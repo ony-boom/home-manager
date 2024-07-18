@@ -7,7 +7,9 @@ return {
   config = function()
     local everforest = require("everforest")
 		everforest.setup({
-			transparent_background_level = 2
+			ui_contrast = "high",
+			transparent_background_level = 1,
+			show_eob = false,
 		})
   end
 }
