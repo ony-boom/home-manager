@@ -4,6 +4,6 @@ This is where I manage my dotfiles.
 Please be aware that this is my "personal" approach to managing em.
 
 ## TODO
-- [ ] Manage everything with `nix`;
-Right now it's a mix of `nix` and `yay`, because I'm using Manjaro(based on Arch btw, to noob for Arch XD).
-It avoids some problems, but I don't like mixing up package managers.
+[ ] Manage everything with `nix`;
+  Right now it's a mix of `nix` and `yay`, because I'm using Manjaro(based on Arch btw, to noob for Arch XD).
+  It avoids some problems, but I don't like mixing up package managers.
