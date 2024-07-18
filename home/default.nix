@@ -6,6 +6,7 @@
 }: {
   imports = [
 		./env.nix
+    ./services
     ./config
     ./programs
   ];
