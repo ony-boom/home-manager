@@ -8,8 +8,8 @@
       lg = "lazygit";
     };
 
-		dotDir = ".config/zsh";
+    dotDir = ".config/zsh";
 
-		initExtra = builtins.readFile ./main.zsh
+    initExtra = builtins.readFile ./main.zsh;
   };
 }

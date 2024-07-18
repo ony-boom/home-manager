@@ -1,6 +1,6 @@
 {pkgs}: let
   packages = [
-		"nvm"
+    "nvm"
     "alacritty"
     "google-chrome"
     "jetbrains-toolbox"
