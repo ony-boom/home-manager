@@ -1,6 +1,8 @@
 {
   imports = [
     ./shell
+    ./emulator
+    ./tmux
   ];
   programs = {
     eza = {
@@ -10,6 +12,6 @@
     fzf.enable = true;
     zoxide.enable = true;
     ripgrep.enable = true;
-		lazygit.enable = true;
+    lazygit.enable = true;
   };
 }

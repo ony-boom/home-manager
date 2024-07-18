@@ -1,7 +1,7 @@
 {
   config,
   pkgs,
-	username,
+  username,
   ...
 }: {
   imports = [
@@ -16,9 +16,9 @@
   # Home Manager needs a bit of information about you and the paths it should
   # manage.
   home = {
-		inherit username;
-		homeDirectory = "/home/${username}";
-	};
+    inherit username;
+    homeDirectory = "/home/${username}";
+  };
 
   # enable desktop integrations
   targets.genericLinux.enable = true;

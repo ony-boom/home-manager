@@ -6,5 +6,8 @@ return {
   -- Optional; default configuration will be used if setup isn't called.
   config = function()
     local everforest = require("everforest")
+		everforest.setup({
+			transparent_background_level = 2
+		})
   end
 }
