@@ -1,4 +1,9 @@
 *Because there's no place like home*
 
 This is where I manage my dotfiles.
-Please be aware that this is my "personal" approach to managing it.
+Please be aware that this is my "personal" approach to managing em.
+
+## TODO
+	- [ ] Manage everything with `nix`;
+		Right now it's a mix of `nix` and `yay`, because I'm using Manjaro(based on arch btw, too noob for arch XD).
+		It avoid me some problems, but I don't really like mixing up package manager.
