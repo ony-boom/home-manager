@@ -1,0 +1,3 @@
+[submodule "home/programs/terminal/emulator/alacritty/themes"]
+	path = home/programs/terminal/emulator/alacritty/themes
+	url = git@github.com:alacritty/alacritty-theme.git
