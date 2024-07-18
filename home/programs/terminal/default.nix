@@ -9,12 +9,12 @@
       enable = true;
       icons = true;
     };
-		gh = {
-			enable = true;
-			settings = {
-				 git_protocol = "ssh";
-			};
-		};
+    gh = {
+      enable = true;
+      settings = {
+        git_protocol = "ssh";
+      };
+    };
     fzf.enable = true;
     zoxide.enable = true;
     ripgrep.enable = true;
