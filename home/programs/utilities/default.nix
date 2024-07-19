@@ -1,3 +1,5 @@
-{
-  imports = [./launchers];
+{pkgs, ...}{
+	home.packages = with pkgs; [
+		ulancher
+	];
 }
