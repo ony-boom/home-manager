@@ -1,3 +1,3 @@
 {
-	imports = [./rofi];
+  imports = [./launchers];
 }
