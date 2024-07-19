@@ -7,7 +7,7 @@
     "visual-studio-code-bin"
   ];
 in {
-  setupArchBased = pkgs.writeShellApplication {
+  arch = pkgs.writeShellApplication {
     name = "setup";
     runtimeInputs = with pkgs; [git gum];
     text = ''

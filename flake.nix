@@ -21,7 +21,7 @@
   in {
     formatter.${system} = pkgs.alejandra;
     packages.${system} = {
-      setupArchBased = setup.setupArchBased;
+      setupArchBased = setup.arch;
     };
     homeConfigurations.${username} = home-manager.lib.homeManagerConfiguration {
       inherit pkgs;
