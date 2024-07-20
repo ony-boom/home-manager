@@ -2,6 +2,7 @@
   packages = [
     "nvm"
     "alacritty"
+		"font-manager"
     "google-chrome"
     "jetbrains-toolbox"
     "visual-studio-code-bin"
