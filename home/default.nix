@@ -33,5 +33,11 @@
   # You should not change this value, even if you update Home Manager. If you do
   # want to update the value, then make sure to first check the Home Manager
   # release notes.
+  home.sessionVariables = {
+    XDG_SESSION_TYPE = "wayland";
+    NVD_BACKEND = "direct";
+    ELECTRON_OZONE_PLATFORM_HINT = "auto";
+  };
+
   home.stateVersion = "24.05"; # Please read the comment before changing.
 }

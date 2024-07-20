@@ -14,6 +14,7 @@
     "swww"
     "dunst"
     "rofi-wayland"
+    "nwg-look"
   ];
 in {
   arch = pkgs.writeShellApplication {
@@ -40,7 +41,7 @@ in {
       	gum confirm "Sync update ?" && yay -Syu
 
         yay -S ${builtins.concatStringsSep " " packages}
-        
+
         gum confirm "Use hyprland to ?" && setup_hyprland
       }
 
