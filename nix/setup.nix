@@ -30,21 +30,17 @@ in {
       	rm -rf yay
       }
 
-      sync() {
-      	yay -Syu ${builtins.concatStringsSep " " packages}
-      }
-
       setup_hyprland() {
-        yay -S
+        yay -S ${builtins.concatStringsSep " " hyprlandPackages}
       }
 
       # programs that I preffer install using yay
       # cause it has some problem with nix or it's better using yay
       install_app() {
-      	gum confirm "Sync update ?" && sync
+      	gum confirm "Sync update ?" && yay -Syu
 
-      	yay -S ${builtins.concatStringsSep " " hyprlandPackages}
-
+        yay -S ${builtins.concatStringsSep " " packages}
+        
         gum confirm "Use hyprland to ?" && setup_hyprland
       }
 
