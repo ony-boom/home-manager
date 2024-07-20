@@ -2,10 +2,18 @@
   packages = [
     "nvm"
     "alacritty"
-		"font-manager"
+    "font-manager"
     "google-chrome"
     "jetbrains-toolbox"
-    "visual-studio-code-bin"
+  ];
+
+  hyprlandPackages = [
+    "libva-nvidia-driver"
+    "hyprland-git"
+    "waybar"
+    "swww"
+    "dunst"
+    "rofi-wayland"
   ];
 in {
   arch = pkgs.writeShellApplication {
@@ -23,7 +31,11 @@ in {
       }
 
       sync() {
-      	yay -Syu
+      	yay -Syu ${builtins.concatStringsSep " " packages}
+      }
+
+      setup_hyprland() {
+        yay -S
       }
 
       # programs that I preffer install using yay
@@ -31,7 +43,9 @@ in {
       install_app() {
       	gum confirm "Sync update ?" && sync
 
-      	yay -S ${builtins.concatStringsSep " " packages}
+      	yay -S ${builtins.concatStringsSep " " hyprlandPackages}
+
+        gum confirm "Use hyprland to ?" && setup_hyprland
       }
 
 

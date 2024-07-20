@@ -3,7 +3,6 @@
     ./terminal
     ./programming
     ./editor
-    ./utilities
   ];
   programs = {
     # Let Home Manager install and manage itself.
