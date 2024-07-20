@@ -1,6 +1,6 @@
 {
 	programs.rofi = {
-		enable = true;
+		enable = false;
 		font = "Noto Sans 14";
 
 		extraConfig = {
