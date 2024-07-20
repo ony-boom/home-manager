@@ -8,6 +8,7 @@
     ./services
     ./config
     ./programs
+		./wm
   ];
   # nixpks config
   nixpkgs.config = {
