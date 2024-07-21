@@ -12,4 +12,4 @@ o.fillchars = { eob = ' ' }
 o.clipboard = 'unnamedplus'
 
 -- for aligning number
-o.statuscolumn = '%=%{v:relnum?v:relnum:v:lnum} '
+-- o.statuscolumn = '%=%{v:relnum?v:relnum:v:lnum} '
