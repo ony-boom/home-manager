@@ -1,0 +1,3 @@
+{
+  terminalEmulator = "kitty";
+}

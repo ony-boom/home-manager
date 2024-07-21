@@ -1,11 +1,15 @@
 {pkgs}: let
-  packages = [
-    "nvm"
-    "alacritty"
-    "font-manager"
-    "google-chrome"
-    "jetbrains-toolbox"
-  ];
+  default = import ./defaultPackages.nix;
+  packages =
+    [
+      "nvm"
+      "font-manager"
+      "google-chrome"
+      "jetbrains-toolbox"
+    ]
+    ++ (with default; [
+      terminalEmulator
+    ]);
 
   hyprlandPackages = [
     "libva-nvidia-driver"

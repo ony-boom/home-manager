@@ -1,6 +1,6 @@
 {
   programs.tmux = {
-    enable = true;
+    enable = false;
     baseIndex = 1;
     escapeTime = 10;
     mouse = true;
