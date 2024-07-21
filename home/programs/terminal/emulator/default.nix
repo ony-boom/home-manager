@@ -2,5 +2,5 @@
   # Since nix has a issue with openGL and stuf, i'll install
   # alacritty using yay
   xdg.configFile."alacritty".source = ./alacritty;
-  xdg.configFile."kitty".source = ./kitty;
+  xdg.configFile."kitty/kitty.conf".source = ./kitty/kitty.conf;
 }
