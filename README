@@ -2,3 +2,6 @@
 
 This is where I manage my dotfiles.
 Please be aware that this is my "personal" approach to managing em.
+
+Some packages are installed via `yay`, because some of them requires more things to do if installed via nix (an example of that is alacritty, which requires nixGL to work).
+I am lazy so I choose to do the easy way. As long as I am with the same config.
