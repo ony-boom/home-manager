@@ -4,7 +4,9 @@
     pkgs.luarocks
   ];
 in {
-  home.packages = with pkgs; [
-		deno
-	] ++ lua;
+  home.packages = with pkgs;
+    [
+      deno
+    ]
+    ++ lua;
 }
