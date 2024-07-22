@@ -18,7 +18,7 @@ return {
 		 	sections = {
     		lualine_a = {'mode'},
     		lualine_b = {'branch'},
-    		lualine_c = {},
+    		lualine_c = {'buffers'},
     		lualine_x = {'encoding', 'fileformat', 'filetype'},
     		lualine_y = {'progress'},
     		lualine_z = {'location'}
@@ -26,5 +26,7 @@ return {
 
 			extensions = {'neo-tree'},
 		}
+
+		vim.g.everforest_better_performance = 1
 	end
 }
