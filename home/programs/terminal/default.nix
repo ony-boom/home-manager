@@ -3,6 +3,7 @@
     ./shell
     ./emulator
     ./tmux
+		./neofetch
   ];
   programs = {
     eza = {
