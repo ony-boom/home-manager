@@ -7,6 +7,7 @@ let
       "font-manager"
       "google-chrome"
       "jetbrains-toolbox"
+			"vscode"
     ]
     ++ (with default; [
       terminalEmulator
