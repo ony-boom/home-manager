@@ -6,7 +6,7 @@
       "font-manager"
       "google-chrome"
       "jetbrains-toolbox"
-      "vscode"
+			"visual-studio-code-bin"
     ]
     ++ (with default; [
       terminalEmulator

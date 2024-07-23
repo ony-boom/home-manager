@@ -1,9 +1,10 @@
-{pkgs, ...}: {
+{pkgs, ...}:
+{
   imports = [
     ./shell
     ./emulator
     ./tmux
-		./neofetch
+    ./neofetch
   ];
   programs = {
     eza = {

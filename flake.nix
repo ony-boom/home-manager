@@ -7,16 +7,21 @@
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    nixgl.url = "github:nix-community/nixGL";
   };
 
   outputs = {
     nixpkgs,
     home-manager,
+    nixgl,
     ...
   }: let
     system = "x86_64-linux";
     username = "ony";
-    pkgs = nixpkgs.legacyPackages.${system};
+    pkgs = import nixpkgs {
+      inherit system;
+      overlays = [nixgl.overlay];
+    };
     setup = import ./nix/setup {inherit pkgs;};
   in {
     formatter.${system} = pkgs.alejandra;
