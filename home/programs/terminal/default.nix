@@ -1,4 +1,4 @@
-{
+{pkgs, ...}: {
   imports = [
     ./shell
     ./emulator
@@ -21,4 +21,8 @@
     ripgrep.enable = true;
     lazygit.enable = true;
   };
+
+  home.packages = with pkgs; [
+    neofetch
+  ];
 }

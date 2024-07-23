@@ -13,15 +13,16 @@
     nixpkgs,
     home-manager,
     ...
-  } @ inputs: let
+  }: let
     system = "x86_64-linux";
     username = "ony";
     pkgs = nixpkgs.legacyPackages.${system};
-    setup = import ./nix/setup.nix {inherit pkgs;};
+    setup = import ./nix/setup {inherit pkgs;};
   in {
     formatter.${system} = pkgs.alejandra;
     packages.${system} = {
       setupArchBased = setup.arch;
+      setupDebianBased = setup.debian;
     };
     homeConfigurations.${username} = home-manager.lib.homeManagerConfiguration {
       inherit pkgs;
