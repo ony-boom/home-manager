@@ -1,5 +1,5 @@
 {pkgs, ...}: {
   imports = [./nvim];
 
-	home.file.".ideavimrc".source = ./.ideavimrc;
+	home.file.".ideavimrc".source = ./ideavimrc;
 }
