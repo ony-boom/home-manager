@@ -1,11 +1,10 @@
 install_yay() {
-    echo "$PACKAGES"
     if ! command -v pacman &> /dev/null; then
         echo "You are not on arch based system"
         exit
     fi
 
-    pacman -S --needed base-devel
+    sudo pacman -S --needed base-devel
 
     git clone https://aur.archlinux.org/yay.git
     cd yay
