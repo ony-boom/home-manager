@@ -1,5 +1,4 @@
-{ pkgs }:
-let
+{pkgs}: let
   default = import ../defaultPackages.nix;
   packages =
     [
@@ -7,7 +6,7 @@ let
       "font-manager"
       "google-chrome"
       "jetbrains-toolbox"
-			"vscode"
+      "vscode"
     ]
     ++ (with default; [
       terminalEmulator
@@ -23,21 +22,23 @@ let
     "nwg-look"
   ];
 
-  scriptArgs = { extraPackages }: {
+  scriptArgs = {extraPackages}: {
     PACKAGES = builtins.concatStringsSep " " (packages ++ extraPackages);
     HYPRLAND_PACKAGES = builtins.concatStringsSep " " (hyprlandPackages ++ extraPackages);
   };
 
-  mkSetupScript = { distro, extraPackages ? [ ] }: pkgs.writeShellApplication {
-    name = "setup";
-    runtimeInputs = with pkgs; [ git gum ];
-    text = builtins.readFile ./scripts/${distro}.sh;
-    runtimeEnv = scriptArgs { inherit extraPackages; };
-    # Just in case i choose to build the script instead of running it
-    derivationArgs = scriptArgs { inherit extraPackages; };
-  };
-
-in
-{
-  arch = mkSetupScript { distro = "arch"; };
+  mkSetupScript = {
+    distro,
+    extraPackages ? [],
+  }:
+    pkgs.writeShellApplication {
+      name = "setup";
+      runtimeInputs = with pkgs; [git gum];
+      text = builtins.readFile ./scripts/${distro}.sh;
+      runtimeEnv = scriptArgs {inherit extraPackages;};
+      # Just in case i choose to build the script instead of running it
+      derivationArgs = scriptArgs {inherit extraPackages;};
+    };
+in {
+  arch = mkSetupScript {distro = "arch";};
 }
