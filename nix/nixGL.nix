@@ -1,5 +1,8 @@
- # TODO: make this more flexible, depending on the machine
-{pkgs, lib}: pkg:
+# TODO: make this more flexible, depending on the machine
+{
+  pkgs,
+  lib,
+}: pkg:
 pkgs.runCommand "${pkg.name}-nixgl-wrapper" {} ''
   mkdir $out
   ln -s ${pkg}/* $out
