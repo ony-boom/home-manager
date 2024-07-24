@@ -8,7 +8,7 @@
   defaultPackages = import ../../../../../nix/defaultPackages.nix;
 in {
 	programs.kitty = {
-		enable = defaultPackages.terminalEmulator != "kitty";
+		enable = defaultPackages.terminalEmulator == "kitty";
 		theme = "Everforest Dark Medium";
 		package = nixGL.wrap pkgs.kitty;
 		extraConfig = builtins.readFile ./kitty.conf;
