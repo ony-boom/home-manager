@@ -14,6 +14,8 @@
         init.defaultBranch = "main";
       };
     };
-    home-manager.enable = true;
+    home-manager = {
+      enable = true;
+    };
   };
 }

@@ -1,0 +1,3 @@
+{
+  gpuType = "nvidia";
+}

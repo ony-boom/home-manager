@@ -9,7 +9,7 @@
     ./config
     ./programs
     ./wm
-    # ./extraOptions.nix
+    ./extraOptions
   ];
   # nixpks config
   nixpkgs.config = {
