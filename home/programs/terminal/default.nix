@@ -1,11 +1,7 @@
 {
   pkgs,
-  config,
-  lib,
   ...
-}: let
-  nixGL = import ../../../nix/nixGL.nix {inherit pkgs config lib;};
-in {
+}: {
   imports = [
     ./shell
     ./emulator
@@ -31,6 +27,5 @@ in {
 
   home.packages = with pkgs; [
     neofetch
-    (nixGL.wrap alacritty)
   ];
 }
