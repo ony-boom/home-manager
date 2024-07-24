@@ -11,7 +11,7 @@ set scrolloff=5
 set number
 set relativenumber
 
-set clipboard
+set clipboard+=unnamedplus
 vim.g.background = "light"
 
 " Do incremental searching.
