@@ -27,7 +27,7 @@
           inherit system;
           overlays = [nixgl.overlay];
         };
-				
+
         setup = import ./nix/setup {inherit pkgs;};
 
         mkHomeConfig = host:

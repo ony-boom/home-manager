@@ -6,7 +6,7 @@
       "google-chrome"
       "jetbrains-toolbox"
       "visual-studio-code-bin"
-    ]
+    ];
 
   scriptArgs = {extraPackages}: {
     PACKAGES = builtins.concatStringsSep " " (packages ++ extraPackages);
