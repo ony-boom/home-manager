@@ -21,18 +21,12 @@ install_yay() {
     rm -rf yay
 }
 
-# set up Hyprland-specific packages
-setup_hyprland() {
-    install_packages "$HYPRLAND_PACKAGES"
-}
 
 # install general packages and Hyprland packages
 install_app() {
     gum confirm "Sync update?" && yay -Syu
 
     install_packages "$PACKAGES"
-
-    gum confirm "Use Hyprland?" && setup_hyprland
 }
 
 # Main function to check for yay and perform installations

@@ -5,11 +5,11 @@
   ...
 }: {
   imports = [
+    ./extraOptions
+
     ./services
     ./config
     ./programs
-    ./wm
-    ./extraOptions
   ];
   # nixpks config
   nixpkgs.config = {
