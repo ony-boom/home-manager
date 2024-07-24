@@ -3,6 +3,8 @@
 " You can find a list of commands here: https://jb.gg/h38q75
 " Find more examples here: https://jb.gg/share-ideavimrc
 
+let mapleader = " "
+
 
 "" -- Suggested options --
 " Show a few lines of context around the cursor. Note that this makes the
@@ -21,13 +23,17 @@ set incsearch
 map Q gq
 
 " --- Enable IdeaVim plugins https://jb.gg/ideavim-plugins
-
-" Highlight copied text
-Plug 'machakann/vim-highlightedyank'
-" Commentary plugin
-Plug 'tpope/vim-commentary'
 set which-key
-set sneak
+Plug 'justinmk/vim-sneak'
+Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-surround'
+Plug 'preservim/nerdtree'
+"Plug 'easymotion/vim-easymotion'
+Plug 'machakann/vim-highlightedyank'
+
+" increase the timeoutlen (default: 1000), don't add space around the equal sign
+" For which-key
+set timeoutlen=5000
 
 "" -- Map IDE actions to IdeaVim -- https://jb.gg/abva4t
 "" Map \r to the Reformat Code action
