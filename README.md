@@ -10,7 +10,7 @@ Please be aware that this is my "personal" approach to managing em.
 - [x] add [nixGL](https://github.com/nix-community/nixGL)
 - [ ] Migrate some packages installed with `yay` to `nix`
     - [x] kitty
-    - [ ] vscode
+    - [x] vscode
     - [ ] chrome
 - [ ] Simplify import from the `nix` directory
 - [ ] Setup [hyprland](https://hyprland.org/). _(Maybe, time consuming)_
