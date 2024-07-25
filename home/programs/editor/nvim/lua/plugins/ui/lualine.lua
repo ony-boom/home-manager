@@ -1,32 +1,32 @@
 return {
-  'nvim-lualine/lualine.nvim',
-  dependencies = { 'nvim-tree/nvim-web-devicons' },
+	"nvim-lualine/lualine.nvim",
+	dependencies = { "nvim-tree/nvim-web-devicons" },
 	config = function()
-		require('lualine').setup {
+		require("lualine").setup({
 			options = {
-				theme = 'auto',
+				theme = "auto",
 				component_separators = {
-					left = '|',
-					right = '|',
+					left = "|",
+					right = "|",
 				},
 				section_separators = {
-					left = '',
-					right = '',
+					left = "",
+					right = "",
 				},
 			},
 
-		 	sections = {
-    		lualine_a = {'mode'},
-    		lualine_b = {'branch'},
-    		lualine_c = {'buffers'},
-    		lualine_x = {'encoding', 'fileformat', 'filetype'},
-    		lualine_y = {'progress'},
-    		lualine_z = {'location'}
-  		},
+			sections = {
+				lualine_a = { "mode" },
+				lualine_b = { "branch" },
+				lualine_c = { "buffers" },
+				lualine_x = { "filetype" },
+				lualine_y = { "progress" },
+				lualine_z = { "location" },
+			},
 
-			extensions = {'neo-tree'},
-		}
+			extensions = { "neo-tree" },
+		})
 
 		vim.g.everforest_better_performance = 1
-	end
+	end,
 }
