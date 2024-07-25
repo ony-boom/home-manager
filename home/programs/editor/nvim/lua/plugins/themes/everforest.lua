@@ -11,5 +11,6 @@ return {
 			-- transparent_background_level = 1,
 			-- show_eob = false,
 		})
+		vim.g.everforest_better_performance = 1
 	end,
 }

@@ -26,7 +26,5 @@ return {
 
 			extensions = { "neo-tree" },
 		})
-
-		vim.g.everforest_better_performance = 1
 	end,
 }
