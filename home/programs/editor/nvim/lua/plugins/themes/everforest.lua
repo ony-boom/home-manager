@@ -8,7 +8,7 @@ return {
 		local everforest = require("everforest")
 		everforest.setup({
 			ui_contrast = "high",
-			transparent_background_level = 1,
+			transparent_background_level = 2,
 			-- show_eob = false,
 		})
 		vim.g.everforest_better_performance = 1
