@@ -7,6 +7,12 @@
     stylua # lua
     alejandra # nix
   ];
+
+  linters = with pkgs; [
+    eslint_d
+    nodePackages.jsonlint
+  ];
+
   lsp = with pkgs; [
     nil # nix
     lua-language-server # lua
@@ -19,7 +25,7 @@ in {
   };
 
   # Mason replacement
-  home.packages = lsp ++ formatters;
+  home.packages = lsp ++ formatters ++ linters;
 
   xdg.configFile."nvim/lua".source = ./lua;
 }
