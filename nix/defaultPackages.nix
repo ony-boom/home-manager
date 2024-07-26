@@ -1,3 +1,3 @@
 {
- terminalEmulator = "kitty";
+  terminalEmulator = "kitty";
 }

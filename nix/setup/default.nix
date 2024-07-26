@@ -1,10 +1,8 @@
 {pkgs}: let
   packages = [
     "nvm"
-    "font-manager"
     "google-chrome"
     "jetbrains-toolbox"
-    "visual-studio-code-bin"
   ];
 
   scriptArgs = {extraPackages}: {

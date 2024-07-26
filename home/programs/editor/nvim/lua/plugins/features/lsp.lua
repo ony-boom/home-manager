@@ -7,6 +7,7 @@ return {
 
 		-- setup servers
 		lspconfig.lua_ls.setup({})
+		lspconfig.nil_ls.setup({})
 
 		-- keymaps
 		map("n", "gd", vim.lsp.buf.definition, { desc = "Go to Definition" })

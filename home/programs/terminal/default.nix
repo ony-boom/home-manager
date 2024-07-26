@@ -23,7 +23,7 @@
   };
 
   home.packages = with pkgs; [
-		slides
+    slides
     neofetch
   ];
 }

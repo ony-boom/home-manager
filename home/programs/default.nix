@@ -1,11 +1,10 @@
-{
+{pkgs, ...}: {
   imports = [
     ./terminal
     ./programming
     ./editor
   ];
   programs = {
-    # Let Home Manager install and manage itself.
     git = {
       enable = true;
       userName = "Ony";
@@ -14,8 +13,12 @@
         init.defaultBranch = "main";
       };
     };
-    home-manager = {
-      enable = true;
-    };
+
+    # Let Home Manager install and manage itself.
+    home-manager.enable = true;
   };
+
+  home.packages = with pkgs; [
+    font-manager
+  ];
 }
