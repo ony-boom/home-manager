@@ -1,3 +1,5 @@
+local map = require("helpers.vim_api_alias").map
+
 return {
 	"nvimtools/none-ls.nvim",
 	config = function()
@@ -12,6 +14,6 @@ return {
 
 		-- null_ls mappings
 
-		vim.keymap.set("n", "<leader>lf", vim.lsp.buf.format, { desc = "LSP Format buffer" })
+		map("n", "<leader>lf", vim.lsp.buf.format, { desc = "LSP Format buffer" })
 	end,
 }

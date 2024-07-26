@@ -1,3 +1,5 @@
+local map = require("helpers.vim_api_alias").map
+
 return {
 	"neovim/nvim-lspconfig",
 	config = function()
@@ -7,7 +9,7 @@ return {
 		lspconfig.lua_ls.setup({})
 
 		-- keymaps
-		vim.keymap.set("n", "gd", vim.lsp.buf.definition, { desc = "Go to Definition" })
-		vim.keymap.set("n", "<leader>la", vim.lsp.buf.code_action, { desc = "LSP Code Actions" })
+		map("n", "gd", vim.lsp.buf.definition, { desc = "Go to Definition" })
+		map("n", "<leader>la", vim.lsp.buf.code_action, { desc = "LSP Code Actions" })
 	end,
 }
