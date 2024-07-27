@@ -16,7 +16,7 @@ return {
 				end,
 				lib.component.foldcolumn(),
 				lib.component.numbercolumn({
-					padding = { right = 1 },
+					padding = { left = 1 },
 				}),
 				lib.component.signcolumn(),
 			} or nil,
@@ -25,14 +25,14 @@ return {
 				condition = function(args)
 					return require("heirline-components.buffer").is_valid(args.buf)
 				end,
-				lib.component.mode(),
+				lib.component.mode({ mode_text = {} }),
 				lib.component.git_branch(),
 				lib.component.file_info(),
 				lib.component.diagnostics(),
 				lib.component.fill(),
 				lib.component.lsp(),
 				lib.component.nav(),
-				lib.component.mode({ surround = { separator = "right" } }),
+				-- lib.component.mode({ surround = { separator = "right" } }),
 			},
 		}
 	end,

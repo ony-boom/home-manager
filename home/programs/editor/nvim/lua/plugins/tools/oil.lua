@@ -1,9 +1,8 @@
 return {
 	"stevearc/oil.nvim",
 	opts = {
-		float = {
-			max_width = 60,
-			max_height = 20,
+		keymaps = {
+			["H"] = "actions.toggle_hidden",
 		},
 	},
 	dependencies = { "nvim-tree/nvim-web-devicons" },
