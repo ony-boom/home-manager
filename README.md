@@ -13,4 +13,5 @@ _Because there's no place like home_
 - [ ] Setup [hyprland](https://hyprland.org/). _(Maybe, time consuming)_
 
 
+> *Notes*:
 > pass `--impure` args when switching on machine with nvidia gpu 
