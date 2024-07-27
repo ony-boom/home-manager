@@ -1,5 +1,5 @@
 vim.cmd([[
-  colorscheme everforest
+  colorscheme catppuccin
 ]])
 
 vim.o.showtabline = 2
