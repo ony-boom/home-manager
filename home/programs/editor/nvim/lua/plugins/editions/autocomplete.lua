@@ -59,7 +59,7 @@ return {
 
 			-- -- Set up lspconfig.
 			local capabilities = require("cmp_nvim_lsp").default_capabilities()
-			local servers = { "lua_ls", "nil_ls" }
+			local servers = { "lua_ls", "nil_ls", "tsserver" }
 
 			for _, server in ipairs(servers) do
 				lspconfig[server].setup({

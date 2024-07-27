@@ -1,10 +1,5 @@
 local map = require("helpers.vim_api_alias").map
 
--- Make sure to setup `mapleader` and `maplocalleader` before
--- loading lazy.nvim so that mappings are correct.
-vim.g.mapleader = " "
-vim.g.maplocalleader = ","
-
 -- CTRL+S to save
 map("n", "<C-S>", ":update<CR>", { silent = true, desc = "Save" })
 
@@ -22,3 +17,5 @@ map("n", "<C-K>", "<C-w>k", { desc = "Focus window Up" })
 map("n", "<C-L>", "<C-w>l", { desc = "Focus window right" })
 map("n", "<C-J>", "<C-w>j", { desc = "Focus window down" })
 map("n", "<C-H>", "<C-w>h", { desc = "Focus window left" })
+map("n", "-", ":Oil<CR>", { desc = "Open parent directory" })
+map("n", "<leader>e", require("oil").toggle_float, { desc = "Open parent directory (Float)" })

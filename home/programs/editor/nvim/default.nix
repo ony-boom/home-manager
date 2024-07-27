@@ -6,6 +6,10 @@
   formatters = with pkgs; [
     stylua # lua
     alejandra # nix
+
+    # web stuff
+    prettierd
+    nodePackages.prettier
   ];
 
   linters = with pkgs; [
@@ -16,6 +20,8 @@
   lsp = with pkgs; [
     nil # nix
     lua-language-server # lua
+
+    nodePackages.typescript-language-server
   ];
 in {
   programs.neovim = {
