@@ -19,6 +19,8 @@ return {
 				nix = { "alejandra" },
 				javascript = { "prettierd", "prettier", "deno_fmt", stop_after_first = true },
 				typescript = { "prettierd", "prettier", "deno_fmt", stop_after_first = true },
+				javascriptreact = { "prettierd", "prettier", "deno_fmt", stop_after_first = true },
+				typescriptreact = { "prettierd", "prettier", "deno_fmt", stop_after_first = true },
 			},
 		})
 

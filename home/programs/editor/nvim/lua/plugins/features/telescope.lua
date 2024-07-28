@@ -5,8 +5,9 @@ return {
 	tag = "0.1.8",
 	dependencies = {
 		"nvim-lua/plenary.nvim",
-		"nvim-telescope/telescope-ui-select.nvim",
 		"smartpde/telescope-recent-files",
+		"nvim-telescope/telescope-ui-select.nvim",
+		{ "nvim-telescope/telescope-fzf-native.nvim", build = "make" },
 	},
 	config = function()
 		local telescope = require("telescope")
@@ -14,6 +15,12 @@ return {
 
 		telescope.setup({
 			extensions = {
+				fzf = {
+					fuzzy = true,
+					override_generic_sorter = true,
+					override_file_sorter = true,
+					case_mode = "smart_case",
+				},
 				["ui-select"] = {
 					require("telescope.themes").get_dropdown({
 						-- even more opts
@@ -29,6 +36,7 @@ return {
 		map("n", "<leader>fh", builtin.help_tags, { desc = "Find Help" })
 		map("n", "<leader>fo", telescope.extensions.recent_files.pick, { desc = "Find Recent file" })
 
+		telescope.load_extension("fzf")
 		telescope.load_extension("ui-select")
 		telescope.load_extension("recent_files")
 	end,
