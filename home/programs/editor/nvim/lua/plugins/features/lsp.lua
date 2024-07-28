@@ -11,6 +11,7 @@ return {
 
 		-- keymaps
 		map("n", "gd", vim.lsp.buf.definition, { desc = "Go to Definition" })
+		map("n", "<leader>lr", vim.lsp.buf.rename, { desc = "Rename current symbol" })
 		map("n", "<leader>la", vim.lsp.buf.code_action, { desc = "LSP Code Actions" })
 		map("n", "<leader>ld", vim.diagnostic.open_float, { desc = "Hover diagnostics" })
 	end,

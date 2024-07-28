@@ -7,6 +7,7 @@ vim.g.maplocalleader = ","
 
 o.number = true
 o.relativenumber = true
+o.cursorline = true
 
 o.shiftwidth = 2
 o.tabstop = 2
