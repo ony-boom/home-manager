@@ -4,6 +4,7 @@
     extensions = with pkgs.vscode-extensions; [
       bbenoist.nix
       eamodio.gitlens
+      dbaeumer.vscode-eslint
       # sainnhe.everforest
       christian-kohler.path-intellisense
       aaron-bond.better-comments

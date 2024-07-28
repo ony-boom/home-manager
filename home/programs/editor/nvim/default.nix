@@ -13,15 +13,16 @@
   ];
 
   linters = with pkgs; [
-    eslint_d
-    nodePackages.jsonlint
+    nodePackages.eslint
   ];
 
   lsp = with pkgs; [
     nil # nix
     lua-language-server # lua
 
+    nodePackages.typescript
     nodePackages.typescript-language-server
+    vscode-langservers-extracted
   ];
 in {
   programs.neovim = {

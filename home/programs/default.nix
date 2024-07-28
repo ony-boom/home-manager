@@ -3,6 +3,7 @@
     ./terminal
     ./programming
     ./editor
+		./media
   ];
   programs = {
     git = {
