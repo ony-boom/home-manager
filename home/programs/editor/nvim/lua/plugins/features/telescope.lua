@@ -12,13 +12,12 @@ return {
 		local telescope = require("telescope")
 		local builtin = require("telescope.builtin")
 
-		telescope.load_extension("ui-select")
-		telescope.load_extension("recent_files")
-
 		telescope.setup({
 			extensions = {
 				["ui-select"] = {
-					require("telescope.themes").get_dropdown({}),
+					require("telescope.themes").get_dropdown({
+						-- even more opts
+					}),
 				},
 			},
 		})
@@ -29,5 +28,8 @@ return {
 		map("n", "<leader>fb", builtin.buffers, { desc = "Find Buffers (navigate through opened buffers)" })
 		map("n", "<leader>fh", builtin.help_tags, { desc = "Find Help" })
 		map("n", "<leader>fo", telescope.extensions.recent_files.pick, { desc = "Find Recent file" })
+
+		telescope.load_extension("ui-select")
+		telescope.load_extension("recent_files")
 	end,
 }
