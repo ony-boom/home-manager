@@ -3,6 +3,8 @@ return {
 	dependencies = { "Zeioth/heirline-components.nvim" },
 	opts = function()
 		local lib = require("heirline-components.all")
+		local utils = require("heirline.utils")
+
 		return {
 			tabline = { -- UI upper bar
 				lib.component.tabline_conditional_padding(),
@@ -24,7 +26,8 @@ return {
 				condition = function(args)
 					return require("heirline-components.buffer").is_valid(args.buf)
 				end,
-				lib.component.mode({ mode_text = {} }),
+				hl = { fg = "fg", bg = "bg" },
+				lib.component.mode({ mode_text = {}, hl = { fg = utils.get_highlight("Normal").bg, bg = "bg" } }),
 				lib.component.git_branch(),
 				lib.component.file_info(),
 				lib.component.diagnostics(),
