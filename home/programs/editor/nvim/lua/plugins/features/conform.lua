@@ -17,8 +17,8 @@ return {
 			formatters_by_ft = {
 				lua = { "stylua" },
 				nix = { "alejandra" },
-				javascript = { "deno_fmt", "prettierd", "prettier", stop_after_first = true },
-				typescript = { "deno_fmt", "prettierd", "prettier", stop_after_first = true },
+				javascript = { "prettierd", "prettier", "deno_fmt", stop_after_first = true },
+				typescript = { "prettierd", "prettier", "deno_fmt", stop_after_first = true },
 			},
 		})
 

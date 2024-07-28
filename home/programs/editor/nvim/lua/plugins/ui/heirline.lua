@@ -21,7 +21,6 @@ return {
 				lib.component.signcolumn(),
 			} or nil,
 			statusline = { -- UI statusbar
-				hl = { fg = "fg", bg = "bg" },
 				condition = function(args)
 					return require("heirline-components.buffer").is_valid(args.buf)
 				end,

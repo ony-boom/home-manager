@@ -14,7 +14,6 @@ set number
 set relativenumber
 
 set clipboard+=unnamedplus
-vim.g.background = "light"
 
 " Do incremental searching.
 set incsearch
