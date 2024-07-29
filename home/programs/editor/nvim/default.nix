@@ -3,6 +3,8 @@
   pkgs,
   ...
 }: let
+  defaultPackage = import ../../../../nix/defaultPackages.nix;
+
   formatters = with pkgs; [
     stylua # lua
     alejandra # nix
@@ -27,7 +29,7 @@
   ];
 in {
   programs.neovim = {
-    enable = true;
+    enable = defaultPackage.editor == "neovim";
     defaultEditor = true;
     extraLuaConfig = lib.readFile ./init.lua;
   };

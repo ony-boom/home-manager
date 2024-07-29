@@ -1,3 +1,4 @@
 {
   terminalEmulator = "kitty";
+  editor = "neovim";
 }
