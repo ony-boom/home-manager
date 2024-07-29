@@ -29,8 +29,8 @@
   ];
 in {
   programs.neovim = {
-    enable = defaultPackage.editor == "neovim";
-    defaultEditor = true;
+    enable = true;
+    defaultEditor = defaultPackage.editor == "neovim";
     extraLuaConfig = lib.readFile ./init.lua;
   };
 

@@ -1,9 +1,6 @@
 return {
 	"folke/noice.nvim",
 	event = "VeryLazy",
-	opts = {
-		-- add any options here
-	},
 	dependencies = {
 		"MunifTanjim/nui.nvim",
 	},
@@ -41,11 +38,11 @@ return {
 
 			views = {
 				mini = {
+					border = {
+						padding = { 0, 1 },
+					},
 					win_options = {
-						winhighlight = {
-							Normal = "NormalFloat",
-							FloatBorder = "FloatBorder",
-						},
+						winblend = 0,
 					},
 				},
 			},

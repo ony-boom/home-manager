@@ -1,26 +1,26 @@
 return {
-	{
-		"sainnhe/everforest",
-		lazy = false,
-		priority = 1000,
-		config = function()
-			vim.g.everforest_enable_italic = true
-			-- vim.g.everforest_better_performance = 1
-			vim.g.everforest_transparent_background = 2
-			-- vim.g.everforest_float_style = "dim"
-			vim.g.everforest_diagnostic_line_highlight = 1
+	"neanias/everforest-nvim",
+	version = false,
+	lazy = false,
+	priority = 1000, -- make sure to load this before all the other start plugins
+	-- Optional; default configuration will be used if setup isn't called.
+	config = function()
+		require("everforest").setup({
+			italics = true,
+			float_style = "dim",
+			transparent_background_level = 2,
+		})
 
-			local winhighlight = "Normal:Normal,FloatBorder:Normal,CursorLine:TelescopeSelection,Search:None"
-			require("cmp").setup({
-				window = {
-					completion = {
-						winhighlight = winhighlight,
-					},
-					documentation = {
-						winhighlight = winhighlight,
-					},
+		local winhighlight = "Normal:Normal,FloatBorder:Normal,CursorLine:TelescopeSelection,Search:None"
+		require("cmp").setup({
+			window = {
+				completion = {
+					winhighlight = winhighlight,
 				},
-			})
-		end,
-	},
+				documentation = {
+					winhighlight = winhighlight,
+				},
+			},
+		})
+	end,
 }
