@@ -17,5 +17,8 @@ o.fillchars = { eob = " " }
 
 o.clipboard = "unnamedplus"
 
+-- clear highlght on pressing <Esc>
+o.hlsearch = true
+
 -- for aligning number
 -- o.statuscolumn = '%=%{v:relnum?v:relnum:v:lnum} '

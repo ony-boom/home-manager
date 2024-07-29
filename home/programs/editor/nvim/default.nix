@@ -20,9 +20,10 @@
     nil # nix
     lua-language-server # lua
 
+    emmet-language-server
+    vscode-langservers-extracted
     nodePackages.typescript
     nodePackages.typescript-language-server
-    vscode-langservers-extracted
   ];
 in {
   programs.neovim = {
