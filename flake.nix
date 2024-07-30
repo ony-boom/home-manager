@@ -10,7 +10,6 @@
     nixgl = {
       url = "github:nix-community/nixGL";
     };
-    # flake-utils.url = "github:numtide/flake-utils";
   };
 
   outputs = {
