@@ -64,8 +64,8 @@ return {
 
 			-- -- Set up lspconfig.
 			local capabilities = require("cmp_nvim_lsp").default_capabilities()
-			local json_capabilities = vim.lsp.protocol.make_client_capabilities()
-			json_capabilities.textDocument.completion.completionItem.snippetSupport = true
+			local builtin_snippets_capabilities = vim.lsp.protocol.make_client_capabilities()
+			builtin_snippets_capabilities.textDocument.completion.completionItem.snippetSupport = true
 
 			local servers = {
 				"lua_ls",
@@ -80,13 +80,16 @@ return {
 					root_dir = lsputil.root_pattern("deno.json", "deno.jsonc"),
 				},
 				jsonls = {
-					capabilities = json_capabilities,
+					capabilities = builtin_snippets_capabilities,
 					settings = {
 						json = {
 							schemas = require("schemastore").json.schemas(),
 							validate = { enable = true },
 						},
 					},
+				},
+				cssls = {
+					capabilities = builtin_snippets_capabilities,
 				},
 			}
 

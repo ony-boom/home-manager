@@ -11,6 +11,7 @@ return {
 
 		-- keymaps
 		map("n", "gd", vim.lsp.buf.definition, { desc = "Go to Definition" })
+		map("n", "gr", vim.lsp.buf.references, { desc = "Go to References" })
 		map("n", "gD", vim.lsp.buf.declaration, { desc = "Go to Declaration" })
 		map("n", "<leader>lr", vim.lsp.buf.rename, { desc = "Rename current symbol" })
 		map("n", "<leader>la", vim.lsp.buf.code_action, { desc = "LSP Code Actions" })
