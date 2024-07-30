@@ -6,7 +6,6 @@
 
     shellAliases = {
       lg = "lazygit";
-			cat = "bat";
     };
 
     dotDir = ".config/zsh";
