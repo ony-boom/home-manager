@@ -7,7 +7,7 @@ return {
 	config = function()
 		require("everforest").setup({
 			italics = true,
-			transparent_background_level = 2,
+			-- transparent_background_level = 1,
 
 			on_highlights = function(hl, palette)
 				hl.Float = { fg = palette.fg, bg = palette.bg0 }

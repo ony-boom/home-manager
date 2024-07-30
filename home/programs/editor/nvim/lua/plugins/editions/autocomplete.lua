@@ -64,13 +64,17 @@ return {
 
 			-- -- Set up lspconfig.
 			local capabilities = require("cmp_nvim_lsp").default_capabilities()
-			local builtin_snippets_capabilities = vim.lsp.protocol.make_client_capabilities()
-			builtin_snippets_capabilities.textDocument.completion.completionItem.snippetSupport = true
+			capabilities.textDocument.completion.completionItem.snippetSupport = true
+			-- capabilities.textDocument.foldingRange = {
+			-- 	dynamicRegistration = true,
+			-- 	lineFoldingOnly = true,
+			-- }
 
 			local servers = {
 				"lua_ls",
 				"nil_ls",
 				"eslint",
+				"cssls",
 				"emmet_language_server",
 				tsserver = {
 					single_file_support = false,
@@ -80,16 +84,12 @@ return {
 					root_dir = lsputil.root_pattern("deno.json", "deno.jsonc"),
 				},
 				jsonls = {
-					capabilities = builtin_snippets_capabilities,
 					settings = {
 						json = {
 							schemas = require("schemastore").json.schemas(),
 							validate = { enable = true },
 						},
 					},
-				},
-				cssls = {
-					capabilities = builtin_snippets_capabilities,
 				},
 			}
 
