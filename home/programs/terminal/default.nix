@@ -4,7 +4,6 @@
     ./emulator
     ./tmux
     ./neofetch
-		./bat
 		./lazygit.nix
   ];
   programs = {
