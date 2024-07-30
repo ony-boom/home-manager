@@ -3,7 +3,7 @@
     ./terminal
     ./programming
     ./editor
-		./media
+    ./media
   ];
   programs = {
     git = {
@@ -20,7 +20,7 @@
   };
 
   home.packages = with pkgs; [
-		emote
+    emote
     font-manager
   ];
 }

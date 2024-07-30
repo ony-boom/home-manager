@@ -1,5 +1,5 @@
-let
-  defaultPackages = import ../../../../nix/defaultPackages.nix;
+{self, ...}: let
+  defaultPackages = import "${self}/nix/defaultPackages.nix";
 in {
   programs.tmux = {
     enable = defaultPackages.terminalEmulator != "kitty";

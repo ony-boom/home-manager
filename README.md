@@ -9,7 +9,8 @@ _Because there's no place like home_
     - [x] kitty
     - [x] vscode
     - [ ] chrome
-- [ ] Simplify import from the `nix` directory
+- [ ] Refactor flake
+    - [x] Simplify import from the `nix` directory
 - [ ] Setup [hyprland](https://hyprland.org/). _(Maybe, time consuming)_
 
 

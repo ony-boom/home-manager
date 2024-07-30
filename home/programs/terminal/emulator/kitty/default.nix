@@ -2,10 +2,11 @@
   pkgs,
   config,
   lib,
+  self,
   ...
 }: let
-  nixGL = import ../../../../../nix/nixGL.nix {inherit pkgs config lib;};
-  defaultPackages = import ../../../../../nix/defaultPackages.nix;
+  nixGL = import (self + /nix/nixGL.nix) {inherit pkgs config lib;};
+  defaultPackages = import "${self}/nix/defaultPackages.nix";
 in {
   programs.kitty = {
     enable = defaultPackages.terminalEmulator == "kitty";

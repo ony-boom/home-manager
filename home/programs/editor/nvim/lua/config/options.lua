@@ -7,7 +7,8 @@ vim.g.maplocalleader = " "
 
 o.number = true
 o.relativenumber = true
-o.cursorline = true
+
+-- o.cursorline = true
 
 o.shiftwidth = 2
 o.tabstop = 2
@@ -19,6 +20,3 @@ o.clipboard = "unnamedplus"
 
 -- clear highlght on pressing <Esc>
 o.hlsearch = true
-
--- for aligning number
--- o.statuscolumn = '%=%{v:relnum?v:relnum:v:lnum} '

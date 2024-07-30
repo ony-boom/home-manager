@@ -1,9 +1,10 @@
 {
   lib,
   pkgs,
+  self,
   ...
 }: let
-  defaultPackage = import ../../../../nix/defaultPackages.nix;
+  defaultPackage = import (self + /nix/defaultPackages.nix);
 
   formatters = with pkgs; [
     stylua # lua

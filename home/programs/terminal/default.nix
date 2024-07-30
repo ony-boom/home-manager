@@ -4,7 +4,7 @@
     ./emulator
     ./tmux
     ./neofetch
-		./lazygit.nix
+    ./lazygit.nix
   ];
   programs = {
     eza = {
@@ -24,7 +24,7 @@
 
   home.packages = with pkgs; [
     slides
-		delta
+    delta
     neofetch
   ];
 }
