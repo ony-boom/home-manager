@@ -7,13 +7,27 @@ return {
 	config = function()
 		require("everforest").setup({
 			italics = true,
-			-- transparent_background_level = 1,
+			transparent_background_level = 1,
 
-			on_highlights = function(hl, palette)
-				hl.Float = { fg = palette.fg, bg = palette.bg0 }
-				hl.NormalFloat = { fg = palette.fg, bg = palette.bg0 }
-				hl.FloatBorder = { fg = palette.fg, bg = palette.none }
-			end,
+			--[[
+            on_highlights = function(hl, palette)
+                hl.Float = { fg = palette.fg, bg = palette.bg0 }
+                hl.NormalFloat = { fg = palette.fg, bg = palette.bg0 }
+                hl.FloatBorder = { fg = palette.fg, bg = palette.none }
+            end,
+      --	]]
+		})
+
+		local winhighlight = "Normal:Normal,FloatBorder:Normal,CursorLine:TelescopeSelection,Search:None"
+		require("cmp").setup({
+			window = {
+				completion = {
+					winhighlight = winhighlight,
+				},
+				documentation = {
+					winhighlight = winhighlight,
+				},
+			},
 		})
 	end,
 }
