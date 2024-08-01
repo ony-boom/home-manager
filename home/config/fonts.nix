@@ -9,14 +9,17 @@
         package = "CascadiaCode";
         name = "CaskaydiaCove Nerd Font";
       };
-      zed = {package = "ZedMono"; name = "";};
+      zed = {
+        package = "ZedMono";
+        name = "ZedMono Nerd Font Mono";
+      };
     };
   };
 in {
   fonts.fontconfig = {
     enable = true;
     defaultFonts = {
-      monospace = [fonts.monospace.cascadia.name];
+      monospace = [fonts.monospace.jetbrains.name];
     };
   };
 
