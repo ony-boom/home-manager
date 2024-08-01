@@ -1,4 +1,4 @@
 {
-  terminalEmulator = "blackbox";
+  terminalEmulator = "kitty";
   editor = "neovim";
 }
