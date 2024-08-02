@@ -6,6 +6,7 @@ return {
 	dependencies = {
 		"nvim-lua/plenary.nvim",
 		"smartpde/telescope-recent-files",
+		-- "nvim-telescope/telescope-file-browser.nvim",
 		{ "nvim-telescope/telescope-fzf-native.nvim", build = "make" },
 	},
 	config = function()
@@ -20,6 +21,9 @@ return {
 					override_file_sorter = true,
 					case_mode = "smart_case",
 				},
+				file_browser = {
+					hijack_netrw = true,
+				},
 			},
 		})
 
@@ -29,8 +33,10 @@ return {
 		map("n", "<leader>fb", builtin.buffers, { desc = "Find Buffers (navigate through opened buffers)" })
 		map("n", "<leader>fh", builtin.help_tags, { desc = "Find Help" })
 		map("n", "<leader>fo", telescope.extensions.recent_files.pick, { desc = "Find Recent file" })
+		-- map("n", "<space>e", ":Telescope file_browser<CR>")
 
 		telescope.load_extension("fzf")
 		telescope.load_extension("recent_files")
+		-- telescope.load_extension("file_browser")
 	end,
 }
