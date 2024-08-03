@@ -1,4 +1,3 @@
--- TODO: split this file
 return {
 	{
 		"hrsh7th/nvim-cmp",
@@ -76,6 +75,7 @@ return {
 				"eslint",
 				"cssls",
 				"emmet_language_server",
+				"gleam",
 				tsserver = {
 					single_file_support = false,
 					root_dir = lsputil.root_pattern("package.json", "jsconfig.json", "tsconfig.json"),

@@ -10,6 +10,7 @@ return {
 		local formatters_by_ft = {
 			lua = { "stylua" },
 			nix = { "alejandra" },
+			gleam = { "gleam" },
 		}
 
 		local web_stuff_ft = { "typescript", "typescriptreact", "javascript", "javascriptreact", "json", "jsonc" }

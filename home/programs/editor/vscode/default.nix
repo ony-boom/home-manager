@@ -10,6 +10,8 @@
       aaron-bond.better-comments
       esbenp.prettier-vscode
       # equinusocio.moxer-icons
+
+      gleam.gleam
     ];
     userSettings = {
       "git.autofetch" = true;
