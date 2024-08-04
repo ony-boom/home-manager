@@ -32,7 +32,7 @@
       home-manager.lib.homeManagerConfiguration {
         inherit pkgs;
         extraSpecialArgs = {
-          inherit self username host;
+          inherit self username host system;
         };
         modules = [
           ./home
