@@ -18,6 +18,7 @@ local ui = {
 config.enable_tab_bar = false
 config.audible_bell = "Disabled"
 config.window_decorations = "RESIZE"
+config.freetype_load_flags = "NO_HINTING"
 config.automatically_reload_config = true
 config.default_cursor_style = "BlinkingBar"
 config.color_scheme_dirs = { "~/.config/wezterm/colors" }
