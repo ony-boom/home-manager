@@ -24,8 +24,9 @@
     lua-language-server # lua
 
     emmet-language-server
-    vscode-langservers-extracted
     nodePackages.typescript
+    tailwindcss-language-server
+    vscode-langservers-extracted
     nodePackages.typescript-language-server
   ];
 in {

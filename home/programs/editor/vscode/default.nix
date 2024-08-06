@@ -20,6 +20,9 @@
       "window.menuBarVisibility" = "toggle";
       "workbench.iconTheme" = "moxer-icons";
       "workbench.colorTheme" = "Everforest Dark";
+      "[javascript]" = {
+        "editor.defaultFormatter" = "esbenp.prettier-vscode";
+      };
     };
   };
 }

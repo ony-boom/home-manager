@@ -16,7 +16,7 @@ local ui = {
 }
 
 config.enable_tab_bar = false
-config.audoble_bell = "Disabled"
+config.audible_bell = "Disabled"
 config.window_decorations = "RESIZE"
 config.automatically_reload_config = true
 config.default_cursor_style = "BlinkingBar"
