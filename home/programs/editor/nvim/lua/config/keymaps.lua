@@ -18,3 +18,5 @@ map("n", "<C-L>", "<C-w>l", { desc = "Focus window right" })
 map("n", "<C-J>", "<C-w>j", { desc = "Focus window down" })
 map("n", "<C-H>", "<C-w>h", { desc = "Focus window left" })
 map("n", "-", ":Oil<CR>", { desc = "Open parent directory", silent = true })
+
+map("n", "<Esc>", "<cmd>nohlsearch<CR>")
