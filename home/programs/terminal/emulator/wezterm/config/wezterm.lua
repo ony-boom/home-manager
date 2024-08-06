@@ -21,7 +21,7 @@ config.window_decorations = "RESIZE"
 config.automatically_reload_config = true
 config.default_cursor_style = "BlinkingBar"
 config.color_scheme_dirs = { "~/.config/wezterm/colors" }
-config.font = wezterm.font(ui.fonts.jetbrains, { weight = "DemiBold" })
+config.font = wezterm.font(ui.fonts.jetbrains)
 
 config.color_scheme = ui.themes.everforest.dark_medium
 -- config.window_background_opacity = 0.8
