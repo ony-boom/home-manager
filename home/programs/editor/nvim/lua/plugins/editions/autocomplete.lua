@@ -25,10 +25,6 @@ return {
 					end,
 				},
 
-				performance = {
-					max_view_entries = 15,
-				},
-
 				window = {
 					completion = cmp.config.window.bordered(),
 					documentation = cmp.config.window.bordered(),

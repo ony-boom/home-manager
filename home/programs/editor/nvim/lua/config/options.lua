@@ -20,3 +20,4 @@ o.clipboard = "unnamedplus"
 
 -- clear highlght on pressing <Esc>
 o.hlsearch = true
+o.pumheight = 20
