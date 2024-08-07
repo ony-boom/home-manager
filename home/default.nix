@@ -33,6 +33,9 @@
     XDG_SESSION_TYPE = "wayland";
     NVD_BACKEND = "direct";
     ELECTRON_OZONE_PLATFORM_HINT = "auto";
+
+    # Disable deno update checker
+    DENO_NO_UPDATE_CHECK = 1;
   };
 
   home.stateVersion = "24.05"; # Please read the comment before changing.
