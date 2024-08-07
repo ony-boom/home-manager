@@ -16,11 +16,11 @@ local ui = {
 	},
 }
 
-config.leader = {
+--[[ config.leader = {
 	key = "a",
 	mods = "CTRL",
 	timeout_milliseconds = 1000,
-}
+} ]]
 
 -- config.keys = keymaps
 
