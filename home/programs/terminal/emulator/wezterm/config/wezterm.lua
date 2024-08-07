@@ -1,4 +1,5 @@
 local wezterm = require("wezterm")
+-- local keymaps = require("keymaps")
 
 local config = wezterm.config_builder()
 
@@ -15,7 +16,16 @@ local ui = {
 	},
 }
 
+config.leader = {
+	key = "a",
+	mods = "CTRL",
+	timeout_milliseconds = 1000,
+}
+
+-- config.keys = keymaps
+
 config.enable_tab_bar = false
+-- config.use_fancy_tab_bar = false
 config.audible_bell = "Disabled"
 config.window_decorations = "RESIZE"
 config.freetype_load_flags = "NO_HINTING"
