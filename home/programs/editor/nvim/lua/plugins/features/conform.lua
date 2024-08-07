@@ -11,6 +11,7 @@ return {
 			lua = { "stylua" },
 			nix = { "alejandra" },
 			gleam = { "gleam" },
+			rust = { "rustfmt" },
 		}
 
 		local web_stuff_ft = { "typescript", "typescriptreact", "javascript", "javascriptreact", "json", "jsonc" }

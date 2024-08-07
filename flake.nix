@@ -10,6 +10,7 @@
     nixgl = {
       url = "github:nix-community/nixGL";
     };
+    rust-overlay.url = "github:oxalica/rust-overlay";
   };
 
   outputs = {
@@ -18,12 +19,12 @@
     home-manager,
     nixgl,
     ...
-  }: let
+  } @ inputs: let
     username = "ony";
     system = "x86_64-linux";
     pkgs = import nixpkgs {
       inherit system;
-      overlays = [nixgl.overlay];
+      overlays = [nixgl.overlay inputs.rust-overlay.overlays.default];
     };
 
     setup = import ./nix/setup {inherit pkgs;};

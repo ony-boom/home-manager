@@ -73,6 +73,7 @@ return {
 				"emmet_language_server",
 				"gleam",
 				"tailwindcss",
+				"rust_analyzer",
 				tsserver = {
 					single_file_support = false,
 					root_dir = lsputil.root_pattern("package.json", "jsconfig.json", "tsconfig.json"),
