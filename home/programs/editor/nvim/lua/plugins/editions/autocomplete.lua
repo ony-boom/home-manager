@@ -73,6 +73,7 @@ return {
 				"emmet_language_server",
 				"gleam",
 				"tailwindcss",
+				"prismals",
 				"rust_analyzer",
 				tsserver = {
 					single_file_support = false,

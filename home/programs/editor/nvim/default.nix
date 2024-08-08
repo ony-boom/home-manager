@@ -28,6 +28,7 @@
     tailwindcss-language-server
     vscode-langservers-extracted
     nodePackages.typescript-language-server
+    nodePackages."@prisma/language-server"
   ];
 in {
   programs.neovim = {

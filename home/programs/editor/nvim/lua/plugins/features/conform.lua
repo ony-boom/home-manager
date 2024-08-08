@@ -12,6 +12,7 @@ return {
 			nix = { "alejandra" },
 			gleam = { "gleam" },
 			rust = { "rustfmt" },
+			prisma = { lsp_format = "fallback" },
 		}
 
 		local web_stuff_ft = { "typescript", "typescriptreact", "javascript", "javascriptreact", "json", "jsonc" }
