@@ -58,6 +58,7 @@ config.freetype_load_flags = "NO_HINTING"
 config.automatically_reload_config = true
 config.hide_tab_bar_if_only_one_tab = true
 config.default_cursor_style = "BlinkingBar"
+config.show_new_tab_button_in_tab_bar = false
 
 config.inactive_pane_hsb = {
 	saturation = 1,
