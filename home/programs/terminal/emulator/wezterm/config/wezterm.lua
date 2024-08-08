@@ -49,7 +49,7 @@ config.leader = {
 config.keys = keymaps.keys
 config.key_tables = keymaps.key_tables
 
--- config.use_fancy_tab_bar = false
+config.use_fancy_tab_bar = false
 config.tab_bar_at_bottom = true
 config.audible_bell = "Disabled"
 config.window_decorations = "RESIZE"
