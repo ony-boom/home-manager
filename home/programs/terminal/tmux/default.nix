@@ -8,7 +8,7 @@
   # better-tmux = import ./better-tmux.nix {inherit pkgs system;};
 in {
   programs.tmux = {
-    enable = defaultPackages.terminalEmulator != "kitty";
+    enable = defaultPackages.terminalEmulator == "alacritty";
     baseIndex = 1;
     escapeTime = 10;
     mouse = true;
