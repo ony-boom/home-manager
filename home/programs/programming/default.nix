@@ -3,22 +3,19 @@
     pkgs.lua
     pkgs.luarocks
   ];
-  /*
-     elixir = with pkgs; [
-    gleam
-    erlang
-    rebar3
+
+  zig = [
+    pkgs.zig
   ];
-  */
 in {
   imports = [
     ./rust
   ];
   home.packages = with pkgs;
     [
-			bun
+      bun
       deno
     ]
-    ++ lua;
-  # ++ elixir;
+    ++ lua
+    ++ zig;
 }
