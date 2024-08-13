@@ -1,4 +1,4 @@
 {
   gpuType = "intel";
-	useWayland = true;
+  useWayland = true;
 }

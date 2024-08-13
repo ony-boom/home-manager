@@ -2,7 +2,7 @@
   toolchain = pkgs.rust-bin.fromRustupToolchainFile ./toolchain.toml;
 in {
   home.packages = [
-		# pkgs.rustup
+    # pkgs.rustup
     toolchain
     # We want the unwrapped version, "rust-analyzer" (wrapped) comes with nixpkgs' toolchain
     pkgs.rust-analyzer-unwrapped
