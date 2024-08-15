@@ -21,6 +21,8 @@
 
   home.packages = with pkgs; [
     emote
+		scrcpy
+		obsidian
     font-manager
   ];
 }
