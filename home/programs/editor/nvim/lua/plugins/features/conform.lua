@@ -15,7 +15,8 @@ return {
 			prisma = { lsp_format = "fallback" },
 		}
 
-		local web_stuff_ft = { "typescript", "typescriptreact", "javascript", "javascriptreact", "json", "jsonc" }
+		local web_stuff_ft =
+			{ "typescript", "typescriptreact", "javascript", "javascriptreact", "json", "jsonc", "html", "css", "scss" }
 
 		for _, ft in pairs(web_stuff_ft) do
 			formatters_by_ft[ft] = { "deno_fmt", "prettierd", "prettier", stop_after_first = true }
