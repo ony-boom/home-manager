@@ -60,10 +60,6 @@ return {
 			-- -- Set up lspconfig.
 			local capabilities = require("cmp_nvim_lsp").default_capabilities()
 			capabilities.textDocument.completion.completionItem.snippetSupport = true
-			-- capabilities.textDocument.foldingRange = {
-			-- 	dynamicRegistration = true,
-			-- 	lineFoldingOnly = true,
-			-- }
 
 			local servers = {
 				"lua_ls",
