@@ -11,7 +11,7 @@
   };
 in {
   imports = [
-    ./extraOptions
+    ./extraOptions.nix
 
     ./services
     ./config
