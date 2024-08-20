@@ -13,6 +13,7 @@ in {
   imports = [
     ./extraOptions.nix
 
+    ./host
     ./services
     ./config
     ./programs

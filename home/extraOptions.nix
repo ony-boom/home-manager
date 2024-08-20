@@ -1,6 +1,5 @@
 {
   lib,
-  host,
   ...
 }: {
   options = {
@@ -15,8 +14,4 @@
       default = false;
     };
   };
-
-  imports = [
-    ./${host}.nix
-  ];
 }

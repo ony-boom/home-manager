@@ -1,6 +1,5 @@
-{
-  imports = [
-    ./tosama.nix
-    ./bocasay.nix
-  ];
+{host, ...}: {
+	imports = [
+		./${host}.nix
+	];
 }
