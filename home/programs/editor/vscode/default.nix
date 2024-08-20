@@ -11,7 +11,9 @@
       esbenp.prettier-vscode
       # equinusocio.moxer-icons
 
-      gleam.gleam
+      # gleam.gleam
+
+      marp-team.marp-vscode
     ];
     userSettings = {
       "git.autofetch" = true;

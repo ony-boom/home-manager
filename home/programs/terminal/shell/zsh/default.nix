@@ -6,6 +6,7 @@
 
     shellAliases = {
       lg = "lazygit";
+      open = "xdg-open";
     };
 
     dotDir = ".config/zsh";
