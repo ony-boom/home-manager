@@ -14,6 +14,7 @@
       # gleam.gleam
 
       marp-team.marp-vscode
+      adpyke.codesnap
     ];
     userSettings = {
       "git.autofetch" = true;
