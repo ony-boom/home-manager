@@ -5,6 +5,7 @@
     ./tmux
     ./neofetch
     ./lazygit.nix
+    ./ssh.nix
   ];
   programs = {
     eza = {
