@@ -24,5 +24,6 @@
 		scrcpy
 		obsidian
     font-manager
+		gromit-mpx
   ];
 }
