@@ -23,7 +23,7 @@
     emote
 		scrcpy
 		obsidian
-		tailscale
+		# tailscale
 		gromit-mpx
     font-manager
   ];
