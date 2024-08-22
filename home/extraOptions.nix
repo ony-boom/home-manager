@@ -1,7 +1,4 @@
-{
-  lib,
-  ...
-}: {
+{lib, ...}: {
   options = {
     gpuType = lib.mkOption {
       type = with lib.types; enum ["intel" "nvidia"];

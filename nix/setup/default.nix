@@ -1,6 +1,7 @@
 {pkgs}: let
   packages = [
     "nvm"
+    "tailscale"
     "google-chrome"
     "jetbrains-toolbox"
   ];

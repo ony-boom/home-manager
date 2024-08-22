@@ -1,5 +1,5 @@
 {host, ...}: {
-	imports = [
-		./${host}.nix
-	];
+  imports = [
+    ./${host}.nix
+  ];
 }

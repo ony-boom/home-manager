@@ -21,10 +21,10 @@
 
   home.packages = with pkgs; [
     emote
-		scrcpy
-		obsidian
-		# tailscale
-		gromit-mpx
+    scrcpy
+    obsidian
+    # tailscale
+    gromit-mpx
     font-manager
   ];
 }
