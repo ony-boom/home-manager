@@ -21,10 +21,9 @@
 
   home.packages = with pkgs; [
     emote
+		deluge
     scrcpy
     obsidian
-    # tailscale
-    gromit-mpx
     font-manager
   ];
 }
