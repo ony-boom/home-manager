@@ -10,5 +10,7 @@
       description = "If use wayland";
       default = false;
     };
+
+    programs.hyprland.enable = lib.mkEnableOption "Hyprland";
   };
 }

@@ -47,7 +47,7 @@
       "${username}@bocasay" = mkHomeConfig "bocasay";
     };
 
-    packages.${system} = {
+    apps.${system} = {
       setupArchBased = setup.arch;
     };
   };
