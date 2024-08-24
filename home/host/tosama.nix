@@ -4,7 +4,7 @@
   ...
 }: {
   gpuType = "nvidia";
-  useWayland = true;
+  useWayland = false;
 
   home.sessionVariables = lib.mkIf config.useWayland {
     GBM_BACKEND = "nvidia-drm";
