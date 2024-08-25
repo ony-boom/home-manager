@@ -62,6 +62,7 @@ return {
 			capabilities.textDocument.completion.completionItem.snippetSupport = true
 
 			local servers = {
+				"gopls",
 				"lua_ls",
 				"nil_ls",
 				"eslint",

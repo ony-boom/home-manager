@@ -20,6 +20,7 @@
   ];
 
   lsp = with pkgs; [
+		gopls
     nil # nix
     lua-language-server # lua
 

@@ -13,6 +13,7 @@ return {
 			gleam = { "gleam" },
 			rust = { "rustfmt" },
 			prisma = { lsp_format = "fallback" },
+			go = { "gofmt" },
 		}
 
 		local web_stuff_ft =
