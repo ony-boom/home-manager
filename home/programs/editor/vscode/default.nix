@@ -15,6 +15,7 @@
 
       marp-team.marp-vscode
       adpyke.codesnap
+      svelte.svelte-vscode
     ];
     userSettings = {
       "git.autofetch" = true;
@@ -28,6 +29,9 @@
       };
       "[css]" = {
         "editor.defaultFormatter" = "esbenp.prettier-vscode";
+      };
+      "[svelte]" = {
+        "editor.defaultFormatter" = "svelte.svelte-vscode";
       };
     };
   };
