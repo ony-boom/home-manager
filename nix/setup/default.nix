@@ -1,7 +1,6 @@
 {pkgs}: let
   packages = [
     "nvm"
-		"wezterm"
     "tailscale"
     "google-chrome"
     "jetbrains-toolbox"

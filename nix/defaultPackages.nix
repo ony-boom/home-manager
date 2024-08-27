@@ -1,4 +1,4 @@
 {
-  terminalEmulator = "wezterm";
+  terminalEmulator = "kitty";
   editor = "neovim";
 }
