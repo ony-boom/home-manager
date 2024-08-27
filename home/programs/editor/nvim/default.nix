@@ -20,7 +20,7 @@
   ];
 
   lsp = with pkgs; [
-		gopls
+    gopls
     nil # nix
     lua-language-server # lua
 
@@ -28,6 +28,7 @@
     nodePackages.typescript
     tailwindcss-language-server
     vscode-langservers-extracted
+    nodePackages.svelte-language-server
     nodePackages.typescript-language-server
     nodePackages."@prisma/language-server"
   ];

@@ -72,6 +72,7 @@ return {
 				"tailwindcss",
 				"prismals",
 				"rust_analyzer",
+				"svelte",
 				tsserver = {
 					single_file_support = false,
 					root_dir = lsputil.root_pattern("package.json", "jsconfig.json", "tsconfig.json"),
