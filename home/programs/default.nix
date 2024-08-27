@@ -12,6 +12,7 @@
       userEmail = "onyrakoto27@gmail.com";
       extraConfig = {
         init.defaultBranch = "main";
+        pull.rebase = true;
       };
     };
 
@@ -21,7 +22,7 @@
 
   home.packages = with pkgs; [
     emote
-		deluge
+    deluge
     scrcpy
     obsidian
     font-manager
