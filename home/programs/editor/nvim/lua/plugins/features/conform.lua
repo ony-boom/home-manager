@@ -17,7 +17,7 @@ return {
 		}
 
 		local web_stuff_ft =
-			{ "typescript", "typescriptreact", "javascript", "javascriptreact", "json", "jsonc", "html", "css", "scss" }
+			{ "typescript", "typescriptreact", "javascript", "javascriptreact", "json", "jsonc", "html", "css", "scss", "svelte" }
 
 		for _, ft in pairs(web_stuff_ft) do
 			formatters_by_ft[ft] = { "deno_fmt", "prettierd", "prettier", stop_after_first = true }
