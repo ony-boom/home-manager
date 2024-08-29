@@ -3,7 +3,7 @@ return {
 	dependencies = { "Zeioth/heirline-components.nvim" },
 	opts = function()
 		local lib = require("heirline-components.all")
-		local utils = require("heirline.utils")
+		-- local utils = require("heirline.utils")
 
 		return {
 			tabline = { -- UI upper bar
