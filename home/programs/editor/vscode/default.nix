@@ -6,6 +6,8 @@
       eamodio.gitlens
       dbaeumer.vscode-eslint
       # sainnhe.everforest
+
+      mvllow.rose-pine
       christian-kohler.path-intellisense
       aaron-bond.better-comments
       esbenp.prettier-vscode

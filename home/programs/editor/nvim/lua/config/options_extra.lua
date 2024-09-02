@@ -1,6 +1,7 @@
 local themes = {
 	catppuccin = "catppuccin",
 	everforest = "everforest",
+	rosepine = "rose-pine"
 }
 vim.cmd.colorscheme(themes.everforest)
 
