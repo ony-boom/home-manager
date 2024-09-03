@@ -3,6 +3,7 @@ local themes = {
 	everforest = "everforest",
 	rosepine = "rose-pine"
 }
+
 vim.cmd.colorscheme(themes.everforest)
 
 vim.o.showtabline = 2
