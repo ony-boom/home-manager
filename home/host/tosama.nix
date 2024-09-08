@@ -2,8 +2,11 @@
   lib,
   config,
   pkgs,
+  self,
   ...
-}: {
+}: let
+  nixGL = import (self + /nix/nixGL.nix) {inherit pkgs config lib;};
+in {
   gpuType = "nvidia";
   useWayland = false;
 
@@ -15,5 +18,7 @@
     WLR_NO_HARDWARE_CURSORS = 1;
   };
 
-  home.packages = with pkgs; [stremio];
+  home.packages = with pkgs; [
+		(nixGL.wrap stremio)
+	];
 }

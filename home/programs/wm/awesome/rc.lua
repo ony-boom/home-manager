@@ -3,8 +3,6 @@
 -- found (e.g. lgi). If LuaRocks is not installed, do nothing.
 pcall(require, "luarocks.loader")
 
--- Standard awesome library
-local gears = require("gears")
 local awful = require("awful")
 
 require("awful.autofocus")
@@ -38,14 +36,13 @@ naughty.connect_signal("request::display_error", function(message, startup)
 end)
 -- }}}
 
--- {{{ Variable definitions
--- Themes define colours, icons, font and wallpapers.
-beautiful.init(gears.filesystem.get_themes_dir() .. "default/theme.lua")
+require("themes")
 
 -- This is used later as the default terminal and editor to run.
 local terminal = "kitty"
 local editor = os.getenv("EDITOR") or "nano"
 local editor_cmd = terminal .. " -e " .. editor
+local launcher = "rofi -show drun"
 
 -- Default modkey.
 -- Usually, Mod4 is the key with a logo between Control and Alt.
@@ -270,11 +267,8 @@ awful.keyboard.append_global_keybindings({
 		awful.spawn(terminal)
 	end, { description = "open a terminal", group = "launcher" }),
 	awful.key({ modkey }, "r", function()
-		awful.screen.focused().mypromptbox:run()
+		awful.spawn(launcher)
 	end, { description = "run prompt", group = "launcher" }),
-	awful.key({ modkey }, "p", function()
-		menubar.show()
-	end, { description = "show the menubar", group = "launcher" }),
 })
 
 -- Tags related keybindings
@@ -526,7 +520,7 @@ ruled.client.connect_signal("request::rules", function()
 	ruled.client.append_rule({
 		id = "titlebars",
 		rule_any = { type = { "normal", "dialog" } },
-		properties = { titlebars_enabled = true },
+		properties = { titlebars_enabled = false },
 	})
 
 	-- Set Firefox to always map on the tag named "2" on screen 1.
@@ -601,3 +595,4 @@ client.connect_signal("mouse::enter", function(c)
 	c:activate({ context = "mouse_enter", raise = false })
 end)
 
+require("autostart")
