@@ -4,7 +4,6 @@
     "tailscale"
     "google-chrome"
     "jetbrains-toolbox"
-    "rose-pine-gtk-theme-full"
   ];
 
   scriptArgs = {extraPackages}: {
