@@ -14,7 +14,7 @@ in {
   home.packages = with pkgs;
     [
       bun
-      deno
+      # deno
     ]
     ++ lua
     ++ zig;
