@@ -26,5 +26,5 @@ in {
     extraConfig = builtins.readFile ./kitty.conf;
   };
 
-  xdg.configFile."kitty/tab_bar.py".source = ./tab_bar.py;
+  # xdg.configFile."kitty/tab_bar.py".source = ./tab_bar.py;
 }
