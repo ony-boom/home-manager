@@ -37,6 +37,7 @@
       };
 
       "svelte.enable-ts-plugin" = true;
+      "editor.fontWeight" = 600;
     };
   };
 }
