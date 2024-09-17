@@ -11,6 +11,7 @@
       url = "github:nix-community/nixGL";
     };
     rust-overlay.url = "github:oxalica/rust-overlay";
+    iosevka-matsuri.url = "github:rxyhn/Iosevka-Matsuri";
   };
 
   outputs = {
@@ -24,7 +25,11 @@
     system = "x86_64-linux";
     pkgs = import nixpkgs {
       inherit system;
-      overlays = [nixgl.overlay inputs.rust-overlay.overlays.default];
+      overlays = [
+        nixgl.overlay
+        inputs.rust-overlay.overlays.default
+        inputs.iosevka-matsuri.overlays.${system}.default
+      ];
     };
 
     setup = import ./nix/setup {inherit pkgs;};
@@ -47,7 +52,7 @@
       "${username}@bocasay" = mkHomeConfig "bocasay";
     };
 
-    apps.${system} = {
+    packages.${system} = {
       setupArchBased = setup.arch;
     };
   };
