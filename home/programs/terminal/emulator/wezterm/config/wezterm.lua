@@ -10,6 +10,7 @@ local ui = {
 		jetbrains = "JetBrainsMono Nerd Font",
 		cascadia = "CaskaydiaCove Nerd Font",
 		zed = "ZedMono Nerd Font",
+		iosevka = "Iosevka Matsuri Term"
 	},
 	themes = {
 		everforest = {
@@ -23,7 +24,7 @@ local ui = {
 }
 
 local current_theme = ui.themes.everforest.dark_medium
-local current_font = ui.fonts.jetbrains
+local current_font = ui.fonts.iosevka
 
 if current_theme.isCustom then
 	local colors, metadata = wezterm.color.load_scheme(

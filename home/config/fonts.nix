@@ -10,7 +10,7 @@
         name = "CaskaydiaCove Nerd Font";
       };
       iosevka = {
-        name = "IosevkaMatsuriTerm Nerd Font";
+        name = "Iosevka Matsuri Term";
       };
     };
   };
