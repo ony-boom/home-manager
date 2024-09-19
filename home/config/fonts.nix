@@ -25,8 +25,8 @@ in {
   fonts.fontconfig = {
     enable = true;
     defaultFonts = {
-      # monospace = [fonts.monospace.jetbrains.name];
-      monospace = [fonts.monospace.maple.name];
+      monospace = [fonts.monospace.jetbrains.name];
+      # monospace = [fonts.monospace.maple.name];
     };
   };
 
