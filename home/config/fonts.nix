@@ -13,8 +13,8 @@
         name = "Iosevka Matsuri Term";
       };
       hasklig = {
-        name = "Hasklug";
-        package = "Hasklug Nerd Font";
+        name = "Hasklug Nerd Font";
+        package = "Hasklig";
       };
     };
   };
@@ -23,7 +23,7 @@ in {
     enable = true;
     defaultFonts = {
       # monospace = [fonts.monospace.jetbrains.name];
-      monospace = [fonts.monospace.iosevka.name];
+      monospace = [fonts.monospace.hasklig.name];
     };
   };
 
