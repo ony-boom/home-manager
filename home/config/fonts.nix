@@ -12,6 +12,10 @@
       iosevka = {
         name = "Iosevka Matsuri Term";
       };
+      hasklig = {
+        name = "Hasklug";
+        package = "Hasklug Nerd Font";
+      };
     };
   };
 in {
@@ -25,6 +29,12 @@ in {
 
   home.packages = with pkgs; [
     iosevka-matsuri
-    (nerdfonts.override {fonts = [fonts.monospace.jetbrains.package fonts.monospace.cascadia.package];})
+    (nerdfonts.override {
+      fonts = [
+        fonts.monospace.hasklig.package
+        fonts.monospace.cascadia.package
+        fonts.monospace.jetbrains.package
+      ];
+    })
   ];
 }
