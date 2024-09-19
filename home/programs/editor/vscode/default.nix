@@ -22,7 +22,6 @@
     userSettings = {
       "git.autofetch" = true;
       "files.autoSave" = "off";
-      "editor.fontLigatures" = true;
       "window.menuBarVisibility" = "toggle";
       "workbench.iconTheme" = "moxer-icons";
       "workbench.colorTheme" = "Everforest Dark";
@@ -37,7 +36,8 @@
       };
 
       "svelte.enable-ts-plugin" = true;
-      "editor.fontWeight" = 600;
+      # "editor.fontWeight" = 600;
+      "editor.fontLigatures" = "'ss01', 'ss02', 'ss03', 'ss04', 'ss05', 'ss06', 'zero', 'onum'";
     };
   };
 }

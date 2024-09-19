@@ -16,6 +16,9 @@
         name = "Hasklug Nerd Font";
         package = "Hasklig";
       };
+      maple = {
+        name = "Maple Mono NF";
+      };
     };
   };
 in {
@@ -23,7 +26,7 @@ in {
     enable = true;
     defaultFonts = {
       # monospace = [fonts.monospace.jetbrains.name];
-      monospace = [fonts.monospace.hasklig.name];
+      monospace = [fonts.monospace.maple.name];
     };
   };
 
