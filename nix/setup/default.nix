@@ -1,7 +1,6 @@
 {pkgs}: let
   packages = [
     "nvm"
-		"ttf-maple"
     "tailscale"
     "google-chrome"
     "jetbrains-toolbox"

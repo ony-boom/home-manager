@@ -16,17 +16,17 @@
         name = "Hasklug Nerd Font";
         package = "Hasklig";
       };
-      maple = {
-        name = "Maple Mono NF";
-      };
+			geist = {
+				name = "GeistMono Nerd Font";
+				package = "GeistMono";
+			};
     };
   };
 in {
   fonts.fontconfig = {
     enable = true;
     defaultFonts = {
-      monospace = [fonts.monospace.jetbrains.name];
-      # monospace = [fonts.monospace.maple.name];
+      monospace = [fonts.monospace.geist.name];
     };
   };
 
@@ -34,6 +34,7 @@ in {
     iosevka-matsuri
     (nerdfonts.override {
       fonts = [
+        fonts.monospace.geist.package
         fonts.monospace.hasklig.package
         fonts.monospace.cascadia.package
         fonts.monospace.jetbrains.package
