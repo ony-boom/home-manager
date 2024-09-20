@@ -20,13 +20,16 @@
 				name = "GeistMono Nerd Font";
 				package = "GeistMono";
 			};
+			maple = {
+				name = "Maple Mono NF";
+			};
     };
   };
 in {
   fonts.fontconfig = {
     enable = true;
     defaultFonts = {
-      monospace = [fonts.monospace.geist.name];
+      monospace = [fonts.monospace.maple.name];
     };
   };
 
