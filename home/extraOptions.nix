@@ -5,9 +5,10 @@
       description = "Which gpu host use";
       default = "nvidia";
     };
-    useWayland = lib.mkOption {
+
+    isNixOS = lib.mkOption {
       type = with lib.types; bool;
-      description = "If use wayland";
+      description = "If using NixOS";
       default = false;
     };
 

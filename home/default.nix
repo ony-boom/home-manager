@@ -1,15 +1,4 @@
-{
-  username,
-  config,
-  lib,
-  ...
-}: let
-  waylandVariable = lib.mkIf config.useWayland {
-    XDG_SESSION_TYPE = "wayland";
-    NVD_BACKEND = "direct";
-    ELECTRON_OZONE_PLATFORM_HINT = "auto";
-  };
-in {
+{username, ...}: {
   imports = [
     ./extraOptions.nix
 
@@ -41,12 +30,10 @@ in {
   # You should not change this value, even if you update Home Manager. If you do
   # want to update the value, then make sure to first check the Home Manager
   # release notes.
-  home.sessionVariables =
-    {
-      # Disable deno update checker
-      DENO_NO_UPDATE_CHECK = 1;
-    }
-    // waylandVariable;
+  home.sessionVariables = {
+    # Disable deno update checker
+    DENO_NO_UPDATE_CHECK = 1;
+  };
 
   home.stateVersion = "24.05"; # Please read the comment before changing.
 }

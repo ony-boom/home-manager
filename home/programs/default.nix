@@ -25,7 +25,7 @@
     # deluge
     scrcpy
     obsidian
-		# gradience
+    # gradience
     font-manager
   ];
 }

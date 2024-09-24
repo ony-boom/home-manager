@@ -73,7 +73,7 @@ return {
 				"prismals",
 				"rust_analyzer",
 				"svelte",
-				tsserver = {
+				ts_ls = {
 					single_file_support = false,
 					root_dir = lsputil.root_pattern("package.json", "jsconfig.json", "tsconfig.json"),
 				},

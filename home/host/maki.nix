@@ -1,0 +1,3 @@
+{
+  isNixOS = true;
+}

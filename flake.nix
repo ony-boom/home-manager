@@ -32,8 +32,6 @@
       ];
     };
 
-    setup = import ./nix/setup {inherit pkgs;};
-
     mkHomeConfig = host:
       home-manager.lib.homeManagerConfiguration {
         inherit pkgs;
@@ -50,10 +48,7 @@
     homeConfigurations = {
       "${username}@tosama" = mkHomeConfig "tosama";
       "${username}@bocasay" = mkHomeConfig "bocasay";
-    };
-
-    packages.${system} = {
-      setupArchBased = setup.arch;
+      "${username}@maki" = mkHomeConfig "maki";
     };
   };
 }

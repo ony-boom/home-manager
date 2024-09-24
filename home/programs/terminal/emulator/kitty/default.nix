@@ -5,7 +5,7 @@
   self,
   ...
 }: let
-  nixGL = import (self + /nix/nixGL.nix) {inherit pkgs config lib;};
+  nixGL = import (self + /lib/nixGL.nix) {inherit pkgs config lib;};
   themes = {
     everforest = {
       dark = {

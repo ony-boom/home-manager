@@ -16,13 +16,10 @@
         name = "Hasklug Nerd Font";
         package = "Hasklig";
       };
-			geist = {
-				name = "GeistMono Nerd Font";
-				package = "GeistMono";
-			};
-			maple = {
-				name = "Maple Mono NF";
-			};
+      geist = {
+        name = "GeistMono Nerd Font";
+        package = "GeistMono";
+      };
     };
   };
 in {
