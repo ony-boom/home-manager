@@ -27,5 +27,4 @@ in {
   };
 
   # xdg.configFile."kitty/tab_bar.py".source = ./tab_bar.py;
-  xdg.configFile."kitty/maple.conf".source = ./maple.conf;
 }
