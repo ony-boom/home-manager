@@ -26,7 +26,7 @@ in {
   fonts.fontconfig = {
     enable = true;
     defaultFonts = {
-      monospace = [fonts.monospace.jetbrains.name];
+      monospace = [fonts.monospace.iosevka.name];
     };
   };
 
