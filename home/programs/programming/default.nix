@@ -1,8 +1,13 @@
 {pkgs, ...}: let
-  lua = [
-    pkgs.lua
-    pkgs.luarocks
+  lua = with pkgs; [
+    lua
+    luarocks
   ];
+
+	node = with pkgs; [
+		nodejs
+		nodePackages.pnpm
+	];
 
   zig = [
     pkgs.zig
@@ -15,6 +20,7 @@ in {
     [
       bun
       deno
+			node
       typescript
     ]
     ++ lua
