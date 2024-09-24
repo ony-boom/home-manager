@@ -15,7 +15,7 @@ in {
     [
       bun
       deno
-			typescript	
+      typescript
     ]
     ++ lua
     ++ zig;

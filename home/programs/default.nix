@@ -24,6 +24,6 @@
     emote
     scrcpy
     obsidian
-		google-chrome
+    google-chrome
   ];
 }
