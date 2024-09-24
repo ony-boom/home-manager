@@ -4,10 +4,10 @@
     luarocks
   ];
 
-	node = with pkgs; [
-		nodejs
-		nodePackages.pnpm
-	];
+  node = with pkgs; [
+    nodejs
+    nodePackages.pnpm
+  ];
 
   zig = [
     pkgs.zig
@@ -20,9 +20,9 @@ in {
     [
       bun
       deno
-			node
       typescript
     ]
+    ++ node
     ++ lua
     ++ zig;
 }
