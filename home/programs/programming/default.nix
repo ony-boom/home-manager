@@ -1,12 +1,12 @@
 {pkgs, ...}: let
-  lua = with pkgs; [
-    lua
-    luarocks
+  lua = [
+    pkgs.lua
+    pkgs.luarocks
   ];
 
-  node = with pkgs; [
-    nodejs
-    nodePackages.pnpm
+  node =  [
+    pkgs.pnpm
+    pkgs.nodejs
   ];
 
   zig = [
