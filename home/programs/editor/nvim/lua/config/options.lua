@@ -10,8 +10,8 @@ o.relativenumber = true
 
 -- o.cursorline = true
 
-o.shiftwidth = 2
 o.tabstop = 2
+o.shiftwidth = 0
 
 o.termguicolors = true
 o.fillchars = { eob = " " }
