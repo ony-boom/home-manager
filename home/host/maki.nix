@@ -1,8 +1,9 @@
 {
   isNixOS = true;
-	programs.chrome.enable = true;
 
-	programs = {};
+  programs = {
+    chrome.enable = true;
+  };
 
   home.sessionVariables = {
     GBM_BACKEND = "nvidia-drm";
