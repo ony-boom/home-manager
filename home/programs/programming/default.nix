@@ -4,6 +4,11 @@
     pkgs.luarocks
   ];
 
+  node =  [
+    pkgs.pnpm
+    pkgs.nodejs
+  ];
+
   zig = [
     pkgs.zig
   ];
@@ -15,7 +20,9 @@ in {
     [
       bun
       deno
+      typescript
     ]
+    ++ node
     ++ lua
     ++ zig;
 }

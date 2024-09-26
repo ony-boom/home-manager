@@ -1,14 +1,6 @@
-{
-  self,
-  pkgs,
-  # system,
-  ...
-}: let
-  defaultPackages = import "${self}/nix/defaultPackages.nix";
-  # better-tmux = import ./better-tmux.nix {inherit pkgs system;};
-in {
+{pkgs, ...}: {
   programs.tmux = {
-    enable = defaultPackages.terminalEmulator == "alacritty";
+    enable = false;
     baseIndex = 1;
     escapeTime = 10;
     mouse = true;

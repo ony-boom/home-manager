@@ -5,7 +5,7 @@
   self,
   ...
 }: let
-  nixGL = import (self + /nix/nixGL.nix) {inherit pkgs config lib;};
+  nixGL = import (self + /lib/nixGL.nix) {inherit pkgs config lib;};
   themes = {
     everforest = {
       dark = {
@@ -27,5 +27,4 @@ in {
   };
 
   # xdg.configFile."kitty/tab_bar.py".source = ./tab_bar.py;
-  xdg.configFile."kitty/maple.conf".source = ./maple.conf;
 }

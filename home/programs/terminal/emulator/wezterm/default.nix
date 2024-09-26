@@ -5,12 +5,10 @@
   lib,
   ...
 }: let
-  nixGL = import (self + /nix/nixGL.nix) {inherit pkgs config lib;};
-  defaultPackage = import (self + /nix/defaultPackages.nix);
-
+  nixGL = import (self + /lib/nixGL.nix) {inherit pkgs config lib;};
 in {
   programs.wezterm = {
-    enable = defaultPackage.terminalEmulator == "wezterm";
+    enable = false;
     package = nixGL.wrap pkgs.wezterm;
   };
 

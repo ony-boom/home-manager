@@ -22,10 +22,8 @@
 
   home.packages = with pkgs; [
     emote
-    # deluge
     scrcpy
     obsidian
-		# gradience
-    font-manager
+    google-chrome
   ];
 }
