@@ -1,4 +1,8 @@
-{pkgs, ...}: {
+{
+  pkgs,
+  config,
+  ...
+}: {
   imports = [
     ./terminal
     ./programming
@@ -20,10 +24,17 @@
     home-manager.enable = true;
   };
 
-  home.packages = with pkgs; [
-    emote
-    scrcpy
-    obsidian
-    google-chrome
-  ];
+  home.packages = with pkgs;
+    [
+      emote
+      scrcpy
+      obsidian
+    ]
+    ++ (
+      if config.programs.chrome.enable
+      then [
+        google-chrome
+      ]
+      else []
+    );
 }

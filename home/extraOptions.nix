@@ -13,5 +13,6 @@
     };
 
     programs.hyprland.enable = lib.mkEnableOption "Hyprland";
+    programs.chrome.enable = lib.mkEnableOption "Google chrome";
   };
 }
