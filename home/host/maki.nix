@@ -2,6 +2,8 @@
   isNixOS = true;
 	programs.chrome.enable = true;
 
+	programs = {};
+
   home.sessionVariables = {
     GBM_BACKEND = "nvidia-drm";
     LIBVA_DRIVER_NAME = "nvidia";
