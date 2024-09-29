@@ -5,6 +5,8 @@
     chrome.enable = true;
   };
 
+  programs.hyprland.enable = true;
+
   home.sessionVariables = {
     GBM_BACKEND = "nvidia-drm";
     LIBVA_DRIVER_NAME = "nvidia";
