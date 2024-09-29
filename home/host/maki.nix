@@ -5,8 +5,6 @@
     chrome.enable = true;
   };
 
-	# wayland.windowManager.hyprland.enable = true;
-
   home.sessionVariables = {
     GBM_BACKEND = "nvidia-drm";
     LIBVA_DRIVER_NAME = "nvidia";
