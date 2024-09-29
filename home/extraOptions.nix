@@ -12,6 +12,12 @@
       default = false;
     };
 
+    useWayland = lib.mkOption {
+      type = with lib.types; bool;
+      description = "If using wayland";
+      default = true;
+    };
+
     programs.hyprland.enable = lib.mkEnableOption "Hyprland";
     programs.chrome.enable = lib.mkEnableOption "Google chrome";
   };
