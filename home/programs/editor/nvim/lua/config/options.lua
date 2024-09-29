@@ -11,7 +11,8 @@ o.relativenumber = true
 -- o.cursorline = true
 
 o.tabstop = 2
-o.shiftwidth = 0
+o.shiftwidth = 2
+vim.o.expandtab = true
 
 o.termguicolors = true
 o.fillchars = { eob = " " }

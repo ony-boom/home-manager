@@ -1,6 +1,6 @@
 {
 	imports = [
 		./hyprland
-		./shared-programs
+		./shared
 	];
 }

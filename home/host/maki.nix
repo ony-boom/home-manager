@@ -1,5 +1,6 @@
 {
   isNixOS = true;
+  useWM = true;
 
   programs = {
     chrome.enable = true;

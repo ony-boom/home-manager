@@ -18,6 +18,13 @@
       default = true;
     };
 
+
+    useWM = lib.mkOption {
+      type = with lib.types; bool;
+      description = "If using a window manager";
+      default = false;
+    };
+
     programs.hyprland.enable = lib.mkEnableOption "Hyprland";
     programs.chrome.enable = lib.mkEnableOption "Google chrome";
   };
