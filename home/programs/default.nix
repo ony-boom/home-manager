@@ -8,7 +8,7 @@
     ./programming
     ./editor
     ./media
-		./wm
+    ./wm
   ];
   programs = {
     git = {
@@ -27,6 +27,7 @@
 
   home.packages = with pkgs;
     [
+      nh
       emote
       scrcpy
       obsidian
