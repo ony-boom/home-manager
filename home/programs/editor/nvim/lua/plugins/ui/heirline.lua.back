@@ -1,6 +1,6 @@
 return {
 	"rebelot/heirline.nvim",
-	dependencies = { "Zeioth/heirline-components.nvim" },
+	dependencies = { "Zeioth/heirline-components.nvim", "stevearc/aerial.nvim" },
 	opts = function()
 		local lib = require("heirline-components.all")
 		-- local utils = require("heirline.utils")
@@ -9,6 +9,15 @@ return {
 			tabline = { -- UI upper bar
 				-- lib.component.tabline_conditional_padding(),
 				lib.component.tabline_buffers({}),
+			},
+			winbar = {
+				init = function(self)
+					self.bufnr = vim.api.nvim_get_current_buf()
+				end,
+				fallthrough = false,
+				{
+					lib.component.breadcrumbs(), -- for example
+				},
 			},
 			statuscolumn = { -- UI left column
 				init = function(self)
