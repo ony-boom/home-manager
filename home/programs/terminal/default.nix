@@ -26,7 +26,7 @@
 
   home.packages = with pkgs; [
     slides
-    delta
+    bottom
     neofetch
   ];
 }
