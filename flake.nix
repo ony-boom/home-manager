@@ -13,6 +13,8 @@
       url = "github:nix-community/nixGL";
     };
 
+    neovim-config.url = "github:ony-boom/neovim-config";
+
     rust-overlay.url = "github:oxalica/rust-overlay";
 
     iosevka-matsuri.url = "github:rxyhn/Iosevka-Matsuri";
@@ -44,6 +46,7 @@
         };
         modules = [
           ./home
+          inputs.neovim-config.homeManagerModules.${system}
         ];
       };
   in {
