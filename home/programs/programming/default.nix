@@ -4,13 +4,17 @@
     pkgs.luarocks
   ];
 
-  node =  [
+  node = [
     pkgs.pnpm
     pkgs.nodejs
   ];
 
   zig = [
     pkgs.zig
+  ];
+
+  java = [
+    pkgs.jdk17
   ];
 in {
   imports = [
@@ -24,5 +28,6 @@ in {
     ]
     ++ node
     ++ lua
-    ++ zig;
+    ++ zig
+    ++ java;
 }
