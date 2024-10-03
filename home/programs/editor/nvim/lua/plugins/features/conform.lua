@@ -16,8 +16,20 @@ return {
 			go = { "gofmt" },
 		}
 
-		local web_stuff_ft =
-			{ "typescript", "typescriptreact", "javascript", "javascriptreact", "json", "jsonc", "html", "css", "scss", "svelte" }
+		local web_stuff_ft = {
+			"typescript",
+			"typescriptreact",
+			"javascript",
+			"javascriptreact",
+			"json",
+			"jsonc",
+			"html",
+			"css",
+			"scss",
+			"svelte",
+			"graphql",
+			"gql",
+		}
 
 		for _, ft in pairs(web_stuff_ft) do
 			formatters_by_ft[ft] = { "deno_fmt", "prettierd", "prettier", stop_after_first = true }
