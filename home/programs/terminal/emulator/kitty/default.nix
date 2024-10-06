@@ -22,7 +22,7 @@ in {
   programs.kitty = {
     enable = true;
     package = nixGL.wrap pkgs.kitty;
-    theme = themes.everforest.dark.medium;
+    theme = themes.rose-pine.dark.default;
     extraConfig = builtins.readFile ./kitty.conf;
   };
 
