@@ -24,7 +24,7 @@
       "files.autoSave" = "off";
       "window.menuBarVisibility" = "toggle";
       "workbench.iconTheme" = "moxer-icons";
-      "workbench.colorTheme" = "Everforest Dark";
+      "workbench.colorTheme" = "Rosé Pine";
       "[javascript]" = {
         "editor.defaultFormatter" = "esbenp.prettier-vscode";
       };
