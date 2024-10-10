@@ -6,6 +6,10 @@
   ...
 }: let
   nixGL = import (self + /lib/nixGL.nix) {inherit pkgs config lib;};
+  icon = pkgs.fetchurl {
+    url = "https://github.com/rose-pine/kitty/blob/main/icons/terminal.app@2x.png?raw=true";
+    hash = "sha256-Y7W9ucwrHrnUREIlO8TCoJLic7oQIeEejMz2TRWWkKM=";
+  };
   themes = {
     everforest = {
       dark = {
@@ -26,5 +30,5 @@ in {
     extraConfig = builtins.readFile ./kitty.conf;
   };
 
-  # xdg.configFile."kitty/tab_bar.py".source = ./tab_bar.py;
+  xdg.configFile."kitty/kitty.app.png".source = icon;
 }
