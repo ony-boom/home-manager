@@ -79,13 +79,13 @@
       "locked": {
         "lastModified": 1725975467,
         "narHash": "sha256-jTKpVYz2tUj0FfLrH2ApEx9V6Yw3yXko6f75RW854D4=",
-        "owner": "rxyhn",
+        "owner": "raexera",
         "repo": "Iosevka-Matsuri",
         "rev": "3b62770ac39ee04c7b26389ecf40538ab1e26528",
         "type": "github"
       },
       "original": {
-        "owner": "rxyhn",
+        "owner": "raexera",
         "repo": "Iosevka-Matsuri",
         "type": "github"
       }

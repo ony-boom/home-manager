@@ -17,7 +17,7 @@
 
     rust-overlay.url = "github:oxalica/rust-overlay";
 
-    iosevka-matsuri.url = "github:rxyhn/Iosevka-Matsuri";
+    iosevka-matsuri.url = "github:raexera/Iosevka-Matsuri";
   };
 
   outputs = {
