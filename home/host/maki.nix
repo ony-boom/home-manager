@@ -4,9 +4,8 @@
 
   programs = {
     chrome.enable = true;
+    hyprland.enable = false;
   };
-
-  programs.hyprland.enable = true;
 
   home.sessionVariables = {
     GBM_BACKEND = "nvidia-drm";
