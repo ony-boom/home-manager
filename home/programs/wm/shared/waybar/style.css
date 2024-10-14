@@ -1,0 +1,71 @@
+@import "./rose-pine.css";
+
+#waybar {
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 8px;
+  background-color: @base;
+  font-family: "Open Sans", sans-serif;
+}
+
+#workspaces button {
+  color: @muted;
+  transition:
+    color,
+    background-color 0.3s;
+  border-radius: 8px;
+  font-family: "Material Icons Outlined";
+}
+
+#workspaces button:hover {
+  background: @overlay;
+}
+
+#workspaces button.active {
+  color: @text;
+}
+
+.modules-right {
+  margin-right: 12px;
+}
+
+#pulseaudio {
+  font-family: "Open sans", "Material Icons Outlined";
+}
+
+#pulseaudio-slider slider {
+  min-height: 0px;
+  min-width: 0px;
+  opacity: 0;
+  background-image: none;
+  border: none;
+  box-shadow: none;
+}
+
+#pulseaudio-slider trough {
+  min-width: 6px;
+  min-height: 16px;
+  border-radius: 6px;
+  background-color: @overlay;
+}
+
+#pulseaudio-slider highlight {
+  min-width: 0px;
+  border-radius: 6px;
+  background-color: @muted;
+  transition: background-color 0.3s;
+}
+
+#pulseaudio-slider highlight:hover,
+#pulseaudio-slider highlight:active,
+#pulseaudio-slider highlight:focus {
+  background-color: @text;
+}
+
+#custom-power {
+  transition: color 0.3s;
+}
+
+#custom-power:hover {
+  color: @love;
+}

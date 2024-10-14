@@ -1,6 +1,6 @@
-{
+{lib, ...}: {
   programs.zsh = {
-    enable = true;
+    enable = lib.mkDefault true;
     enableCompletion = true;
     oh-my-zsh.enable = true;
     syntaxHighlighting.enable = true;

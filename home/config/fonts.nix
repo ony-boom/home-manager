@@ -41,6 +41,8 @@ in {
   };
 
   home.packages = with pkgs; [
+    open-sans
+    material-icons
     iosevka-matsuri
     fonts.monospace.cartographCF.package
     (nerdfonts.override {

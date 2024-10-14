@@ -18,6 +18,8 @@
     rust-overlay.url = "github:oxalica/rust-overlay";
 
     iosevka-matsuri.url = "github:raexera/Iosevka-Matsuri";
+
+    rose-pine-hyprcursor.url = "github:ndom91/rose-pine-hyprcursor";
   };
 
   outputs = {
@@ -35,6 +37,9 @@
         nixgl.overlay
         inputs.rust-overlay.overlays.default
         inputs.iosevka-matsuri.overlays.${system}.default
+        (prev: final: {
+          rose-pine-hyprcursor = inputs.rose-pine-hyprcursor.packages.${system}.default;
+        })
       ];
     };
 

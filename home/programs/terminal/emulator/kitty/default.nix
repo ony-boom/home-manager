@@ -13,12 +13,12 @@
   themes = {
     everforest = {
       dark = {
-        medium = "Everforest Dark Medium";
+        medium = "everforest_dark_medium";
       };
     };
     rose-pine = {
       dark = {
-        default = "Rosé Pine";
+        default = "rose-pine";
       };
     };
   };
@@ -26,7 +26,7 @@ in {
   programs.kitty = {
     enable = true;
     package = nixGL.wrap pkgs.kitty;
-    theme = themes.rose-pine.dark.default;
+    themeFile = themes.rose-pine.dark.default;
     extraConfig = builtins.readFile ./kitty.conf;
   };
 
