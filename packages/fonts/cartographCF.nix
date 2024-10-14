@@ -10,11 +10,21 @@ in
 
     installPhase = ''
       mkdir -p $out/share/fonts/truetype/
+      mkdir -p $out/share/fonts/opentype/
+
+      # Install TTF fonts
       if [ -d "$src/Nerd Font" ]; then
         cp -r "$src/Nerd Font"/*.ttf $out/share/fonts/truetype/
       else
-        echo "No fonts found in $src/Nerd Font"
+        echo "No TTF fonts found in $src/Nerd Font"
         exit 0
+      fi
+
+      # Install OTF fonts
+      if [ -d "$src" ] && [ "$(ls -A $src/*.otf 2>/dev/null)" ]; then
+        cp -r "$src"/*.otf $out/share/fonts/opentype/
+      else
+        echo "No OTF fonts found in $src"
       fi
     '';
   }

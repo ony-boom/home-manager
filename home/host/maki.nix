@@ -4,7 +4,7 @@
 
   programs = {
     chrome.enable = true;
-    hyprland.enable = false;
+    hyprland.enable = true;
   };
 
   home.sessionVariables = {

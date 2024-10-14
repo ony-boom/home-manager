@@ -31,6 +31,7 @@
       emote
       scrcpy
       obsidian
+      font-manager
     ]
     ++ (
       if config.programs.chrome.enable
