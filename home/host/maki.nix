@@ -4,8 +4,9 @@
 
   programs = {
     chrome.enable = true;
-    hyprland.enable = true;
   };
+
+  wayland.windowManager.hyprland.enable = true;
 
   home.sessionVariables = {
     GBM_BACKEND = "nvidia-drm";
