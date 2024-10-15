@@ -34,7 +34,7 @@ in {
 
         border_size = 2;
 
-        "col.active_border" = themes.rose-pine.text;
+        "col.active_border" = themes.rose-pine.rose;
         "col.inactive_border" = colors.transparent;
 
         resize_on_border = true;
