@@ -8,7 +8,7 @@
   nixGL = import (self + /lib/nixGL.nix) {inherit pkgs config lib;};
 in {
   programs.wezterm = {
-    enable = true;
+    enable = false;
     package = nixGL.wrap pkgs.wezterm;
   };
 

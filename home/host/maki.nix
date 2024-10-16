@@ -11,7 +11,7 @@
   };
 
   home.packages = with pkgs; [
-    gnome.nautilus
+    nautilus
   ];
 
   wayland.windowManager.hyprland = {
