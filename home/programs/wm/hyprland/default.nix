@@ -2,7 +2,7 @@ let
   themes = import ./themes.nix;
   hyprApps = {
     terminal = "kitty";
-    fileManager = "dolphin";
+    fileManager = "nautilus";
     menu = "rofi -show drun";
   };
   colors = {
@@ -30,7 +30,7 @@ in {
       ## Look and feel
       general = {
         gaps_in = 6;
-        gaps_out = 16;
+        gaps_out = 20;
 
         border_size = 2;
 

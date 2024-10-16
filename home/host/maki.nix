@@ -1,10 +1,18 @@
-{stablePkgs, ...}: {
+{
+  stablePkgs,
+  pkgs,
+  ...
+}: {
   isNixOS = true;
   useWM = true;
 
   programs = {
     chrome.enable = true;
   };
+
+  home.packages = with pkgs; [
+    gnome.nautilus
+  ];
 
   wayland.windowManager.hyprland = {
     enable = true;

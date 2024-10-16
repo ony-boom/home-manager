@@ -22,7 +22,7 @@
 }
 
 #workspaces button.active {
-  color: @text;
+  color: @rose;
 }
 
 .modules-right {
