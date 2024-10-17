@@ -1,4 +1,4 @@
-let
+{config, ...}: let
   themes = import ./themes.nix;
   hyprApps = {
     terminal = "kitty";
@@ -10,6 +10,7 @@ let
   };
 in {
   wayland.windowManager.hyprland = {
+    systemd.variables = ["--all"];
     extraConfig = builtins.readFile ./hyprland.conf;
     settings = {
       env = [
@@ -69,4 +70,11 @@ in {
       ];
     };
   };
+
+  xdg.configFile."environment.d/envvars.conf".text =
+    if config.isNixOS
+    then ""
+    else ''
+        PATH=$PATH:$HOME/.nix-profile/bin
+    '';
 }

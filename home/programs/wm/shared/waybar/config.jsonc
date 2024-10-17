@@ -13,6 +13,12 @@
     "modules": ["pulseaudio"],
   },
 
+  "clock#time": {
+    "interval": 1,
+    "format": "%H:%M",
+    "timezone": "Indian/Antananarivo",
+  },
+
   "custom/power": {
     "format": "<span size='14pt'>{icon}</span>",
     "tooltip": "Power",

@@ -1,6 +1,7 @@
 {pkgs, ...}: {
   imports = [
     ./rofi.nix
+    ./nwg
   ];
 
   programs = {
@@ -8,6 +9,7 @@
   };
 
   xdg.configFile."waybar".source = ./waybar;
+
   home
     .file
     .".local/share/icons/rose-pine-hyprcursor"

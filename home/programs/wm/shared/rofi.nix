@@ -31,7 +31,13 @@ in {
     theme = {
       "@import" = "${themes.rose-pine}/share/rofi/themes/rose-pine.rasi";
 
+      "*" = {
+        font = "Open Sans 12";
+        font-weight = "700";
+      };
+
       "window" = {
+        border = 2;
         width = 524;
         height = 312;
       };
@@ -43,7 +49,7 @@ in {
       };
     };
     extraConfig = {
-      # show-icons = true;
+      show-icons = true;
     };
     package =
       if config.useWayland
