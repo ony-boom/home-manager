@@ -35,8 +35,7 @@ in {
   fonts.fontconfig = {
     enable = true;
     defaultFonts = {
-      # monospace = [fonts.monospace.iosevka.name];
-      monospace = ["CartographCF Nerd Font"];
+      monospace = [fonts.monospace.jetbrains.name];
     };
   };
 
