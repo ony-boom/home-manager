@@ -8,6 +8,7 @@
     shellAliases = {
       lg = "lazygit";
       open = "xdg-open";
+      ecr = "kitty --session sessions/eco-react.conf &";
     };
 
     dotDir = ".config/zsh";
