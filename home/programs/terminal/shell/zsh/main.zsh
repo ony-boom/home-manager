@@ -5,3 +5,10 @@ case ":$PATH:" in
 esac
 
 export PATH="/home/ony/.bun/bin:$PATH"
+
+# Extra functions
+ks() {
+  SESSION="$(gum file ~/.config/kitty/sessions)"
+  echo "Starting kitty session: $SESSION"
+  kitty --session "$SESSION"
+}
