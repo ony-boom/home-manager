@@ -25,4 +25,5 @@ in {
     themeFile = themes.rose-pine.dark.default;
     extraConfig = builtins.readFile ./kitty.conf;
   };
+  xdg.configFile."kitty/sessions".source = ./sessions;
 }
