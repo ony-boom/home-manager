@@ -10,7 +10,7 @@
   programs = {
     eza = {
       enable = true;
-      icons = true;
+      icons = "always";
     };
     gh = {
       enable = true;
