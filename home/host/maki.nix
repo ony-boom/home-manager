@@ -8,10 +8,14 @@
 
   programs = {
     chrome.enable = true;
-    waybar.settings = {
-      mainBar = {
-        persistent-workspaces = {
-          HDMI-A-1 = 2;
+    waybar = {
+      settings = {
+        mainBar = {
+          "hyprland/workspaces" = {
+            persistent-workspaces = {
+              HDMI-A-1 = 2;
+            };
+          };
         };
       };
     };

@@ -2,10 +2,14 @@
   gpuType = "intel";
 
   programs = {
-    waybar.settings = {
-      mainBar = {
-        persistent-workspaces = {
-          eDP-1 = 2;
+    waybar = {
+      settings = {
+        mainBar = {
+          "hyprland/workspaces" = {
+            persistent-workspaces = {
+              HDMI-A-1 = 2;
+            };
+          };
         };
       };
     };
