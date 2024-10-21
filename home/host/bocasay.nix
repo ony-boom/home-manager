@@ -1,6 +1,16 @@
 {stablePkgs, ...}: {
   gpuType = "intel";
 
+  programs = {
+    waybar.settings = {
+      mainBar = {
+        persistent-workspaces = {
+          eDP-1 = 2;
+        };
+      };
+    };
+  };
+
   wayland.windowManager.hyprland = {
     enable = true;
     package = stablePkgs.hyprland;

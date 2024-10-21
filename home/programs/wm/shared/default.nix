@@ -2,13 +2,8 @@
   imports = [
     ./rofi.nix
     ./nwg
+    ./waybar
   ];
-
-  programs = {
-    waybar.enable = true;
-  };
-
-  xdg.configFile."waybar".source = ./waybar;
 
   home
     .file
