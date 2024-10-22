@@ -32,8 +32,14 @@
     };
 
     "custom/clock" = {
-      "exec" = "date +\"%I:%M\"";
-      "interval" = 10;
+      exec = "date +\"%I:%M\"";
+      interval = 10;
+    };
+
+    "clock#time" = {
+      format = "{%H:%M}";
+      timezone = "Indian/Antananarivo";
+      interval = 1;
     };
 
     "custom/power" = {
