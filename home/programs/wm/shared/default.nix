@@ -5,6 +5,7 @@
 }: {
   imports = [
     ./rofi.nix
+    ./dunst.nix
     ./nwg
     ./waybar
   ];
@@ -19,6 +20,7 @@
     pamixer
     nwg-bar
     nwg-look
+    libnotify
     pavucontrol
     rose-pine-cursor
     rose-pine-hyprcursor

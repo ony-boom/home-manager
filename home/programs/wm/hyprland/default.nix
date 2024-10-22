@@ -25,6 +25,7 @@ in {
         "swww restore"
         "waybar &"
         "nm-applet &"
+        "dunst &"
         "lxqt-policykit-agent &"
       ];
 
