@@ -5,7 +5,7 @@
 }: {
   imports = [
     ./rofi.nix
-    ./dunst.nix
+    ./dunst
     ./nwg
     ./waybar
   ];
