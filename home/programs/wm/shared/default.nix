@@ -1,4 +1,8 @@
-{pkgs, ...}: {
+{
+  pkgs,
+  config,
+  ...
+}: {
   imports = [
     ./rofi.nix
     ./nwg
@@ -19,5 +23,10 @@
     rose-pine-cursor
     rose-pine-hyprcursor
     networkmanagerapplet
+    (
+      if config.useWayland
+      then wl-clipboard
+      else xclip
+    )
   ];
 }
