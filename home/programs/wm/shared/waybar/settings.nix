@@ -76,10 +76,6 @@
         active = "";
         default = "";
       };
-
-      persistent-workspaces = {
-        HDMI-A-1 = 2;
-      };
     };
   };
 }

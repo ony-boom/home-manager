@@ -7,7 +7,7 @@
         mainBar = {
           "hyprland/workspaces" = {
             persistent-workspaces = {
-              HDMI-A-1 = 2;
+              eDP-1 = 2;
             };
           };
         };
