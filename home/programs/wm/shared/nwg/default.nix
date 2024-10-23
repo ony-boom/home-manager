@@ -1,3 +1,3 @@
 {
-  # xdg.configFile."nwg-bar/bar.json".source = ./bar.json;
+  xdg.configFile."nwg-bar/bar.json".source = ./bar.json;
 }

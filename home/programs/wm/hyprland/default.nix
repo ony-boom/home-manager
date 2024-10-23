@@ -9,6 +9,10 @@
     transparent = "0x00000000";
   };
 in {
+  imports = [
+    ./hyprlock.nix
+  ];
+
   wayland.windowManager.hyprland = {
     systemd.variables = ["--all"];
     extraConfig = builtins.readFile ./hyprland.conf;
