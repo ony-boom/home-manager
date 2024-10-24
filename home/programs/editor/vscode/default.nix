@@ -11,10 +11,9 @@
       christian-kohler.path-intellisense
       aaron-bond.better-comments
       esbenp.prettier-vscode
-      # equinusocio.moxer-icons
 
       # gleam.gleam
-
+      vscodevim.vim
       marp-team.marp-vscode
       adpyke.codesnap
       svelte.svelte-vscode
