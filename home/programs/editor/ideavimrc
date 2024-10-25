@@ -47,4 +47,6 @@ map <leader>fw <Action>(FindInPath)
 "" Map \b to toggle the breakpoint on the current line
 "map \b <Action>(ToggleLineBreakpoint)
 map <leader>e :NERDTreeToggle<CR>
+map [b :prev<CR>
+map ]b :next<CR>
 
