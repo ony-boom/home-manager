@@ -4,7 +4,8 @@ case ":$PATH:" in
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 
-export PATH="/home/ony/.bun/bin:$PATH"
+export PATH="/home/ony/.deno/bin:$PATH"
+
 
 # Extra functions
 ks() {
