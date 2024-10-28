@@ -6,6 +6,9 @@ esac
 
 export PATH="/home/ony/.deno/bin:$PATH"
 
+fpath=(~/.config/completions $fpath)
+autoload -U compinit
+compinit
 
 # Extra functions
 ks() {
