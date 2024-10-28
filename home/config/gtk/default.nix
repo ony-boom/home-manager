@@ -13,6 +13,16 @@
       name = "rose-pine";
       package = pkgs.rose-pine-icon-theme;
     };
-    gtk3.extraCss = builtins.readFile ./gtk.css;
+    gtk4 = {
+      extraConfig = {
+        gtk-application-prefer-dark-theme = 1;
+      };
+    };
+    gtk3 = {
+      extraConfig = {
+        gtk-application-prefer-dark-theme = 1;
+      };
+      extraCss = builtins.readFile ./gtk.css;
+    };
   };
 }

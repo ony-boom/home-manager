@@ -21,6 +21,7 @@
     nwg-bar
     nwg-look
     libnotify
+    libsecret
     pavucontrol
     rose-pine-cursor
     rose-pine-hyprcursor
