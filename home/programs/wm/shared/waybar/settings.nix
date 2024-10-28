@@ -16,7 +16,7 @@
     modules-right = [
       "tray"
       "group/audio"
-      "keyboard"
+      "hyprland/language"
       "custom/power"
     ];
 
@@ -62,6 +62,11 @@
       };
       on-click = "pavucontrol";
       on-click-right = "pamixer -t";
+    };
+
+    "hyprland/language" = {
+      format = "󰧺   {}";
+      format-en = "en";
     };
 
     "pulseaudio/slider" = {
