@@ -29,7 +29,8 @@ in {
         "swww restore"
         "waybar &"
         "nm-applet &"
-        "dunst &"
+        # "dunst &"
+        "swaync &"
         "lxqt-policykit-agent &"
       ];
 
@@ -78,7 +79,7 @@ in {
       };
 
       input = {
-        kb_layout = "us,intl";
+        kb_layout = "us";
         /*
            kb_variant = "";
         kb_model = "";
