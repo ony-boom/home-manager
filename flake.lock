@@ -118,11 +118,11 @@
         "nixpkgs": "nixpkgs_2"
       },
       "locked": {
-        "lastModified": 1729769596,
-        "narHash": "sha256-kUOMgRq0fhTiNGPu9pRLSFlTd2paltKcYbVgfwCukmE=",
+        "lastModified": 1730212925,
+        "narHash": "sha256-rhjZ9NqWXK7EaRKzdaKVvkFi8XVjo/deJWi3eFYB4/k=",
         "owner": "ony-boom",
         "repo": "neovim-config",
-        "rev": "86925c6f800ac8cc3a24325d15297aa788c8fdce",
+        "rev": "8839d7ef5e7bb4d921859f9aedd4d9f367451c63",
         "type": "github"
       },
       "original": {
