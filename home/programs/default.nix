@@ -4,7 +4,6 @@
   ...
 }: {
   imports = [
-    ./browser
     ./terminal
     ./programming
     ./editor
