@@ -11,6 +11,9 @@
     waybar = {
       settings = {
         mainBar = {
+          modules-center = [
+            "clock"
+          ];
           "hyprland/workspaces" = {
             persistent-workspaces = {
               HDMI-A-1 = 2;
