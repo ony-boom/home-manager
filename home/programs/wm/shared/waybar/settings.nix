@@ -1,4 +1,4 @@
-{
+{lib}: {
   mainBar = {
     height = 42;
     margin = "8 20 0 20";
@@ -9,7 +9,7 @@
       "hyprland/workspaces"
     ];
 
-    modules-center = [
+    modules-center = lib.mkDefault [
       "custom/clock"
     ];
 
