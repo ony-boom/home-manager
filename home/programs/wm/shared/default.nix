@@ -26,7 +26,7 @@
     rose-pine-cursor
     rose-pine-hyprcursor
     networkmanagerapplet
-    swaynotificationcenter
+    # swaynotificationcenter
     (
       if config.useWayland
       then wl-clipboard

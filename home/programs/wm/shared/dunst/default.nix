@@ -30,7 +30,7 @@
   };
 in {
   services.dunst = {
-    # enable = true;
+    enable = true;
     iconTheme = {
       name = themes.rose-pine.icons;
       package = pkgs.rose-pine-icon-theme;
