@@ -4,6 +4,7 @@
     terminal = "kitty";
     fileManager = "nautilus";
     menu = "rofi -show drun";
+    emoji = "emote";
   };
   colors = {
     transparent = "0x00000000";
@@ -104,6 +105,7 @@ in {
         "${mainMod}, RETURN, exec, ${hyprApps.terminal}"
         "${mainMod}, E, exec, ${hyprApps.fileManager}"
         "${mainMod}, R, exec, ${hyprApps.menu}"
+        "SUPER, ;, exec, ${hyprApps.emoji}"
 
         "SUPER SHIFT, LEFT, movewindow, l"
         "SUPER SHIFT, RIGHT, movewindow, r"
