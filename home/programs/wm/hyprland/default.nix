@@ -105,7 +105,7 @@ in {
         "${mainMod}, RETURN, exec, ${hyprApps.terminal}"
         "${mainMod}, E, exec, ${hyprApps.fileManager}"
         "${mainMod}, R, exec, ${hyprApps.menu}"
-        "SUPER, ;, exec, ${hyprApps.emoji}"
+        "CONTROL ALT, E, exec, ${hyprApps.emoji}"
 
         "SUPER SHIFT, LEFT, movewindow, l"
         "SUPER SHIFT, RIGHT, movewindow, r"
