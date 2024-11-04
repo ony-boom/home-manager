@@ -45,7 +45,7 @@ in {
         padding = 10;
         horizontal_padding = 10;
         frame_width = 1;
-        gap_size = 3;
+        gap_size = 6;
 
         enable_recursive_icon_lookup = true;
         corner_radius = 8;
