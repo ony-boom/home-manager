@@ -5,7 +5,7 @@ in [
   {
     label = "Lock";
     exec = "hyprlock --immediate";
-    icon = withBasePath "system-lock-sceen.svg";
+    icon = withBasePath "system-lock-screen.svg";
   }
   {
     label = "Logout";
@@ -15,11 +15,11 @@ in [
   {
     label = "Reboot";
     exec = "systemctl reboot";
-    icon = withBasePath "system-reboot";
+    icon = withBasePath "system-reboot.svg";
   }
   {
     label = "Shutdown";
     exec = "systemctl -i poweroff";
-    icon = withBasePath "system-shutdown";
+    icon = withBasePath "system-shutdown.svg";
   }
 ]
