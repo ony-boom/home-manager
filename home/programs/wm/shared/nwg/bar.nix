@@ -1,5 +1,5 @@
 {pkgs}: let
-  basePath = "${pkgs.nwg-bar}/share/images";
+  basePath = "${pkgs.nwg-bar}/share/nwg-bar/images";
   withBasePath = path: "${basePath}/${path}";
 in [
   {
