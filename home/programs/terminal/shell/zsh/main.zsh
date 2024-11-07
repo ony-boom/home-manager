@@ -4,7 +4,7 @@ case ":$PATH:" in
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 
-# export PATH="/home/ony/.deno/bin:$PATH"
+export PATH="/home/ony/.deno/bin:$PATH"
 # fpath=(~/.config/zsh/completions $fpath)
 # autoload -U compinit
 # compinit
