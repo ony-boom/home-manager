@@ -1,4 +1,12 @@
-{
+{lib}: let
+  mkSpanIcon = {
+    icon,
+    size ? "14pt",
+    rise ? 0,
+    extraText ? "",
+  }:
+    lib.strings.trim "<span size='${size}' rise='${builtins.toString rise}'>${icon}</span> ${extraText}";
+in {
   mainBar = {
     height = 42;
     margin = "8 20 0 20";
@@ -9,7 +17,7 @@
       "hyprland/workspaces"
     ];
 
-    modules-center = [
+    modules-center = lib.mkDefault [
       "custom/clock"
     ];
 
@@ -43,7 +51,10 @@
     };
 
     "custom/power" = {
-      format = "<span size='14pt'>{icon}</span>";
+      format = mkSpanIcon {
+        icon = "{icon}";
+        rise = -5000;
+      };
       tooltip = "Power";
       format-icons = {
         default = "";
@@ -52,7 +63,11 @@
     };
 
     pulseaudio = {
-      format = "<span size='14pt' rise='-5000'>{icon}</span> {volume}%";
+      format = mkSpanIcon {
+        icon = "{icon}";
+        rise = -5000;
+        extraText = "{volume}%";
+      };
       format-muted = "";
       format-icons = {
         default = [
@@ -65,7 +80,11 @@
     };
 
     "hyprland/language" = {
-      format = "󰧺   {}";
+      format = mkSpanIcon {
+        icon = "󰧺 ";
+        rise = -4000;
+        extraText = "{}";
+      };
       format-en = "en";
     };
 
@@ -76,7 +95,9 @@
     };
 
     "hyprland/workspaces" = {
-      format = "<span size='14pt'>{icon}</span>";
+      format = mkSpanIcon {
+        icon = "{icon}";
+      };
       format-icons = {
         active = "";
         default = "";

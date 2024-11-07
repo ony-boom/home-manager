@@ -4,6 +4,7 @@
     terminal = "kitty";
     fileManager = "nautilus";
     menu = "rofi -show drun";
+    emoji = "emote";
   };
   colors = {
     transparent = "0x00000000";
@@ -79,14 +80,13 @@ in {
       };
 
       input = {
-        kb_layout = "us";
+        kb_layout = "us,us";
+        kb_variant = ",intl";
+        kb_options = "grp:win_space_toggle";
         /*
-           kb_variant = "";
-        kb_model = "";
+           kb_model = "";
         kb_rules = "";
         */
-
-        kb_options = "grp:win_space_toggle";
         follow_mouse = 1;
 
         sensitivity = 0;
@@ -105,6 +105,9 @@ in {
         "${mainMod}, RETURN, exec, ${hyprApps.terminal}"
         "${mainMod}, E, exec, ${hyprApps.fileManager}"
         "${mainMod}, R, exec, ${hyprApps.menu}"
+
+        "CONTROL ALT, E, exec, ${hyprApps.emoji}"
+        "SUPER, F, fullscreen, 1"
 
         "SUPER SHIFT, LEFT, movewindow, l"
         "SUPER SHIFT, RIGHT, movewindow, r"

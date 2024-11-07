@@ -30,7 +30,7 @@
   };
 in {
   services.dunst = {
-    # enable = true;
+    enable = true;
     iconTheme = {
       name = themes.rose-pine.icons;
       package = pkgs.rose-pine-icon-theme;
@@ -45,7 +45,7 @@ in {
         padding = 10;
         horizontal_padding = 10;
         frame_width = 1;
-        gap_size = 3;
+        gap_size = 6;
 
         enable_recursive_icon_lookup = true;
         corner_radius = 8;
