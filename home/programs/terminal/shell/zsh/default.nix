@@ -15,5 +15,5 @@
     initExtra = builtins.readFile ./main.zsh;
   };
 
-  xdg.configFile."zsh/completions".source = ./completions;
+  # xdg.configFile."zsh/completions".source = ./completions;
 }
