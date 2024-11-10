@@ -5,6 +5,7 @@ case ":$PATH:" in
 esac
 
 export PATH="/home/ony/.deno/bin:$PATH"
+export PATH="/home/ony/.cargo/bin:$PATH"
 # fpath=(~/.config/zsh/completions $fpath)
 # autoload -U compinit
 # compinit
