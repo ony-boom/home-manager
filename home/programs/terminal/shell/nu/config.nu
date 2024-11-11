@@ -1,1 +1,3 @@
-$env.config = {}
+$env.config = {
+  show_banner: false,
+}
