@@ -1,4 +1,13 @@
-{stablePkgs, ...}: {
+{
+  stablePkgs,
+  pkgs,
+  self,
+  lib,
+  config,
+  ...
+}: let
+  nixGL = import (self + /lib/nixGL.nix) {inherit pkgs config lib;};
+in {
   gpuType = "intel";
 
   programs = {
@@ -26,4 +35,8 @@
       ];
     };
   };
+
+  home.packages = with pkgs; [
+    (nixGL.wrap stremio)
+  ];
 }
