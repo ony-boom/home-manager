@@ -9,3 +9,9 @@ $env.PATH = (
   | append ($env.HOME | path join .deno bin)
   | uniq
 )
+
+def ks [] {
+  let session = $"(gum file ~/.config/kitty/sessions)"
+  print $"Starting kitty session: ($session)"
+  kitty session $session
+}
