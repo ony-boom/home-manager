@@ -23,9 +23,9 @@ in {
     enable = true;
     package = nixGL.wrap pkgs.kitty;
     themeFile = themes.rose-pine.dark.default;
-    settings = {
+    /* settings = {
       shell = "${pkgs.nushell}/bin/nu";
-    };
+    }; */
     extraConfig = builtins.readFile ./kitty.conf;
   };
   xdg.configFile."kitty/sessions".source = ./sessions;
