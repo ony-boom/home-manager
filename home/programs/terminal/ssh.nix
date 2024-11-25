@@ -1,11 +1,11 @@
 {
   programs.ssh = {
     enable = true;
-		addKeysToAgent = "yes";
+    addKeysToAgent = "yes";
     matchBlocks = {
-      "do-nixos" = {
-        user = "root";
-        hostname = "167.99.73.105";
+      "ina" = {
+        user = "ony";
+        hostname = "128.199.228.20";
       };
     };
   };
