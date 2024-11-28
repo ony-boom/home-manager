@@ -4,7 +4,7 @@
     ./gtk
   ];
 
-  nix.config = {
+  nixpkgs.config = {
     allowUnfree = true;
   };
 }
