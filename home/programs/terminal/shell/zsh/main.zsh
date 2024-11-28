@@ -4,8 +4,10 @@ case ":$PATH:" in
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 
-export PATH="/home/ony/.deno/bin:$PATH"
-export PATH="/home/ony/.cargo/bin:$PATH"
+export PATH="$HOME/.deno/bin:$PATH"
+export PATH="$HOME/.cargo/bin:$PATH"
+export PATH="$HOME/.cargo/bin:$PATH"
+export PATH="$HOME/.local/share/JetBrains/Toolbox/scripts:$PATH"
 # fpath=(~/.config/zsh/completions $fpath)
 # autoload -U compinit
 # compinit
