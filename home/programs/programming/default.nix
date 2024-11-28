@@ -24,7 +24,6 @@ in {
     [
       bun
       # deno
-      docker
       typescript
     ]
     ++ node
