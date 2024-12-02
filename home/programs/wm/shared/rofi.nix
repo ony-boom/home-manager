@@ -21,7 +21,7 @@
   themes = {
     rose-pine = mkRofiTheme (pkgs.fetchzip {
       url = "https://github.com/rose-pine/rofi/archive/refs/heads/main.zip";
-      sha256 = "sha256-PnXk3t0Ce8ButnSsZFe7Id9SqgsnVUUXGSlTAO1wcaY=";
+      sha256 = "sha256-V1o8Rv9Jcojp25qOoDm/QWOb7woMVrSXH/xZHAiitB0=";
     });
   };
   inherit (config.lib.formats.rasi) mkLiteral;

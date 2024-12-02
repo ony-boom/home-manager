@@ -13,7 +13,7 @@
         name = "CaskaydiaCove Nerd Font";
       };
       iosevka = {
-        name = "Iosevka Matsuri Term";
+        name = "Iosevka Nerd Font";
       };
       hasklig = {
         name = "Hasklug Nerd Font";
@@ -33,6 +33,7 @@
     caskaydia-cove
     hasklug
     geist-mono
+    iosevka
   ];
 in {
   fonts.fontconfig = {
@@ -46,7 +47,6 @@ in {
     [
       open-sans
       material-icons
-      iosevka-matsuri
       fonts.monospace.cartographCF.package
     ]
     ++ nerdFonts;
