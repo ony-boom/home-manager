@@ -7,11 +7,9 @@
   fonts = {
     monospace = {
       jetbrains = {
-        package = "JetBrainsMono";
         name = "JetBrainsMono Nerd Font";
       };
       cascadia = {
-        package = "CascadiaCode";
         name = "CaskaydiaCove Nerd Font";
       };
       iosevka = {
@@ -19,11 +17,9 @@
       };
       hasklig = {
         name = "Hasklug Nerd Font";
-        package = "Hasklig";
       };
       geist = {
         name = "GeistMono Nerd Font";
-        package = "GeistMono";
       };
       cartographCF = {
         name = "CartographCF Nerd Font";
@@ -31,26 +27,27 @@
       };
     };
   };
+
+  nerdFonts = with pkgs.nerd-fonts; [
+    jetbrains-mono
+    caskaydia-cove
+    hasklug
+    geist-mono
+  ];
 in {
   fonts.fontconfig = {
     enable = true;
     defaultFonts = {
-      monospace = [fonts.monospace.jetbrains.name];
+      monospace = [fonts.monospace.iosevka.name];
     };
   };
 
-  home.packages = with pkgs; [
-    open-sans
-    material-icons
-    iosevka-matsuri
-    fonts.monospace.cartographCF.package
-    (nerdfonts.override {
-      fonts = [
-        fonts.monospace.geist.package
-        fonts.monospace.hasklig.package
-        fonts.monospace.cascadia.package
-        fonts.monospace.jetbrains.package
-      ];
-    })
-  ];
+  home.packages = with pkgs;
+    [
+      open-sans
+      material-icons
+      iosevka-matsuri
+      fonts.monospace.cartographCF.package
+    ]
+    ++ nerdFonts;
 }
