@@ -9,6 +9,7 @@
   nixGL = import (self + /lib/nixGL.nix) {inherit pkgs config lib;};
 in {
   gpuType = "intel";
+  useWayland = false;
 
   programs = {
     waybar = {
