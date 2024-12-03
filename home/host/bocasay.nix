@@ -4,8 +4,6 @@
   config,
   ...
 }: {
-  nixGL.defaultWrapper = "mesa";
-  nixGL.installScripts = ["mesa"];
   useWayland = false;
 
   programs = {

@@ -1,11 +1,9 @@
-{nixgl, system, ...}: {
+{nixgl, ...}: {
   imports = [
     ./fonts.nix
     ./gtk
   ];
-
-  nixGl.packages = nixgl.packages.${system};
-
+  nixGL.packages = nixgl.packages;
   nixpkgs.config = {
     allowUnfree = true;
   };
