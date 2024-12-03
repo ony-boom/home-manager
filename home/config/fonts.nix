@@ -39,7 +39,7 @@ in {
   fonts.fontconfig = {
     enable = true;
     defaultFonts = {
-      monospace = [fonts.monospace.iosevka.name];
+      monospace = [fonts.monospace.cascadia.name];
     };
   };
 
