@@ -1,14 +1,9 @@
 {
-  lib,
-  config,
   pkgs,
-  self,
   stablePkgs,
   ...
-}: let
-  nixGL = import (self + /lib/nixGL.nix) {inherit pkgs config lib;};
-in {
-  gpuType = "nvidia";
+}: {
+  nixGL.defaultWrapper = "mesa";
   useWayland = true;
 
   programs = {
@@ -31,6 +26,6 @@ in {
   };
 
   home.packages = with pkgs; [
-    (nixGL.wrap stremio)
+    (config.lib.nixGL.wrap stremio)
   ];
 }

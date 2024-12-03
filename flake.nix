@@ -49,7 +49,7 @@
       home-manager.lib.homeManagerConfiguration {
         inherit pkgs;
         extraSpecialArgs = {
-          inherit self username host system stablePkgs;
+          inherit self username host system stablePkgs nixgl;
         };
         modules = [
           ./home
