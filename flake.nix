@@ -61,7 +61,6 @@
     formatter.${system} = pkgs.alejandra;
 
     homeConfigurations = {
-      "${username}@tosama" = mkHomeConfig "tosama";
       "${username}@bocasay" = mkHomeConfig "bocasay";
       "${username}@maki" = mkHomeConfig "maki";
     };

@@ -27,6 +27,7 @@
   inherit (config.lib.formats.rasi) mkLiteral;
 in {
   programs.rofi = {
+    enabled = config.useWM;
     theme = {
       "@import" = "${themes.rose-pine}/share/rofi/themes/rose-pine.rasi";
 

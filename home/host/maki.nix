@@ -5,6 +5,10 @@
 }: {
   isNixOS = true;
   useWM = true;
+  nixGL = {
+    installScripts = ["nvdia"];
+    defaultWrapper = "nvidia";
+  };
 
   programs = {
     chrome.enable = true;
