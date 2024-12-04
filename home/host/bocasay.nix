@@ -5,6 +5,7 @@
   ...
 }: {
   useWayland = false;
+  nixGL.installScripts = ["mesa"];
 
   programs = {
     waybar = {
@@ -33,6 +34,7 @@
   };
 
   home.packages = with pkgs; [
+    nixgl.nixGLIntel
     (config.lib.nixGL.wrap stremio)
   ];
 }
