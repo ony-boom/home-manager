@@ -1,5 +1,11 @@
-{username, ...}: {
+{
+  username,
+  inputs,
+  system,
+  ...
+}: {
   imports = [
+    inputs.neovim-config.homeManagerModules.${system}
     ./extraOptions.nix
 
     ./host
