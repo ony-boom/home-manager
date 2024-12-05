@@ -1,9 +1,9 @@
 {
   pkgs,
-  inputs,
+  self,
   ...
 }: let
-  cartographCFPackage = inputs.self + /packages/fonts/cartographCF.nix;
+  cartographCFPackage = self + /packages/fonts/cartographCF.nix;
   fonts = {
     monospace = {
       jetbrains = {

@@ -26,6 +26,7 @@
     nixpkgs,
     home-manager,
     nixgl,
+    self,
     ...
   } @ inputs: let
     username = "ony";
@@ -47,31 +48,19 @@
       inherit system;
     };
 
-    homeSpecialArgs = {
-      inherit inputs username system stablePkgs nixgl nixGLWrap;
-    };
-
     mkHomeConfig = host:
       home-manager.lib.homeManagerConfiguration {
         inherit pkgs;
-        extraSpecialArgs = homeSpecialArgs;
+        extraSpecialArgs = {
+          inherit self username system stablePkgs nixgl nixGLWrap;
+        };
         modules = [
           ./home
+          inputs.neovim-config.homeManagerModules.${system}
         ];
       };
   in {
     formatter.${system} = pkgs.alejandra;
-
-    nixosModules = {
-      home-manager = home-manager.nixosModules.default;
-      config = {
-        home-manager = {
-          useGlobalPkgs = true;
-          useUserPackages = true;
-          users.${username} = import ./home;
-        };
-      };
-    };
 
     homeConfigurations = {
       "${username}@bocasay" = mkHomeConfig "bocasay";

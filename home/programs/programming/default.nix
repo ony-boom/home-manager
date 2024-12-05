@@ -12,10 +12,6 @@
   zig = [
     pkgs.zig
   ];
-
-  java = [
-    pkgs.jdk17
-  ];
 in {
   imports = [
     ./rust
@@ -28,6 +24,5 @@ in {
     ]
     ++ node
     ++ lua
-    ++ zig
-    ++ java;
+    ++ zig;
 }
