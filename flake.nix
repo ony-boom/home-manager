@@ -62,7 +62,7 @@
         ];
       };
 
-    mkHomeConfigNixosModules = host: inputs: {
+    mkHomeConfigNixosModules = host: osInputs: {
       home-manager = {
         useGlobalPkgs = true;
         useUserPackages = true;
