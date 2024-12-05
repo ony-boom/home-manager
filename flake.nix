@@ -77,7 +77,7 @@
     formatter.${system} = pkgs.alejandra;
 
     nixosModules = {
-      home-manager = home-manager.nixosModules.home-manager;
+      home-manager = home-manager.nixosModules;
     };
 
     lib = {
