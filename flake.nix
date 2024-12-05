@@ -61,18 +61,6 @@
           inputs.neovim-config.homeManagerModules.${system}
         ];
       };
-
-    mkHomeConfigNixosModules = host: osInputs: {
-      home-manager = {
-        useGlobalPkgs = true;
-        useUserPackages = true;
-        extraSpecialArgs = getHomeSpecialArgs host;
-        modules = [
-          ./home
-          inputs.neovim-config.homeManagerModules.${system}
-        ];
-      };
-    };
   in {
     formatter.${system} = pkgs.alejandra;
 
@@ -81,7 +69,7 @@
     };
 
     lib = {
-      inherit mkHomeConfigNixosModules;
+      inherit mkHomeConfig;
     };
 
     homeConfigurations = {
