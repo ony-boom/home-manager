@@ -2,6 +2,7 @@
   stablePkgs,
   pkgs,
   config,
+  nixGLWrap,
   ...
 }: {
   useWayland = false;
@@ -34,7 +35,9 @@
   };
 
   home.packages = with pkgs; [
-    nixgl.nixGLIntel
-    (config.lib.nixGL.wrap stremio)
+    (nixGLWrap {
+      pkg = stremio;
+      inherit config;
+    })
   ];
 }

@@ -18,7 +18,7 @@ in {
     ];
 
     modules-center = lib.mkDefault [
-      "custom/clock"
+      "clock"
     ];
 
     modules-right = [
@@ -39,11 +39,6 @@ in {
       spacing = 16;
     };
 
-    "custom/clock" = {
-      exec = "date +\"%I:%M\"";
-      interval = 10;
-    };
-
     "clock#time" = {
       format = "{%H:%M}";
       timezone = "Indian/Antananarivo";
@@ -57,7 +52,7 @@ in {
       };
       tooltip = "Power";
       format-icons = {
-        default = "";
+        default = "󰤆 ";
       };
       on-click = "nwg-bar";
     };

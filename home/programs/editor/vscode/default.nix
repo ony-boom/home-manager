@@ -1,11 +1,15 @@
 {
   pkgs,
   config,
+  nixGLWrap,
   ...
 }: {
   programs.vscode = {
     enable = true;
-    package = config.lib.nixGL.wrap pkgs.vscode;
+    package = nixGLWrap {
+      pkg = pkgs.vscode;
+      inherit config;
+    };
     extensions = with pkgs.vscode-extensions; [
       bbenoist.nix
       eamodio.gitlens

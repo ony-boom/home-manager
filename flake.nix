@@ -42,6 +42,8 @@
       ];
     };
 
+    nixGLWrap = import ./lib/nixGL.nix {inherit pkgs;};
+
     stablePkgs = import inputs.nixpkgs-stable {
       inherit system;
     };
@@ -50,7 +52,7 @@
       home-manager.lib.homeManagerConfiguration {
         inherit pkgs;
         extraSpecialArgs = {
-          inherit self username host system stablePkgs nixgl;
+          inherit self username host system stablePkgs nixgl nixGLWrap;
         };
         modules = [
           ./home
