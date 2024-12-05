@@ -10,5 +10,10 @@
       pkg = vlc;
       inherit config;
     })
+
+    (nixGLWrap {
+      pkg = stremio;
+      inherit config;
+    })
   ];
 }

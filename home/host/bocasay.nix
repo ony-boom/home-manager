@@ -1,8 +1,5 @@
 {
   stablePkgs,
-  pkgs,
-  config,
-  nixGLWrap,
   ...
 }: {
   useWayland = false;
@@ -33,11 +30,4 @@
       ];
     };
   };
-
-  home.packages = with pkgs; [
-    (nixGLWrap {
-      pkg = stremio;
-      inherit config;
-    })
-  ];
 }
