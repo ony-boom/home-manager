@@ -52,7 +52,7 @@
       home-manager.lib.homeManagerConfiguration {
         inherit pkgs;
         extraSpecialArgs = {
-          inherit self username system stablePkgs nixgl nixGLWrap;
+          inherit self host username system stablePkgs nixgl nixGLWrap;
         };
         modules = [
           ./home
@@ -62,9 +62,14 @@
   in {
     formatter.${system} = pkgs.alejandra;
 
+    nixosModules = {
+      home-manager = home-manager.nixosModules.home-manager;
+    };
+
+    lib.mkHomeConfig = mkHomeConfig;
+
     homeConfigurations = {
       "${username}@bocasay" = mkHomeConfig "bocasay";
-      "${username}@maki" = mkHomeConfig "maki";
     };
   };
 }
