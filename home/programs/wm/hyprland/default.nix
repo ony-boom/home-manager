@@ -1,4 +1,7 @@
-{config, ...}: let
+{
+  config,
+  ...
+}: let
   themes = import ./themes.nix;
   hyprApps = {
     terminal = "kitty";

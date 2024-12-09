@@ -11,7 +11,7 @@
 
       background = [
         {
-          path = "/home/ony/Pictures/Wallpapers/rose_pine_shape.png";
+          path = "/home/ony/Pictures/totoros-moment.png";
           blur_passes = 3;
           blur_size = 8;
         }
