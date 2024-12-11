@@ -6,7 +6,6 @@
     ./extraOptions.nix
 
     ./host
-    ./services
     ./config
     ./programs
   ];
