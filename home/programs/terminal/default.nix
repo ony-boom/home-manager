@@ -22,6 +22,7 @@
     fzf.enable = true;
     zoxide.enable = true;
     ripgrep.enable = true;
+    jq.enable = true;
   };
 
   home.packages = with pkgs; [

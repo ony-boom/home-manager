@@ -1,7 +1,4 @@
-{
-  config,
-  ...
-}: let
+{config, ...}: let
   themes = import ./themes.nix;
   hyprApps = {
     terminal = "kitty";
@@ -27,6 +24,7 @@ in {
         "HYPRCURSOR_THEME,rose-pine-hyprcursor"
         "XCURSOR_THEME,rose-pine-hyprcursor"
         "XDG_CURRENT_DESKTOP,Hyprland"
+        "SSH_AUTH_SOCK,$XDG_RUNTIME_DIR/ssh-agent.socket"
       ];
       exec-once = [
         "swww-daemon &"
