@@ -24,7 +24,6 @@ in {
         "HYPRCURSOR_THEME,rose-pine-hyprcursor"
         "XCURSOR_THEME,rose-pine-hyprcursor"
         "XDG_CURRENT_DESKTOP,Hyprland"
-        "SSH_AUTH_SOCK,$XDG_RUNTIME_DIR/ssh-agent.socket"
       ];
       exec-once = [
         "swww-daemon &"
@@ -33,7 +32,6 @@ in {
         "nm-applet &"
         # "dunst &"
         "swaync &"
-        "lxqt-policykit-agent &"
       ];
 
       ## Look and feel

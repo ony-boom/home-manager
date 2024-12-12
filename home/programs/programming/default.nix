@@ -4,7 +4,8 @@
     pkgs.luarocks
   ];
 
-  node = [
+  javascript = [
+    pkgs.deno
     pkgs.pnpm
     pkgs.nodejs
   ];
@@ -22,7 +23,7 @@ in {
       # deno
       typescript
     ]
-    ++ node
+    ++ javascript
     ++ lua
     ++ zig;
 }
