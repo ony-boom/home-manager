@@ -32,6 +32,7 @@ in {
         "nm-applet &"
         # "dunst &"
         "swaync &"
+        "gnome-keyring-daemon --start --components=pkcs11,secrets,ssh"
       ];
 
       ## Look and feel
