@@ -26,13 +26,13 @@ in {
         "XDG_CURRENT_DESKTOP,Hyprland"
       ];
       exec-once = [
+        "udiskie &"
         "swww-daemon &"
         "swww restore"
         "waybar &"
         "nm-applet &"
-        # "dunst &"
         "swaync &"
-        "gnome-keyring-daemon --start --components=pkcs11,secrets,ssh"
+        "export $(gnome-keyring-daemon)"
       ];
 
       ## Look and feel
@@ -94,6 +94,10 @@ in {
         touchpad = {
           natural_scroll = false;
         };
+      };
+
+      misc = {
+        focus_on_activate = 1;
       };
 
       ## Keybindings

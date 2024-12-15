@@ -1,13 +1,11 @@
-{
-  username,
-  ...
-}: {
+{username, ...}: {
   imports = [
     ./extraOptions.nix
 
     ./host
     ./config
     ./programs
+    ./services
   ];
   # nixpks config
   nixpkgs.config = {
@@ -36,6 +34,12 @@
     # Disable deno update checker
     DENO_NO_UPDATE_CHECK = 1;
   };
+
+  home.sessionPath = [
+    "$HOME/.local/bin"
+    "$HOME/.cargo/bin"
+    "$HOME/.local/share/pnpm"
+  ];
 
   home.stateVersion = "24.05"; # Please read the comment before changing.
 }

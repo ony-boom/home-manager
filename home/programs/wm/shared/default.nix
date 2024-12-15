@@ -17,6 +17,7 @@
 
   home.packages = with pkgs; [
     swww
+    udiskie
     pamixer
     nwg-bar
     nwg-look
