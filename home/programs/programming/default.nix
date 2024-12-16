@@ -10,6 +10,12 @@
     pkgs.nodejs
   ];
 
+  elm = with pkgs.elmPackages; [
+    elm
+    elm-test
+    elm-format
+  ];
+
   zig = [
     pkgs.zig
   ];
@@ -25,5 +31,6 @@ in {
     ]
     ++ javascript
     ++ lua
-    ++ zig;
+    ++ zig
+    ++ elm;
 }
