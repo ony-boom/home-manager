@@ -14,7 +14,6 @@
     elm
     elm-test
     elm-format
-    elm-language-server
   ];
 
   zig = [
