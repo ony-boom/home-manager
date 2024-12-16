@@ -10,7 +10,7 @@
     pkgs.nodejs
   ];
 
-  elm = with pkgs.elmPackages; [
+  elmLang = with pkgs.elmPackages; [
     elm
     elm-test
     elm-format
@@ -32,5 +32,5 @@ in {
     ++ javascript
     ++ lua
     ++ zig
-    ++ elm;
+    ++ elmLang;
 }
