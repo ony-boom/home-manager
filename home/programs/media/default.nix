@@ -15,5 +15,10 @@
       pkg = stremio;
       inherit config;
     })
+
+    (nixGLWrap {
+      pkg = spotify;
+      inherit config;
+    })
   ];
 }
