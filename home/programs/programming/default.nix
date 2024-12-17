@@ -26,8 +26,8 @@ in {
   home.packages = with pkgs;
     [
       bun
-      # deno
       typescript
+      jdk
     ]
     ++ javascript
     ++ lua
