@@ -45,7 +45,7 @@ in {
   fonts.fontconfig = {
     enable = true;
     defaultFonts = {
-      monospace = [fonts.monospace.maple.name];
+      monospace = [fonts.monospace.cartographCF.name];
     };
   };
 
