@@ -17,6 +17,8 @@
 
   home.packages = with pkgs; [
     swww
+    grim
+    slurp
     udiskie
     pamixer
     nwg-bar
