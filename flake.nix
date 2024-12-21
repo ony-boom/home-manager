@@ -15,7 +15,10 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    neovim-config.url = "github:ony-boom/neovim-config";
+    neovim-config = {
+      url = "github:ony-boom/neovim-config";
+      inputs.nixpkgs.follows = "nixpkgs-stable";
+    };
 
     rust-overlay.url = "github:oxalica/rust-overlay";
 

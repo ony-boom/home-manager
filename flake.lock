@@ -78,14 +78,16 @@
     "neovim-config": {
       "inputs": {
         "flake-utils": "flake-utils",
-        "nixpkgs": "nixpkgs"
+        "nixpkgs": [
+          "nixpkgs-stable"
+        ]
       },
       "locked": {
-        "lastModified": 1734700953,
-        "narHash": "sha256-9DDWTV/nRg/6vJPwX7NSmrG0TrtaGfliJBHHNe0RC94=",
+        "lastModified": 1734752249,
+        "narHash": "sha256-d/qfjmP7LlWoXPcfShwGNx4PE4tjXvML5NuviOncOQY=",
         "owner": "ony-boom",
         "repo": "neovim-config",
-        "rev": "04446e984b4420e790809e638eb4e4c41b94cf89",
+        "rev": "973245a00877fb6cab1acc78d08c2c8bfc1b78bf",
         "type": "github"
       },
       "original": {
@@ -149,22 +151,6 @@
     },
     "nixpkgs_2": {
       "locked": {
-        "lastModified": 1734424634,
-        "narHash": "sha256-cHar1vqHOOyC7f1+tVycPoWTfKIaqkoe1Q6TnKzuti4=",
-        "owner": "nixos",
-        "repo": "nixpkgs",
-        "rev": "d3c42f187194c26d9f0309a8ecc469d6c878ce33",
-        "type": "github"
-      },
-      "original": {
-        "owner": "nixos",
-        "ref": "nixos-unstable",
-        "repo": "nixpkgs",
-        "type": "github"
-      }
-    },
-    "nixpkgs_3": {
-      "locked": {
         "lastModified": 1710272261,
         "narHash": "sha256-g0bDwXFmTE7uGDOs9HcJsfLFhH7fOsASbAuOzDC+fhQ=",
         "owner": "NixOS",
@@ -179,7 +165,7 @@
         "type": "github"
       }
     },
-    "nixpkgs_4": {
+    "nixpkgs_3": {
       "locked": {
         "lastModified": 1728538411,
         "narHash": "sha256-f0SBJz1eZ2yOuKUr5CA9BHULGXVSn6miBuUWdTyhUhU=",
@@ -200,7 +186,7 @@
         "home-manager": "home-manager",
         "neovim-config": "neovim-config",
         "nixgl": "nixgl",
-        "nixpkgs": "nixpkgs_2",
+        "nixpkgs": "nixpkgs",
         "nixpkgs-stable": "nixpkgs-stable",
         "rose-pine-hyprcursor": "rose-pine-hyprcursor",
         "rust-overlay": "rust-overlay"
@@ -209,7 +195,7 @@
     "rose-pine-hyprcursor": {
       "inputs": {
         "hyprlang": "hyprlang",
-        "nixpkgs": "nixpkgs_3",
+        "nixpkgs": "nixpkgs_2",
         "utils": "utils"
       },
       "locked": {
@@ -228,7 +214,7 @@
     },
     "rust-overlay": {
       "inputs": {
-        "nixpkgs": "nixpkgs_4"
+        "nixpkgs": "nixpkgs_3"
       },
       "locked": {
         "lastModified": 1734747996,
