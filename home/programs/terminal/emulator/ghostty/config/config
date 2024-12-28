@@ -1,0 +1,10 @@
+auto-update = off
+theme = rose-pine
+
+window-padding-y = 6
+window-padding-x = 12
+window-decoration = false
+gtk-single-instance = true
+
+font-family = Cartograph CF
+

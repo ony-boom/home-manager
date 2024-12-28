@@ -1,7 +1,7 @@
 {config, ...}: let
   themes = import ./themes.nix;
   hyprApps = {
-    terminal = "kitty";
+    terminal = "ghostty";
     fileManager = "nautilus";
     menu = "rofi -show drun";
     emoji = "emote";
