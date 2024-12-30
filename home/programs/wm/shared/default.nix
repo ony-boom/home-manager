@@ -19,7 +19,6 @@
     swww
     grim
     slurp
-    udiskie
     pamixer
     nwg-bar
     nwg-look

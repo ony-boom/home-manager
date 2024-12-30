@@ -26,13 +26,10 @@ in {
         "XDG_CURRENT_DESKTOP,Hyprland"
       ];
       exec-once = [
-        "udiskie &"
         "swww-daemon &"
         "swww restore"
         "waybar &"
         "nm-applet &"
-        "swaync &"
-        "export $(gnome-keyring-daemon)"
       ];
 
       ## Look and feel
