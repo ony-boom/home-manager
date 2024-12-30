@@ -8,3 +8,10 @@ gtk-single-instance = true
 
 font-family = Cartograph CF
 
+keybind = ctrl+shift+right=next_tab
+keybind = ctrl+shift+right=previous_tab
+
+keybind = ctrl+up=goto_split:top
+keybind = ctrl+left=goto_split:left
+keybind = ctrl+down=goto_split:bottom
+keybind = ctrl+right=goto_split:right
