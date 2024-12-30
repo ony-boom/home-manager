@@ -2,7 +2,6 @@
   stablePkgs,
   ...
 }: {
-  useWayland = false;
   nixGL.installScripts = ["mesa"];
 
   programs = {
