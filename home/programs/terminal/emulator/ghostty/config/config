@@ -1,3 +1,5 @@
+command = tmux
+
 auto-update = off
 theme = rose-pine
 

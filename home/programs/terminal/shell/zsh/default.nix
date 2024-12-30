@@ -6,7 +6,12 @@
   programs.zsh = {
     enable = lib.mkDefault true;
     enableCompletion = true;
-    oh-my-zsh.enable = true;
+    oh-my-zsh = {
+      enable = true;
+      plugins = [
+        "tmux"
+      ];
+    };
     syntaxHighlighting.enable = true;
 
     plugins = [
