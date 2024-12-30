@@ -1,5 +1,3 @@
-command = tmux
-
 auto-update = off
 theme = rose-pine
 
@@ -9,6 +7,8 @@ window-decoration = false
 gtk-single-instance = true
 
 font-family = Cartograph CF
+
+background-opacity = 0.8
 
 # keybind = ctrl+shift+right=next_tab
 # keybind = ctrl+shift+right=previous_tab
