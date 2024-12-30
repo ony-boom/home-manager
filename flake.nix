@@ -20,6 +20,10 @@
       inputs.nixpkgs.follows = "nixpkgs-stable";
     };
 
+    ghostty = {
+      url = "github:ghostty-org/ghostty";
+    };
+
     rust-overlay.url = "github:oxalica/rust-overlay";
 
     rose-pine-hyprcursor.url = "github:ndom91/rose-pine-hyprcursor";
@@ -30,6 +34,7 @@
     home-manager,
     nixgl,
     self,
+    ghostty,
     ...
   } @ inputs: let
     username = "ony";
@@ -39,13 +44,12 @@
       overlays = [
         nixgl.overlay
         inputs.rust-overlay.overlays.default
-        (prev: final: {
+        (final: prev: {
           rose-pine-hyprcursor = inputs.rose-pine-hyprcursor.packages.${system}.default;
+          ghostty = ghostty.packages.${system}.default;
         })
       ];
     };
-
-    nixGLWrap = import ./lib/nixGL.nix {inherit pkgs;};
 
     stablePkgs = import inputs.nixpkgs-stable {
       inherit system;
@@ -55,9 +59,20 @@
       home-manager.lib.homeManagerConfiguration {
         inherit pkgs;
         extraSpecialArgs = {
-          inherit host self username system stablePkgs nixgl nixGLWrap;
+          inherit host self username system stablePkgs;
         };
         modules = [
+          ({config, ...}: {
+            nixGL.packages = nixgl.packages;
+            nixpkgs.overlays = [
+              (final: prev: {
+                nixGL = pkg:
+                  if config.isNixOS
+                  then pkg
+                  else config.lib.nixGL.wrap pkg;
+              })
+            ];
+          })
           ./home
           inputs.neovim-config.homeManagerModules.${system}
         ];

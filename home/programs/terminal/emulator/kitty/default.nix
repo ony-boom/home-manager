@@ -1,7 +1,5 @@
 {
   pkgs,
-  config,
-  nixGLWrap,
   ...
 }: let
   themes = {
@@ -20,10 +18,7 @@ in {
   programs.kitty = {
     enable = true;
 
-    package = nixGLWrap {
-      pkg = pkgs.kitty;
-      inherit config;
-    };
+    package = pkgs.nixGL pkgs.kitty;
 
     themeFile = themes.rose-pine.dark.default;
     /*

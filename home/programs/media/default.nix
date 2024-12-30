@@ -1,24 +1,11 @@
-{
-  pkgs,
-  nixGLWrap,
-  config,
-  ...
-}: {
+{pkgs, ...}: {
   home.packages = with pkgs; [
     playerctl
-    (nixGLWrap {
-      pkg = vlc;
-      inherit config;
-    })
 
-    (nixGLWrap {
-      pkg = stremio;
-      inherit config;
-    })
+    (pkgs.nixGL vlc)
 
-    (nixGLWrap {
-      pkg = spotify;
-      inherit config;
-    })
+    (pkgs.nixGL stremio)
+
+    (pkgs.nixGL spotify)
   ];
 }

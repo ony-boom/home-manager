@@ -18,7 +18,6 @@
       default = true;
     };
 
-
     useWM = lib.mkOption {
       type = with lib.types; bool;
       description = "If using a window manager";
