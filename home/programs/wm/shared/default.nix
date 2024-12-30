@@ -29,6 +29,7 @@
     rose-pine-cursor
     rose-pine-hyprcursor
     networkmanagerapplet
+    gnome-disk-utility
     # swaynotificationcenter
     (
       if config.useWayland
