@@ -8,6 +8,8 @@ gtk-single-instance = true
 
 background-opacity = 0.8
 
+font-family = CaskaydiaCove Nerd Font
+
 # keybind = ctrl+shift+right=next_tab
 # keybind = ctrl+shift+right=previous_tab
 # 
