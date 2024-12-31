@@ -36,11 +36,11 @@ in
       repo = "maple-font";
       rev = version;
       inherit version;
-      sha256 = "sha256-A8Ekk7tFJrzhFIFx+E6NjQy7rcSGu38ZNr+xCxO8qNE=";
+      sha256 = "sha256-1vJArwIwe7ntJEly61htSnIPrms6CePWABl8IJOe1m8=";
     };
     name = "maple-font";
     inherit version;
-    buildInputs = [ftcli pkgs.python3];
+    buildInputs = [ftcli pkgs.python3 pkgs.python3Packages.glyphslib];
 
     buildPhase = ''
       mkdir -p $out/share/fonts/truetype
