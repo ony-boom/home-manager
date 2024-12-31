@@ -8,6 +8,7 @@
 
   programs = {
     chrome.enable = true;
+    ghostty.enable = true;
     waybar = {
       settings = {
         mainBar = {

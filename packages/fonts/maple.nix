@@ -28,7 +28,7 @@
     ];
   };
 
-  version = "v7.0-beta32";
+  version = "v7.0-beta33";
 in
   pkgs.stdenv.mkDerivation {
     src = pkgs.fetchFromGitHub {
@@ -39,7 +39,7 @@ in
       sha256 = "sha256-A8Ekk7tFJrzhFIFx+E6NjQy7rcSGu38ZNr+xCxO8qNE=";
     };
     name = "maple-font";
-    version = "v7.0-beta32";
+    inherit version;
     buildInputs = [ftcli pkgs.python3];
 
     buildPhase = ''
