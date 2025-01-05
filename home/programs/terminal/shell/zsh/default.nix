@@ -8,9 +8,6 @@
     enableCompletion = true;
     oh-my-zsh = {
       enable = true;
-      plugins = [
-        "tmux"
-      ];
     };
     syntaxHighlighting.enable = true;
 
@@ -30,10 +27,6 @@
     dotDir = ".config/zsh";
 
     initExtra = builtins.readFile ./main.zsh;
-    localVariables = {
-      ZSH_TMUX_AUTOSTART = true;
-      ZSH_TMUX_AUTOCONNECT = false;
-    };
   };
 
   # xdg.configFile."zsh/completions".source = ./completions;
