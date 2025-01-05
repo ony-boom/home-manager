@@ -20,10 +20,6 @@
       inputs.nixpkgs.follows = "nixpkgs-stable";
     };
 
-    ghostty = {
-      url = "github:ghostty-org/ghostty";
-    };
-
     rust-overlay.url = "github:oxalica/rust-overlay";
 
     rose-pine-hyprcursor.url = "github:ndom91/rose-pine-hyprcursor";
@@ -34,7 +30,6 @@
     home-manager,
     nixgl,
     self,
-    ghostty,
     ...
   } @ inputs: let
     username = "ony";
@@ -46,7 +41,6 @@
         inputs.rust-overlay.overlays.default
         (final: prev: {
           rose-pine-hyprcursor = inputs.rose-pine-hyprcursor.packages.${system}.default;
-          ghostty = ghostty.packages.${system}.default;
         })
       ];
     };

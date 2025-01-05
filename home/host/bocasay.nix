@@ -5,7 +5,6 @@
   nixGL.installScripts = ["mesa"];
 
   programs = {
-    ghostty.enable = true;
     waybar = {
       settings = {
         mainBar = {
