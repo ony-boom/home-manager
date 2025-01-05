@@ -25,4 +25,9 @@
       extraCss = builtins.readFile ./gtk.css;
     };
   };
+
+  home.sessionVariables = {
+    XCURSOR_SIZE = "24";
+    XCURSOR_THEME = "BreezeX-RosePine-Linux";
+  };
 }

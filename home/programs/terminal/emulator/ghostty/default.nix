@@ -4,11 +4,9 @@
 }: {
   programs.ghostty = {
     enable = true;
-    installVimSyntax = true;
 
     settings = {
       font-size = 14;
-      auto-update = false;
       theme = "rose-pine";
 
       window-padding-y = 10;
