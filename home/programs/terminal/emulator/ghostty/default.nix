@@ -6,7 +6,7 @@
     enable = true;
 
     settings = {
-      font-size = 14;
+      font-size = 12;
       theme = "rose-pine";
 
       window-padding-y = 10;
