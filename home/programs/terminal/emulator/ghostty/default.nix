@@ -1,9 +1,11 @@
 {
   config,
+  pkgs,
   ...
 }: {
   programs.ghostty = {
     enable = true;
+    package = pkgs.nixGL pkgs.ghostty;
 
     settings = {
       font-size = 12;
