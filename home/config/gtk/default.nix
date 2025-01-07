@@ -27,7 +27,5 @@
   };
 
   home.sessionVariables = {
-    XCURSOR_SIZE = "24";
-    XCURSOR_THEME = "BreezeX-RosePine-Linux";
   };
 }

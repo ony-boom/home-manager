@@ -24,6 +24,9 @@ in {
         "HYPRCURSOR_THEME,rose-pine-hyprcursor"
         "XCURSOR_THEME,rose-pine-hyprcursor"
         "XDG_CURRENT_DESKTOP,Hyprland"
+
+        "XCURSOR_SIZE,24"
+        "XCURSOR_THEME,BreezeX-RosePine-Linux"
       ];
       exec-once = [
         "swww-daemon &"
