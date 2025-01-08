@@ -8,7 +8,6 @@
     package = pkgs.nixGL pkgs.ghostty;
 
     settings = {
-      font-size = 12;
       theme = "rose-pine";
 
       window-padding-y = 10;

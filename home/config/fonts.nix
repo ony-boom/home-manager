@@ -4,6 +4,8 @@
   ...
 }: let
   maple = self + /packages/fonts/maple.nix;
+  monolisa = self + /packages/fonts/monolisa;
+
   fonts = {
     monospace = {
       jetbrains = {
@@ -25,6 +27,10 @@
         name = "Maple Mono";
         package = pkgs.callPackage maple {inherit pkgs;};
       };
+      monolisa = {
+        name = "Monolisa";
+        package = pkgs.callPackage monolisa {inherit pkgs;};
+      };
     };
   };
 
@@ -39,7 +45,7 @@ in {
   fonts.fontconfig = {
     enable = true;
     defaultFonts = {
-      monospace = [fonts.monospace.cascadia.name];
+      monospace = [fonts.monospace.monolisa.name];
     };
   };
 
@@ -48,6 +54,7 @@ in {
       open-sans
       material-icons
       fonts.monospace.maple.package
+      fonts.monospace.monolisa.package
     ]
     ++ nerdFonts;
 }

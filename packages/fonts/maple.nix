@@ -45,7 +45,9 @@ in
     buildPhase = ''
       mkdir -p $out/share/fonts/truetype
       python3 build.py
+    '';
 
+    installPhase = ''
       cp -r fonts/TTF/* $out/share/fonts/truetype
     '';
   }
