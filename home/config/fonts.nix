@@ -1,60 +1,18 @@
-{
-  pkgs,
-  self,
-  ...
-}: let
-  maple = self + /packages/fonts/maple.nix;
-  monolisa = self + /packages/fonts/monolisa;
-
-  fonts = {
-    monospace = {
-      jetbrains = {
-        name = "JetBrainsMono Nerd Font";
-      };
-      cascadia = {
-        name = "CaskaydiaCove Nerd Font";
-      };
-      iosevka = {
-        name = "Iosevka Nerd Font";
-      };
-      hasklig = {
-        name = "Hasklug Nerd Font";
-      };
-      geist = {
-        name = "GeistMono Nerd Font";
-      };
-      maple = {
-        name = "Maple Mono";
-        package = pkgs.callPackage maple {inherit pkgs;};
-      };
-      monolisa = {
-        name = "Monolisa";
-        package = pkgs.callPackage monolisa {inherit pkgs;};
-      };
-    };
-  };
-
+{pkgs, ...}: let
   nerdFonts = with pkgs.nerd-fonts; [
     jetbrains-mono
-    caskaydia-cove
-    hasklug
-    geist-mono
-    iosevka
   ];
 in {
   fonts.fontconfig = {
     enable = true;
     defaultFonts = {
-      monospace = [fonts.monospace.monolisa.name];
+      monospace = ["JetBrainsMono Nerd Font"];
     };
   };
 
   home.packages = with pkgs;
     [
       open-sans
-      material-icons
-      fonts.monospace.maple.package
-      fonts.monospace.monolisa.package
     ]
     ++ nerdFonts;
 }

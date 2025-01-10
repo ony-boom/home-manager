@@ -1,6 +1,5 @@
 {
   pkgs,
-  config,
   ...
 }: {
   imports = [
@@ -8,7 +7,6 @@
     ./programming
     ./editor
     ./media
-    ./wm
   ];
   programs = {
     git = {
@@ -32,12 +30,5 @@
       scrcpy
       obsidian
       font-manager
-    ]
-    ++ (
-      if config.programs.chrome.enable
-      then [
-        google-chrome
-      ]
-      else []
-    );
+    ];
 }

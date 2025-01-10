@@ -1,11 +1,7 @@
 {username, ...}: {
   imports = [
-    ./extraOptions.nix
-
-    ./host
     ./config
     ./programs
-    ./services
   ];
   # nixpks config
   nixpkgs.config = {

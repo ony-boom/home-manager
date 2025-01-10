@@ -21,8 +21,6 @@
     };
 
     rust-overlay.url = "github:oxalica/rust-overlay";
-
-    rose-pine-hyprcursor.url = "github:ndom91/rose-pine-hyprcursor";
   };
 
   outputs = {
@@ -39,9 +37,6 @@
       overlays = [
         nixgl.overlay
         inputs.rust-overlay.overlays.default
-        (final: prev: {
-          rose-pine-hyprcursor = inputs.rose-pine-hyprcursor.packages.${system}.default;
-        })
       ];
     };
 
@@ -60,10 +55,7 @@
             nixGL.packages = nixgl.packages;
             nixpkgs.overlays = [
               (final: prev: {
-                nixGL = pkg:
-                  if config.isNixOS
-                  then pkg
-                  else config.lib.nixGL.wrap pkg;
+                nixGL = pkg: config.lib.nixGL.wrap pkg;
               })
             ];
           })
