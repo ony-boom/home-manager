@@ -25,7 +25,6 @@
 
   home.packages = with pkgs;
     [
-      nh
       emote
       scrcpy
       obsidian
