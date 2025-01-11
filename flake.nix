@@ -44,11 +44,11 @@
       inherit system;
     };
 
-    mkHomeConfig = host:
+    mkHomeConfig = hostname:
       home-manager.lib.homeManagerConfiguration {
         inherit pkgs;
         extraSpecialArgs = {
-          inherit host self username system stablePkgs;
+          inherit hostname self username system stablePkgs;
         };
         modules = [
           ({config, ...}: {
@@ -60,6 +60,7 @@
             ];
           })
           ./home
+          ./host
           inputs.neovim-config.homeManagerModules.${system}
         ];
       };

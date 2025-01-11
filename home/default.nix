@@ -1,5 +1,6 @@
 {username, ...}: {
   imports = [
+    ./modules
     ./config
     ./programs
   ];
