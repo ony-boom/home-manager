@@ -1,0 +1,3 @@
+{
+  session.type = "wayland";
+}

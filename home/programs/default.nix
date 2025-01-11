@@ -1,5 +1,6 @@
 {
   pkgs,
+  config,
   ...
 }: {
   imports = [
@@ -23,11 +24,15 @@
     home-manager.enable = true;
   };
 
-  home.packages = with pkgs;
-    [
-      emote
-      scrcpy
-      obsidian
-      font-manager
-    ];
+  home.packages = with pkgs; [
+    emote
+    scrcpy
+    obsidian
+    font-manager
+    (
+      if config.session.isWayland
+      then wl-clipboard
+      else xclip
+    )
+  ];
 }
