@@ -61,11 +61,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1736604787,
-        "narHash": "sha256-MJZ7+Q922chl54R5Jnmz9xiT0qBqWob6F0JHeZzSjg0=",
+        "lastModified": 1736662466,
+        "narHash": "sha256-bLhEc9jMdi0RDvTJDwJHM1BiigOv29PJUCaj+eapA28=",
         "owner": "ony-boom",
         "repo": "neovim-config",
-        "rev": "eb7561d1831222d2e939fd3daa7e2d19e8f93886",
+        "rev": "76f2259f5128200504531af89f2a053904b6ea15",
         "type": "github"
       },
       "original": {
