@@ -29,10 +29,7 @@
     scrcpy
     obsidian
     font-manager
-    (
-      if config.session.isWayland
-      then wl-clipboard
-      else xclip
-    )
+    wl-clipboard
+    xclip
   ];
 }
