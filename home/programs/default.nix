@@ -25,7 +25,7 @@
   };
 
   home.packages = with pkgs; [
-    emote
+    smile
     scrcpy
     obsidian
     font-manager
