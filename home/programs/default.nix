@@ -25,7 +25,6 @@
   };
 
   home.packages = with pkgs; [
-    smile
     scrcpy
     obsidian
     font-manager
