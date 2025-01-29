@@ -31,5 +31,6 @@
     font-manager
     wl-clipboard
     xclip
+    cava
   ];
 }
