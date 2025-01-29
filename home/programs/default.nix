@@ -1,8 +1,4 @@
-{
-  pkgs,
-  config,
-  ...
-}: {
+{pkgs, ...}: {
   imports = [
     ./terminal
     ./programming
@@ -27,7 +23,7 @@
   home.packages = with pkgs; [
     emote
     scrcpy
-    obsidian
+    (pkgs.nixGL obsidian)
     font-manager
     wl-clipboard
     xclip
