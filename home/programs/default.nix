@@ -23,7 +23,6 @@
   home.packages = with pkgs; [
     emote
     scrcpy
-    (pkgs.nixGL obsidian)
     font-manager
     wl-clipboard
     xclip

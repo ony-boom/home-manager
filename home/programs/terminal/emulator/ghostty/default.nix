@@ -17,6 +17,7 @@
 
       background-opacity = 0.8;
       font-family = config.fonts.fontconfig.defaultFonts.monospace;
+      shell-integration-features = "sudo";
     };
   };
 }
