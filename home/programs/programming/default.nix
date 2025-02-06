@@ -6,7 +6,6 @@
 
   javascript = [
     pkgs.deno
-    pkgs.pnpm
     pkgs.nodejs
   ];
 
