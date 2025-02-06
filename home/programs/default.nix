@@ -26,7 +26,6 @@
     font-manager
     wl-clipboard
     xclip
-    gpaste
     cava
   ];
 }
