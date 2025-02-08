@@ -31,6 +31,8 @@
     # Disable deno update checker
     DENO_NO_UPDATE_CHECK = 1;
     PNPM_HOME = "$HOME/.local/share/pnpm";
+    # Disable auto pinning of JS package managers
+    COREPACK_ENABLE_AUTO_PIN = 0;
   };
 
   home.sessionPath = [
