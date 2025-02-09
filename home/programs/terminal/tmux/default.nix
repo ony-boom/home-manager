@@ -7,10 +7,6 @@
     prefix = "C-a";
 
     plugins = with pkgs; [
-      {
-        plugin = tmuxPlugins.resurrect;
-        extraConfig = "set -g @resurrect-strategy-nvim 'session'";
-      }
       tmuxPlugins.urlview
       {
         plugin = tmuxPlugins.rose-pine;
