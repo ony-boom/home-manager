@@ -1,8 +1,4 @@
-{
-  lib,
-  pkgs,
-  ...
-}: {
+{lib, ...}: {
   programs.zsh = {
     enable = lib.mkDefault true;
     enableCompletion = true;
@@ -12,11 +8,13 @@
     syntaxHighlighting.enable = true;
 
     plugins = [
-      {
+      /*
+         {
         name = "vi-mode";
         src = pkgs.zsh-vi-mode;
         file = "share/zsh-vi-mode/zsh-vi-mode.plugin.zsh";
       }
+      */
     ];
 
     shellAliases = {
