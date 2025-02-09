@@ -20,7 +20,7 @@
       shell-integration-features = "sudo";
 
       keybind = [
-        "ctrl+r=reload_config"
+        "ctrl+shift+r=reload_config"
         "ctrl+up=goto_split:up"
         "ctrl+down=goto_split:down"
         "ctrl+left=goto_split:left"
