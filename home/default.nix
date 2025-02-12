@@ -39,6 +39,7 @@
     "$HOME/.local/bin"
     "$HOME/.cargo/bin"
     "$HOME/.local/share/pnpm"
+    "$HOME/.volta/bin"
   ];
 
   home.stateVersion = "24.05"; # Please read the comment before changing.
