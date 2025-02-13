@@ -33,6 +33,8 @@
     PNPM_HOME = "$HOME/.local/share/pnpm";
     # Disable auto pinning of JS package managers
     COREPACK_ENABLE_AUTO_PIN = 0;
+
+    ANDROID_HOME = "$HOME/Android/Sdk";
   };
 
   home.sessionPath = [
@@ -40,6 +42,8 @@
     "$HOME/.cargo/bin"
     "$HOME/.local/share/pnpm"
     "$HOME/.volta/bin"
+    "$ANDROID_HOME/emulator"
+    "$ANDROID_HOME/platform-tools"
   ];
 
   home.stateVersion = "24.05"; # Please read the comment before changing.
