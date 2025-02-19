@@ -35,13 +35,14 @@
     COREPACK_ENABLE_AUTO_PIN = 0;
 
     ANDROID_HOME = "$HOME/Android/Sdk";
+    VOLTA_HOME = "$HOME/.volta";
   };
 
   home.sessionPath = [
     "$HOME/.local/bin"
     "$HOME/.cargo/bin"
     "$HOME/.local/share/pnpm"
-    "$HOME/.volta/bin"
+    "$VOLTA_HOME/bin"
     "$ANDROID_HOME/emulator"
     "$ANDROID_HOME/platform-tools"
   ];
