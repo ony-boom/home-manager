@@ -23,10 +23,7 @@
 
   home.packages = with pkgs; [
     emote
-    scrcpy
-    font-manager
     wl-clipboard
     xclip
-    cava
   ];
 }

@@ -16,7 +16,7 @@
   };
 in {
   programs.kitty = {
-    enable = true;
+    enable = false;
 
     package = pkgs.nixGL pkgs.kitty;
 
