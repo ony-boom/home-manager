@@ -17,9 +17,10 @@ in {
   ];
   home.packages = with pkgs;
     [
+      jdk
+      php
       bun
       typescript
-      jdk
     ]
     ++ javascript
     ++ lua
