@@ -4,10 +4,6 @@
     pkgs.luarocks
   ];
 
-  javascript = [
-    pkgs.deno
-  ];
-
   zig = [
     pkgs.zig
   ];
@@ -22,7 +18,6 @@ in {
       bun
       typescript
     ]
-    ++ javascript
     ++ lua
     ++ zig;
 }
