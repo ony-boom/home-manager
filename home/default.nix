@@ -45,6 +45,7 @@
     "$VOLTA_HOME/bin"
     "$ANDROID_HOME/emulator"
     "$ANDROID_HOME/platform-tools"
+    "$HOME/.deno/bin"
   ];
 
   home.stateVersion = "24.05"; # Please read the comment before changing.
