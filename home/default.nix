@@ -46,6 +46,7 @@
     "$ANDROID_HOME/emulator"
     "$ANDROID_HOME/platform-tools"
     "$HOME/.deno/bin"
+    "/opt/Postman"
   ];
 
   home.stateVersion = "24.05"; # Please read the comment before changing.
