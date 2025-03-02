@@ -22,8 +22,8 @@
 
       theme = {
         mode = "system";
-        dark = "Rose Pine";
-        light = "Rose Pine Moon";
+        dark = "Rosé Pine";
+        light = "Rosé Pine Moon";
       };
 
       icon_theme = {
