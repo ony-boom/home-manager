@@ -1,7 +1,7 @@
 {pkgs, ...}: {
   programs.zed-editor = {
     enable = true;
-    pkg = pkgs.nixGL pkgs.zed;
+    pkg = pkgs.nixGL pkgs.zed-editor;
     extensions = [
       "rose-pine-theme"
       "colored-zed-icons-theme"
