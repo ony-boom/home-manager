@@ -1,4 +1,7 @@
 {
+  imports = [
+    ./zed.nix
+  ];
   programs.neovim = {
     enable = true;
     defaultEditor = true;
