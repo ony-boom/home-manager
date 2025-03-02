@@ -70,6 +70,7 @@ in
             x = "project_panel::Cut";
             c = "project_panel::Copy";
             p = "project_panel::Paste";
+            "space e" = "project_panel::ToggleLeftDock";
           };
         }
       ];
