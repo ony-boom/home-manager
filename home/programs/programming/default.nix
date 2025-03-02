@@ -1,7 +1,7 @@
 {pkgs, ...}: let
   lua = [
-    pkgs.lua
-    pkgs.luarocks
+    pkgs.lua51Packages.lua
+    pkgs.lua51Packages.luarocks
   ];
 
   zig = [
