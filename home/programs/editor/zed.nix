@@ -50,14 +50,6 @@ in
 
       userKeymaps = [
         {
-          context = "Workspace && VimControl";
-          bindings = {
-            "space e" = "workspace::ToggleLeftDock";
-            "space f f" = "file_finder::Toggle";
-            "space f w" = "pane::DeploySearch";
-          };
-        }
-        {
           context = "Editor && vim_mode == normal";
           bindings = {
             "space l f" = "editor::Format";
@@ -65,6 +57,9 @@ in
             "space c" = "pane::CloseActiveItem";
             "] b" = "pane::ActivateNextItem";
             "[ b" = "pane::ActivatePrevItem";
+            "space e" = "workspace::ToggleLeftDock";
+            "space f f" = "file_finder::Toggle";
+            "space f w" = "pane::DeploySearch";
           };
         }
         {
