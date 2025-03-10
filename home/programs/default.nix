@@ -24,6 +24,7 @@
   };
 
   home.packages = with pkgs; [
+    nixd
     emote
     wl-clipboard
     xclip

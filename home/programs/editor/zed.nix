@@ -2,7 +2,7 @@ let
   languages-settings = {
     languages = {
       Nix = {
-        language_servers = ["nil" "!nixd"];
+        language_servers = ["nil" "nixd"];
         formatter.external = {
           command = "alejandra";
           args = ["--quiet" "--"];
