@@ -8,7 +8,7 @@
     package = pkgs.nixGL pkgs.ghostty;
 
     settings = {
-      theme = "rose-pine";
+      theme = "dark:rose-pine,light:rose-pine-dawn";
 
       window-padding-y = 10;
       window-padding-x = 12;

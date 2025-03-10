@@ -38,7 +38,7 @@ in
           theme = {
             mode = "system";
             dark = "Rosé Pine";
-            light = "Rosé Pine Moon";
+            light = "Rosé Pine Dawn";
           };
 
           icon_theme = {
