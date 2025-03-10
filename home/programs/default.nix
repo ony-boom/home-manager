@@ -18,7 +18,9 @@
     };
 
     # Let Home Manager install and manage itself.
-    home-manager.enable = true;
+    home-manager = {
+      enable = true;
+    };
   };
 
   home.packages = with pkgs; [

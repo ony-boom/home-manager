@@ -67,7 +67,7 @@
 
     hosts = {
       work = "BCS-MG-LP-0120-09";
-      home = "taki";
+      home = "maki";
     };
   in {
     formatter.${system} = pkgs.alejandra;
