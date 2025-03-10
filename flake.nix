@@ -64,12 +64,17 @@
           inputs.neovim-config.homeManagerModules.${system}
         ];
       };
+
+    hosts = {
+      work = "BCS-MG-LP-0120-09";
+      home = "taki";
+    };
   in {
     formatter.${system} = pkgs.alejandra;
 
     homeConfigurations = {
-      "${username}@bocasay" = mkHomeConfig "bocasay";
-      "${username}@maki" = mkHomeConfig "maki";
+      "${username}@${hosts.work}" = mkHomeConfig hosts.work;
+      "${username}@${hosts.home}" = mkHomeConfig hosts.home;
     };
   };
 }
