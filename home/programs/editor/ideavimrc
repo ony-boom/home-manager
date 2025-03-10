@@ -40,6 +40,11 @@ map <leader>c <Action>(CloseContent)
 map <leader>lf <Action>(ReformatCode)
 map <leader>ff <Action>(GotoFile)
 map <leader>fw <Action>(FindInPath)
+map <leader>ld <Action>(ShowHoverInfo)
+map <leader>lr <Action>(RenameElement)
+map <leader>la <Action>(ShowIntentionActions)
+map ]d <Action>(GotoNextError)
+map [d <Action>(GotoPreviousError)
 
 "" Map <leader>d to start debug
 "map <leader>d <Action>(Debug)
