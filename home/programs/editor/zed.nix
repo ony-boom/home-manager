@@ -65,11 +65,6 @@ in
         {
           context = "ProjectPanel";
           bindings = {
-            a = "project_panel::NewFile";
-            d = "project_panel::Trash";
-            x = "project_panel::Cut";
-            c = "project_panel::Copy";
-            p = "project_panel::Paste";
             "space e" = "workspace::ToggleLeftDock";
           };
         }
