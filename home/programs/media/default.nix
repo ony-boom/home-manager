@@ -2,6 +2,11 @@
   imports = [
     ./mpd.nix
   ];
+
+  services.mms = {
+    enable = true;
+  };
+
   home.packages = with pkgs; [
     playerctl
 
