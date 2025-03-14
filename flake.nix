@@ -41,6 +41,7 @@
       inherit system;
       overlays = [
         nixgl.overlay
+        inputs.mms.overlays.default
         inputs.rust-overlay.overlays.default
       ];
     };
