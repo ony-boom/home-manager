@@ -18,6 +18,7 @@ in
       extensions = [
         "rose-pine-theme"
         "colored-zed-icons-theme"
+        "neosolarized"
       ];
 
       userSettings =
@@ -37,8 +38,8 @@ in
 
           theme = {
             mode = "system";
-            dark = "Rosé Pine";
-            light = "Rosé Pine Dawn";
+            dark = "NeoSolarized Dark";
+            light = "NeoSolarized Light";
           };
 
           icon_theme = {
