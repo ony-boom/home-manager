@@ -12,9 +12,7 @@
 
       window-padding-y = 10;
       window-padding-x = 12;
-      window-decoration = false;
       gtk-single-instance = true;
-      gtk-titlebar = false;
 
       background-opacity = 0.8;
       font-family = config.fonts.fontconfig.defaultFonts.monospace;

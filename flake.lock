@@ -79,11 +79,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1741965396,
-        "narHash": "sha256-eeUxiAQA7ULpMzPi3SiRx10LMMlxKDR31VdGW4e5eho=",
+        "lastModified": 1742110217,
+        "narHash": "sha256-E3ni6kXiEzqZRCRk2kD8ZmRAeNvuBQGeDv1AIqMmmgY=",
         "owner": "ony-boom",
         "repo": "mms",
-        "rev": "e0f396cd36b5721e70ea5dd41bf47c2c776f725c",
+        "rev": "886fe118c9e939fe43adb9ac6fa5b9a5dcfaa2b4",
         "type": "github"
       },
       "original": {
