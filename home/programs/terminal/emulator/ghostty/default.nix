@@ -8,7 +8,7 @@
     package = pkgs.nixGL pkgs.ghostty;
 
     settings = {
-      theme = "dark:Solarized Dark - Patched,light:Builtin Solarized Light";
+      theme = "dark:GruvboxDarkHard,light:GruvboxLightHard";
 
       window-padding-y = 10;
       window-padding-x = 12;
