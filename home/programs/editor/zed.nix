@@ -11,9 +11,9 @@ let
     };
   };
 in
-  {pkgs, ...}: {
+  {pkgs, lib, ...}: {
     programs.zed-editor = {
-      enable = true;
+      enable = lib.mkDefault true;
       package = pkgs.nixGL pkgs.zed-editor;
       extensions = [
         "rose-pine-theme"
