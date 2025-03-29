@@ -36,16 +36,18 @@
 
     ANDROID_HOME = "$HOME/Android/Sdk";
     VOLTA_HOME = "$HOME/.volta";
+    ENCORE_INSTALL = "/home/ony/.encore";
   };
 
   home.sessionPath = [
     "$HOME/.local/bin"
     "$HOME/.cargo/bin"
+    "$HOME/.deno/bin"
     "$HOME/.local/share/pnpm"
-    "$VOLTA_HOME/bin"
     "$ANDROID_HOME/emulator"
     "$ANDROID_HOME/platform-tools"
-    "$HOME/.deno/bin"
+    "$VOLTA_HOME/bin"
+    "$ENCORE_INSTALL/bin"
     "/opt/Postman"
   ];
 
