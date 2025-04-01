@@ -14,7 +14,7 @@
       window-padding-x = 12;
       gtk-single-instance = true;
 
-      background-opacity = 0.8;
+      # background-opacity = 0.8;
       font-family = config.fonts.fontconfig.defaultFonts.monospace;
       shell-integration-features = "sudo";
 
