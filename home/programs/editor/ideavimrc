@@ -23,6 +23,7 @@ map Q gq
 
 " --- Enable IdeaVim plugins https://jb.gg/ideavim-plugins
 set which-key
+set peekaboo " show register contents
 Plug 'justinmk/vim-sneak'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-surround'
