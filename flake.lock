@@ -79,11 +79,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1744216853,
-        "narHash": "sha256-BuAMqRVuc1yTmM+vmgx5eF9TeBE12O3l/40PLZmFfRc=",
+        "lastModified": 1744259622,
+        "narHash": "sha256-yVL5XrAjW+CYnGoX8PLmPL6TU7LYBqRvObj/sHMKu1Y=",
         "owner": "ony-boom",
         "repo": "mms",
-        "rev": "8fb50052ab9aa2c3ce1ea272e047c0ee08057f05",
+        "rev": "65a003d7b643145009f67a270f3a4fc04fdebe35",
         "type": "github"
       },
       "original": {
@@ -100,11 +100,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1744190107,
-        "narHash": "sha256-XNmPhjeT1ctaaJ+7JRocfMaPxCoTP8jVEs0Fiztqd/E=",
+        "lastModified": 1744260457,
+        "narHash": "sha256-fKc4jdEI5qoUsfkV4qS3c1y9xpZzPXWPwtqEqbwTCNE=",
         "owner": "ony-boom",
         "repo": "neovim-config",
-        "rev": "1459074b4c49b815cff8c5c795871bb21ac0c91a",
+        "rev": "f503f22642941311fa45a1ed3ec821b48c988d2d",
         "type": "github"
       },
       "original": {
