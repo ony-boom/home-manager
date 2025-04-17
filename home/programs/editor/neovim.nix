@@ -18,9 +18,9 @@
     alejandra
     stylua
     prettierd
+    vscode-langservers-extracted
 
     # lsp
-
     nil
     lua-language-server
     vscode-langservers-extracted
