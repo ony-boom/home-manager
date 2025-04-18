@@ -1,10 +1,10 @@
-{pkgs, ...}: {
+{pkgs, lib, ...}: {
   imports = [
     ./mpd.nix
   ];
 
   services.mms = {
-    enable = true;
+    enable = lib.mkDefault true;
   };
 
   home.packages = with pkgs; [

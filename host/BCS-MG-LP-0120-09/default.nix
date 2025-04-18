@@ -1,2 +1,5 @@
 {
+  services.mms = {
+    enable = false;
+  };
 }
