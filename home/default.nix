@@ -37,6 +37,7 @@
     ANDROID_HOME = "$HOME/Android/Sdk";
     VOLTA_HOME = "$HOME/.volta";
     ENCORE_INSTALL = "/home/ony/.encore";
+    GOPATH = "$HOME/go";
   };
 
   home.sessionPath = [
@@ -48,7 +49,7 @@
     "$ANDROID_HOME/platform-tools"
     "$VOLTA_HOME/bin"
     "$ENCORE_INSTALL/bin"
-    "$HOME/go/bin"
+    "$GOPATH/bin"
   ];
 
   home.stateVersion = "24.05"; # Please read the comment before changing.
