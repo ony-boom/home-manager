@@ -1,12 +1,13 @@
-{pkgs, lib, ...}: let
+{
+  pkgs,
+  lib,
+  ...
+}: let
   lua = [
     pkgs.lua51Packages.lua
     pkgs.lua51Packages.luarocks
   ];
 
-  zig = [
-    pkgs.zig
-  ];
 in {
   imports = [
     ./rust
@@ -16,11 +17,10 @@ in {
 
   home.packages = with pkgs;
     [
-      jdk
+      go
       php
       bun
       typescript
     ]
-    ++ lua
-    ++ zig;
+    ++ lua;
 }
