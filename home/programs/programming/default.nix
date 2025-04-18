@@ -8,6 +8,12 @@
     pkgs.lua51Packages.luarocks
   ];
 
+  golang = with pkgs; [
+    go
+    gopls
+    gotools
+    gofumpt
+  ];
 in {
   imports = [
     ./rust
@@ -17,10 +23,9 @@ in {
 
   home.packages = with pkgs;
     [
-      go
       php
       bun
       typescript
     ]
-    ++ lua;
+    ++ lua ++ golang;
 }
