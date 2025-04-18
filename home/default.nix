@@ -48,7 +48,7 @@
     "$ANDROID_HOME/platform-tools"
     "$VOLTA_HOME/bin"
     "$ENCORE_INSTALL/bin"
-    "/opt/Postman"
+    "$HOME/go/bin"
   ];
 
   home.stateVersion = "24.05"; # Please read the comment before changing.
