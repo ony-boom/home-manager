@@ -1,6 +1,6 @@
-{config, ...}: {
+{config, lib, ...}: {
   services.mpd = {
-    enable = true;
+    enable =  lib.mkDefault true;
     musicDirectory = "${config.home.homeDirectory}/Music";
     playlistDirectory = "${config.home.homeDirectory}/.config/mpd/playlists";
     dbFile = "${config.home.homeDirectory}/.config/mpd/database";
@@ -15,7 +15,7 @@
   };
 
   programs.ncmpcpp = {
-    enable = true;
+    enable = config.services.mpd.enable;
     mpdMusicDir = "~/Music";
   };
 }

@@ -1,5 +1,6 @@
 {
-  services.mms = {
-    enable = false;
+  services = {
+    mpd.enable = false;
+    mms.enable = false;
   };
 }
