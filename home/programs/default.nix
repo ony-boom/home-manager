@@ -28,5 +28,6 @@
     emote
     wl-clipboard
     xclip
+    tree-sitter
   ];
 }
