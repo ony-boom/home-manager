@@ -25,5 +25,7 @@
     lua-language-server
     vscode-langservers-extracted
     typescript-language-server
+    svelte-language-server
+    eslint
   ];
 }
