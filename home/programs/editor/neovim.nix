@@ -27,5 +27,6 @@
     typescript-language-server
     svelte-language-server
     eslint
+    tailwindcss-language-server
   ];
 }
