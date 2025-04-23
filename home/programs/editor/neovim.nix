@@ -28,5 +28,6 @@
     svelte-language-server
     eslint
     tailwindcss-language-server
+    nodePackages."@astrojs/language-server"
   ];
 }
