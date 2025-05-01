@@ -1,7 +1,7 @@
 {
   imports = [
     ./zed.nix
-    ./neovim.nix
+    ./neovim
   ];
   home.file.".ideavimrc".source = ./ideavimrc;
 }

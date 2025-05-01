@@ -9,7 +9,7 @@
   };
 
   xdg.configFile."nvim" = {
-    source = config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/Repos/mine/neovim-config";
+    source = config.lib.file.mkOutOfStoreSymlink "./config";
     recursive = true;
   };
 

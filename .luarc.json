@@ -1,11 +1,6 @@
 {
     "diagnostics.globals": [
-        "client",
-        "awesome",
-        "tag",
-        "screen",
-        "awful",
-        "xressources",
-        "xresources"
+        "vim",
+        "Snacks"
     ]
 }
