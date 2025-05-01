@@ -5,6 +5,7 @@
     ./editor
     ./media
     ./nix
+    ./misc
   ];
   programs = {
     git = {

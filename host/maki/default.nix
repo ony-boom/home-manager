@@ -4,8 +4,9 @@
     installScripts = ["nvidia"];
   };
 
+  programs.wofi.enabled = true;
+
   home.packages = with pkgs; [
-    wofi
     scrcpy
     font-manager
     cava
