@@ -8,6 +8,7 @@
     package = pkgs.nixGL pkgs.ghostty;
 
     settings = {
+      command  = "zsh";
       theme = "dark:catppuccin-mocha,light:catppuccin-latte";
 
       window-padding-y = 10;
@@ -17,8 +18,9 @@
       gtk-single-instance = true;
 
       # background-opacity = 0.8;
-      font-family = config.fonts.fontconfig.defaultFonts.monospace;
+      shell-integration = "zsh";
       shell-integration-features = "sudo";
+      font-family = config.fonts.fontconfig.defaultFonts.monospace;
 
       keybind = [
         "ctrl+shift+r=reload_config"
