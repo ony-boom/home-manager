@@ -17,7 +17,7 @@
   };
 in {
   programs.kitty = {
-    enable = config.defaulrtApps.terminal == "kitty";
+    enable = config.defaultApps.terminal == "kitty";
 
     package = pkgs.nixGL pkgs.kitty;
 
