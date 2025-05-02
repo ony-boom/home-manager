@@ -32,7 +32,8 @@
     DENO_NO_UPDATE_CHECK = 1;
     PNPM_HOME = "$HOME/.local/share/pnpm";
 
-    NPM_CONFIG_UPDATE_NOTIFIER = false;
+    # Disable node update checker, I think...
+    NO_UPDATE_NOTIFIER = "true";
 
     ANDROID_HOME = "$HOME/Android/Sdk";
     VOLTA_HOME = "$HOME/.volta";

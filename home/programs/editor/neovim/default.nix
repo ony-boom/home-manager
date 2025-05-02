@@ -15,6 +15,7 @@
 
   home.packages = with pkgs; [
     # format
+    shfmt
     alejandra
     stylua
     prettierd
