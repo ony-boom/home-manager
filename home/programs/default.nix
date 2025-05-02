@@ -25,7 +25,6 @@
   };
 
   home.packages = with pkgs; [
-    gawk
     nixd
     emote
     wl-clipboard
