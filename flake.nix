@@ -48,17 +48,9 @@
       home-manager.lib.homeManagerConfiguration {
         inherit pkgs;
         extraSpecialArgs = {
-          inherit hostname self username system stablePkgs;
+          inherit hostname self nixgl username system stablePkgs;
         };
         modules = [
-          ({config, ...}: {
-            nixGL.packages = nixgl.packages;
-            nixpkgs.overlays = [
-              (final: prev: {
-                nixGL = pkg: config.lib.nixGL.wrap pkg;
-              })
-            ];
-          })
           ./home
           ./host
           inputs.mms.homeManagerModules.${system}
@@ -72,9 +64,12 @@
   in {
     formatter.${system} = pkgs.alejandra;
 
-    homeConfigurations = {
-      "${username}@${hosts.work}" = mkHomeConfig hosts.work;
-      "${username}@${hosts.home}" = mkHomeConfig hosts.home;
-    };
+    homeConfigurations =
+      nixpkgs.lib.mapAttrs'
+      (key: host: {
+        name = "${username}@${host}";
+        value = mkHomeConfig host;
+      })
+      hosts;
   };
 }

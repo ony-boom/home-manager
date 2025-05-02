@@ -1,5 +1,6 @@
 {
   pkgs,
+  config,
   ...
 }: let
   themes = {
@@ -16,7 +17,7 @@
   };
 in {
   programs.kitty = {
-    enable = false;
+    enable = config.defaulrtApps.terminal == "kitty";
 
     package = pkgs.nixGL pkgs.kitty;
 

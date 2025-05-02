@@ -4,11 +4,11 @@
   ...
 }: {
   programs.ghostty = {
-    enable = true;
+    enable = config.defaultApps.terminal == "ghostty";
     package = pkgs.nixGL pkgs.ghostty;
 
     settings = {
-      command  = "zsh";
+      command = "zsh";
       theme = "dark:catppuccin-mocha,light:catppuccin-latte";
 
       window-padding-y = 10;
