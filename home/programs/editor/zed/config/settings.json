@@ -6,7 +6,11 @@
     },
     "version": "2"
   },
-  "icon_theme": "Colored Zed Icons Theme Dark",
+  "icon_theme": {
+    "mode": "system",
+    "light": "JetBrains New UI Icons (Light)",
+    "dark": "JetBrains New UI Icons (Dark)"
+  },
   "features": {
     "edit_prediction_provider": "zed"
   },
