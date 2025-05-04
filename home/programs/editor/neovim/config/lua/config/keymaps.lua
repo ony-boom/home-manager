@@ -5,7 +5,7 @@ local map = function(mode, lhs, rhs, opts)
 end
 
 map("n", "<leader>q", ":q<CR>", { desc = "Quit" })
-map("n", "<leader>/", ":gcc<CR>", { desc = "Quit" })
+map("n", "<leader>/", ":normal gcc<CR>", { desc = "Quit" })
 map({ "n", "i" }, "<C-s>", ":w<CR>", { desc = "Save File" })
 map("n", "<leader>c", ":bd<CR>", { desc = "Close buffer" })
 map("n", "]b", ":bnext<CR>", { desc = "Next buffer" })

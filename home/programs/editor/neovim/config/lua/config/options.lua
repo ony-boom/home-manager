@@ -16,6 +16,7 @@ local options = {
   foldlevelstart = 99,
   winborder = "rounded",
   undofile = true,
+  timeoutlen = 1000,
 }
 
 for key, value in pairs(options) do

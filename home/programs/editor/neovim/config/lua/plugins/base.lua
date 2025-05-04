@@ -52,4 +52,12 @@ return {
       config = function() require("gitsigns").setup() end,
     },
   },
+
+  {
+    "numToStr/Comment.nvim",
+    opts = {},
+    config = function()
+      require("Comment").setup()
+    end,
+  },
 }
