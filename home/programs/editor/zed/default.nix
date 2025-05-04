@@ -2,6 +2,7 @@
   pkgs,
   lib,
   config,
+  username,
   ...
 }: {
   programs.zed-editor = {
@@ -10,7 +11,7 @@
   };
 
   xdg.configFile."zed" = {
-    source = config.lib.file.mkOutOfStoreSymlink ./config;
+    source = config.lib.file.mkOutOfStoreSymlink /home/${username}/.config/home-manager/home/programs/editor/zed/config;
     recursive = true;
   };
 }
