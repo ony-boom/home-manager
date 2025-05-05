@@ -25,7 +25,7 @@
 
     dotDir = ".config/zsh";
 
-    initExtra = builtins.readFile ./main.zsh;
+    initContent = builtins.readFile ./main.zsh;
   };
 
   # xdg.configFile."zsh/completions".source = ./completions;

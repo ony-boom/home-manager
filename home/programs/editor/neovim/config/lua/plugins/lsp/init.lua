@@ -29,12 +29,8 @@ return {
       svelte = {},
       tailwindcss = {},
       emmet_language_server = {},
-      vtsls = {
-        root_markers = { "package.json", "tsconfig.json" },
-      },
-      denols = {
-        root_markers = { "deno.json", "deno.jsonc" },
-      },
+      vtsls = {},
+      denols = {},
       jsonls = {
         capabilities = snippets_capabilities,
         settings = {
