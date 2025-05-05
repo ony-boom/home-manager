@@ -1,37 +1,59 @@
-local keymaps = require "config.keymaps"
-local on_attach = require "plugins.lsp.on_attach"
-local servers = require "plugins.lsp.servers"
-
---- @type LazySpec
 return {
   "neovim/nvim-lspconfig",
   dependencies = { "saghen/blink.cmp", "b0o/schemastore.nvim" },
 
-  opts = {
-    servers = servers,
-  },
+  config = function()
+    local snippets_capabilities = {
+      textDocument = {
+        completion = {
+          completionItem = {
+            snippetSupport = true,
+          },
+        },
+      },
+    }
 
-  config = function(_, opts)
-    local capabilities = require("blink.cmp").get_lsp_capabilities()
+    local servers = {
+      lua_ls = {},
+      nil_ls = {},
+      gopls = {},
+      html = {
+        capabilities = snippets_capabilities,
+      },
+      cssls = {
+        capabilities = snippets_capabilities,
+      },
+      astro = {},
+      rust_analyzer = {},
+      eslint = {},
+      svelte = {},
+      tailwindcss = {},
+      emmet_language_server = {},
+      ts_ls = {
+        root_markers = { "package.json", "tsconfig.json" },
+      },
+      denols = {
+        root_markers = { "deno.json", "deno.jsonc" },
+      },
+      jsonls = {
+        capabilities = snippets_capabilities,
+        settings = {
+          json = {
+            schemas = require("schemastore").json.schemas(),
+            validate = { enable = true },
+          },
+        },
+      },
+    }
 
-    for name, server_opts in pairs(opts.servers) do
-      local config = type(server_opts) == "function" and server_opts() or server_opts
-
-      local server_on_attach = config.on_attach
-      config.on_attach = function(client, bufnr)
-        on_attach(client, bufnr)
-        if server_on_attach then server_on_attach(client, bufnr) end
+    for name, config in pairs(servers) do
+      if next(config) ~= nil then
+        vim.lsp.config(name, config)
+      else
+        vim.lsp.enable(name)
       end
-
-      vim.lsp.enable(name)
-      vim.lsp.config(
-        name,
-        vim.tbl_deep_extend("force", {
-          capabilities = capabilities,
-        }, config)
-      )
     end
 
-    keymaps.map("n", "<leader>ld", vim.diagnostic.open_float, { desc = "Line diagnostic" })
+    require "plugins.lsp.lsp_attach"
   end,
 }
