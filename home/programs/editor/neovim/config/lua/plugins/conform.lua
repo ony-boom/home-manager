@@ -23,6 +23,8 @@ return {
         go = { "gofumpt", "goimports" },
         javascript = prettiers,
         typescript = prettiers,
+        javascriptreact = prettiers,
+        typescriptreact = prettiers,
         html = prettiers,
         css = prettiers,
         rust = { "rustfmt" },
