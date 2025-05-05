@@ -13,6 +13,7 @@ return {
   eslint = {},
   svelte = {},
   tailwindcss = {},
+  emmet_language_server = {},
 
   html = {
     capabilities = snippets_capabilities,

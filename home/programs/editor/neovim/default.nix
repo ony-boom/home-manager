@@ -16,19 +16,19 @@
   home.packages = with pkgs; [
     # format
     shfmt
-    alejandra
     stylua
     prettierd
-    vscode-langservers-extracted
+    alejandra
 
     # lsp
     nil
-    lua-language-server
-    vscode-langservers-extracted
-    typescript-language-server
-    svelte-language-server
     eslint
+    lua-language-server
+    emmet-language-server
+    svelte-language-server
+    typescript-language-server
     tailwindcss-language-server
+    vscode-langservers-extracted
     nodePackages."@astrojs/language-server"
   ];
 }

@@ -12,7 +12,6 @@ return {
   },
 
   config = function(_, opts)
-    local lspconfig = require "lspconfig"
     local capabilities = require("blink.cmp").get_lsp_capabilities()
 
     for name, server_opts in pairs(opts.servers) do
@@ -24,9 +23,13 @@ return {
         if server_on_attach then server_on_attach(client, bufnr) end
       end
 
-      lspconfig[name].setup(vim.tbl_deep_extend("force", {
-        capabilities = capabilities,
-      }, config))
+      vim.lsp.enable(name)
+      vim.lsp.config(
+        name,
+        vim.tbl_deep_extend("force", {
+          capabilities = capabilities,
+        }, config)
+      )
     end
 
     keymaps.map("n", "<leader>ld", vim.diagnostic.open_float, { desc = "Line diagnostic" })
