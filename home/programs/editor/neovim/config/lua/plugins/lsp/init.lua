@@ -29,7 +29,7 @@ return {
       svelte = {},
       tailwindcss = {},
       emmet_language_server = {},
-      ts_ls = {
+      vtsls = {
         root_markers = { "package.json", "tsconfig.json" },
       },
       denols = {
@@ -47,11 +47,8 @@ return {
     }
 
     for name, config in pairs(servers) do
-      if next(config) ~= nil then
-        vim.lsp.config(name, config)
-      else
-        vim.lsp.enable(name)
-      end
+      if next(config) ~= nil then vim.lsp.config(name, config) end
+      vim.lsp.enable(name)
     end
 
     require "plugins.lsp.lsp_attach"

@@ -23,10 +23,11 @@
     # lsp
     nil
     eslint
+    vtsls
+    typescript
     lua-language-server
     emmet-language-server
     svelte-language-server
-    typescript-language-server
     tailwindcss-language-server
     vscode-langservers-extracted
     nodePackages."@astrojs/language-server"

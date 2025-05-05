@@ -81,5 +81,23 @@ vim.api.nvim_create_autocmd("LspAttach", {
         })
       end
     end
+
+    if client.name == "denols" then
+      local clients = (vim.lsp.get_clients) {
+        bufnr = bufnr,
+        name = "vtsls",
+      }
+      for _, c in ipairs(clients) do
+        vim.lsp.stop_client(c.id, true)
+      end
+    end
+
+    if client.name == "vtsls" then
+      local deno_clients = (vim.lsp.get_clients) {
+        bufnr = bufnr,
+        name = "denols",
+      }
+      if next(deno_clients) then vim.lsp.stop_client(client.id, true) end
+    end
   end,
 })
