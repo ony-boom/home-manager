@@ -1,34 +1,37 @@
--- this is for formatting code
 return {
   "stevearc/conform.nvim",
   event = { "BufWritePre" },
   cmd = { "ConformInfo" },
   keys = {
     {
-      -- Customize or remove this keymap to your liking
       "<leader>lf",
       function() require("conform").format { async = true } end,
       mode = "",
       desc = "Format buffer",
     },
   },
-  ---@module "conform"
-  ---@type conform.setupOpts
-  opts = {
-    formatters_by_ft = {
-      zsh = { "shfmt" },
-      sh = { "shfmt" },
-      lua = { "stylua" },
-      nix = { "alejandra" },
-      go = { "gofumpt", "goimports" },
-      javascript = { "prettierd", "prettier", stop_after_first = true },
-      rust = { "rustfmt" },
-    },
-    default_format_opts = {
-      lsp_format = "fallback",
-    },
-    format_on_save = nil,
-    -- Customize formatters
-    formatters = {},
-  },
+  opts = function()
+    local prettiers = { "prettierd", "prettier", stop_after_first = true }
+    local sh_like = { "shfmt" }
+
+    return {
+      formatters_by_ft = {
+        zsh = sh_like,
+        sh = sh_like,
+        lua = { "stylua" },
+        nix = { "alejandra" },
+        go = { "gofumpt", "goimports" },
+        javascript = prettiers,
+        typescript = prettiers,
+        html = prettiers,
+        css = prettiers,
+        rust = { "rustfmt" },
+      },
+      default_format_opts = {
+        lsp_format = "fallback",
+      },
+      format_on_save = nil,
+      formatters = {},
+    }
+  end,
 }
