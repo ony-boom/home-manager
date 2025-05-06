@@ -26,7 +26,6 @@ return {
       astro = {},
       rust_analyzer = {},
       svelte = {},
-      tailwindcss = {},
       emmet_language_server = {},
       jsonls = {
         capabilities = snippets_capabilities,
@@ -41,6 +40,7 @@ return {
 
     local servers_with_setup = {
       eslint = {},
+      tailwindcss = {},
       denols = {
         root_dir = lspconfig.util.root_pattern { "deno.json", "deno.jsonc" },
       },
