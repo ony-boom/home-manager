@@ -36,28 +36,19 @@ return {
           },
         },
       },
-    }
-
-    local servers_with_setup = {
       eslint = {},
       tailwindcss = {},
       denols = {
         root_dir = lspconfig.util.root_pattern { "deno.json", "deno.jsonc" },
       },
-      vtsls = {
+      ts_ls = {
         root_dir = lspconfig.util.root_pattern "package.json",
         single_file_support = false,
       },
     }
 
-    -- Standard server setup
-    for name, config in pairs(servers) do
-      if next(config) ~= nil then vim.lsp.config(name, config) end
-      vim.lsp.enable(name)
-    end
-
     -- Servers with custom setup
-    for name, config in pairs(servers_with_setup) do
+    for name, config in pairs(servers) do
       lspconfig[name].setup(config)
     end
 
