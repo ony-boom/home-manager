@@ -27,6 +27,7 @@
   home.packages = with pkgs; [
     emote
     xclip
+    copyq
     wl-clipboard
   ];
 }
