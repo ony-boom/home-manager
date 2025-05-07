@@ -14,6 +14,9 @@
   };
 
   home.packages = with pkgs; [
+    # misc
+    tree-sitter
+
     # format
     shfmt
     stylua

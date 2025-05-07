@@ -28,7 +28,7 @@
     nixd
     emote
     wl-clipboard
+    clipse
     xclip
-    tree-sitter
   ];
 }
