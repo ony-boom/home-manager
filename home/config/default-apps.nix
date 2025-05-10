@@ -10,11 +10,12 @@ in {
     type = lib.types.submodule {
       options = {
         terminal = mkDefaultApp ["ghostty" "kitty"] "ghostty";
-        # browser = mkDefaultApp [ "firefox" "chromium" ] "firefox";
+        shell = mkDefaultApp ["zsh" "fish" "nu"] "nu";
       };
     };
     default = {
       terminal = "ghostty";
+      shell = "nu";
     };
     description = "Default applications to be used across the system.";
   };

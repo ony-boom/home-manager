@@ -8,7 +8,7 @@
     package = pkgs.nixGL pkgs.ghostty;
 
     settings = {
-      command = "zsh";
+      command = config.defaultApps.shell ? "nu";
       theme = "dark:catppuccin-mocha,light:catppuccin-latte";
 
       window-padding-y = 10;

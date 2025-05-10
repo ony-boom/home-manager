@@ -10,9 +10,3 @@ $env.PATH = (
   | append ($env.HOME | path join .local share pnpm)
   | uniq
 )
-
-def ks [] {
-  let session = $"(gum file ~/.config/kitty/sessions)"
-  print $"Starting kitty session: ($session)"
-  zsh -c "kitty session $session"
-}
