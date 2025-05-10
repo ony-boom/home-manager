@@ -24,6 +24,7 @@ return {
       cssls = {
         capabilities = snippets_capabilities,
       },
+      astro = {},
       rust_analyzer = {},
       svelte = {},
       emmet_language_server = {},
