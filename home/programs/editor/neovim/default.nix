@@ -19,6 +19,7 @@
 
     # format
     shfmt
+    nufmt
     stylua
     prettierd
     alejandra
