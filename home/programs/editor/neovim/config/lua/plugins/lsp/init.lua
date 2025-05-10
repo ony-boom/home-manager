@@ -17,13 +17,13 @@ return {
       lua_ls = {},
       nil_ls = {},
       gopls = {},
+      nushell = {},
       html = {
         capabilities = snippets_capabilities,
       },
       cssls = {
         capabilities = snippets_capabilities,
       },
-      astro = {},
       rust_analyzer = {},
       svelte = {},
       emmet_language_server = {},
