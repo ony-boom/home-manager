@@ -15,7 +15,7 @@ in {
     };
     default = {
       terminal = "ghostty";
-      shell = "nu";
+      shell = "zsh";
     };
     description = "Default applications to be used across the system.";
   };

@@ -14,6 +14,10 @@
   home = {
     inherit username;
     homeDirectory = "/home/${username}";
+    shell = {
+      enableZshIntegration = true;
+      enableNushellIntegration = true;
+    };
   };
 
   # enable desktop integrations
@@ -32,12 +36,7 @@
     DENO_NO_UPDATE_CHECK = 1;
     PNPM_HOME = "$HOME/.local/share/pnpm";
 
-    # Disable node update checker, I think...
-    NO_UPDATE_NOTIFIER = "true";
-
     ANDROID_HOME = "$HOME/Android/Sdk";
-    VOLTA_HOME = "$HOME/.volta";
-    ENCORE_INSTALL = "/home/ony/.encore";
     GOPATH = "$HOME/go";
   };
 
@@ -45,11 +44,7 @@
     "$HOME/.local/bin"
     "$HOME/.cargo/bin"
     "$HOME/.deno/bin"
-    "$HOME/.local/share/pnpm"
-    "$ANDROID_HOME/emulator"
-    "$ANDROID_HOME/platform-tools"
-    "$VOLTA_HOME/bin"
-    "$ENCORE_INSTALL/bin"
+    "$PNPM_HOME"
     "$GOPATH/bin"
   ];
 
