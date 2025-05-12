@@ -13,8 +13,8 @@
 
       window-padding-y = 10;
       window-padding-x = 12;
-      gtk-titlebar = false;
-      window-decoration = "none";
+      # gtk-titlebar = false;
+      # window-decoration = "none";
       gtk-single-instance = true;
 
       font-size = 14;
