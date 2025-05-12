@@ -20,7 +20,7 @@
       # background-opacity = 0.8;
       shell-integration = "zsh";
       shell-integration-features = "sudo";
-      font-family = config.fonts.fontconfig.defaultFonts.monospace;
+      font-family = builtins.head config.fonts.fontconfig.defaultFonts.monospace;
 
       keybind = [
         "ctrl+shift+r=reload_config"
