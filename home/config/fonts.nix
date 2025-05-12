@@ -6,7 +6,7 @@
   ];
 
   monospacefontPriorities = {
-    "MesloLGL Nerd Font" = 0;
+    "MesloLGS Nerd Font" = 0;
     "ZedMono NF" = 1;
     "JetBrainsMono Nerd Font" = 2;
   };
