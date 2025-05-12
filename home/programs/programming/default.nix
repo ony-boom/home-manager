@@ -23,7 +23,7 @@ in {
 
   home.packages = with pkgs;
     [
-      php
+      nixd
       bun
       typescript
     ]

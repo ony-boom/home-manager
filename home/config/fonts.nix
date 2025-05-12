@@ -1,13 +1,13 @@
 {pkgs, ...}: let
   nerdFonts = with pkgs.nerd-fonts; [
-    jetbrains-mono
-    zed-mono
     meslo-lg
+    jetbrains-mono
+    caskaydia-mono
   ];
 
   monospacefontPriorities = {
-    "MesloLGS Nerd Font" = 0;
-    "ZedMono NF" = 1;
+    "CaskaydiaMono NF" = 0;
+    "MesloLGS Nerd Font" = 1;
     "JetBrainsMono Nerd Font" = 2;
   };
 
