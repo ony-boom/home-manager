@@ -1,7 +1,7 @@
 {config, ...}: {
   xdg.configFile = {
     "hypr" = {
-      source = config.lib.file.mkOutOfStoreSymlink /${config.home.homeDirectory}/.config/home-manager/home/programs/wm/hyprland/config;
+      source = config.lib.file.mkOutOfStoreSymlink /${config.home.homeDirectory}/.config/home-manager/home/programs/wm/hyprland/hypr;
       recursive = true;
     };
 
