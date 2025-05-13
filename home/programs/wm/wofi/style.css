@@ -1,5 +1,6 @@
 window {
   font-size: 16px;
+  border-radius: 12px;
 }
 
 #outer-box {
