@@ -13,9 +13,13 @@
 
       window-padding-y = 10;
       window-padding-x = 12;
-      # gtk-titlebar = false;
-      # window-decoration = "none";
-      gtk-single-instance = true;
+
+      # just for title bar to look good
+      gtk-wide-tabs = false;
+      gtk-titlebar = false;
+      window-decoration = "none";
+      window-theme = "ghostty";
+      adw-toolbar-style = "flat";
 
       font-size = 14;
       background-opacity = 0.9;
