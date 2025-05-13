@@ -2,7 +2,6 @@
   "theme.font.size": "1rem",
   "theme.bar.floating": false,
   "theme.bar.buttons.enableBorders": false,
-
   "menus.clock.weather.enabled": false,
   "menus.clock.time.military": true,
   "menus.clock.time.hideSeconds": true,
@@ -28,7 +27,6 @@
   "menus.dashboard.controls.enabled": false,
   "menus.dashboard.shortcuts.left.shortcut4.icon": "",
   "menus.dashboard.shortcuts.left.shortcut4.tooltip": "",
-
   "bar.layouts": {
     "*": {
       "left": [
@@ -47,5 +45,10 @@
         "notifications"
       ]
     }
-  }
+  },
+  "theme.bar.buttons.workspaces.enableBorder": false,
+  "bar.workspaces.show_icons": false,
+  "bar.windowtitle.custom_title": true,
+  "theme.bar.buttons.systray.enableBorder": false,
+  "bar.clock.format": "%b %d  %I:%M"
 }
