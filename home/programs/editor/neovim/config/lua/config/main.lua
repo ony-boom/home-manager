@@ -1,5 +1,7 @@
 local theme = require "config.themes"
 
+vim.wo.fillchars='eob: '
+
 vim.cmd("colorscheme " .. theme.get_default())
 
 vim.api.nvim_create_autocmd("TextYankPost", {
