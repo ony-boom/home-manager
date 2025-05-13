@@ -29,6 +29,5 @@
     emote
     xclip
     copyq
-    wl-clipboard
   ];
 }
