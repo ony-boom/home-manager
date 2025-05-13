@@ -15,7 +15,6 @@
       window-padding-x = 12;
 
       # just for title bar to look good
-      gtk-wide-tabs = false;
       gtk-titlebar = false;
       window-decoration = "none";
       window-theme = "ghostty";
