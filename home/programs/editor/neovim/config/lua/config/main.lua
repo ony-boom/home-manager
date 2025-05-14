@@ -1,6 +1,7 @@
 local theme = require "config.themes"
 
-vim.wo.fillchars='eob: '
+-- remove the `~` characters at the end of the buffer
+vim.opt.fillchars:append { eob = " " }
 
 vim.cmd("colorscheme " .. theme.get_default())
 

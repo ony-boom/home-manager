@@ -1,12 +1,14 @@
-{config, ...}: {
+{config, ...}: let
+  mkHmPath = path: config.lib.file.mkOutOfStoreSymlink /${config.home.homeDirectory}/.config/home-manager/home/programs${path};
+in {
   xdg.configFile = {
     "hypr" = {
-      source = config.lib.file.mkOutOfStoreSymlink /${config.home.homeDirectory}/.config/home-manager/home/programs/wm/hyprland/hypr;
+      source = mkHmPath /wm/hyprland/hypr;
       recursive = true;
     };
 
     "hyprpanel" = {
-      source = config.lib.file.mkOutOfStoreSymlink /${config.home.homeDirectory}/.config/home-manager/home/programs/wm/hyprland/hyprpanel;
+      source = mkHmPath /wm/hyprland/hyprpanel;
       recursive = true;
     };
   };
