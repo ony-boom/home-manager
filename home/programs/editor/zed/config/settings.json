@@ -12,7 +12,7 @@
     "dark": "JetBrains New UI Icons (Dark)"
   },
   "features": {
-    "edit_prediction_provider": "zed"
+    "edit_prediction_provider": "copilot"
   },
   "vim_mode": true,
   "ui_font_size": 16,
