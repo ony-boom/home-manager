@@ -4,9 +4,10 @@
     ./programming
     ./editor
     ./media
-    ./nix
     ./wm
+    ./nix.nix
   ];
+
   programs = {
     git = {
       enable = true;
@@ -27,7 +28,6 @@
   home.packages = with pkgs; [
     font-manager
     emote
-    xclip
     copyq
   ];
 }
