@@ -13,6 +13,7 @@
     gopls
     gotools
     gofumpt
+    go-task
   ];
 in {
   imports = [
