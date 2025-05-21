@@ -1,5 +1,6 @@
 {pkgs, ...}: {
   programs.qutebrowser = {
+    enable = true;
     package = pkgs.nixGL pkgs.qutebrowser;
 
     searchEngines = {
