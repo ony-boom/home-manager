@@ -3,6 +3,8 @@
     enable = true;
     package = pkgs.nixGL pkgs.qutebrowser;
 
+    loadAutoconfig = true;
+
     searchEngines = {
       w = "https://en.wikipedia.org/wiki/Special:Search?search={}&amp;go=Go&amp;ns0=1";
       aw = "https://wiki.archlinux.org/?search={}";
