@@ -14,6 +14,11 @@ if os.path.exists(config.configdir / "theme.py"):
     import theme
     theme.setup(c, 'mocha', True)
 
+c.colors.webpage.darkmode.enabled = True
+c.colors.webpage.darkmode.algorithm = 'lightness-cielab'
+c.colors.webpage.darkmode.policy.images = 'never'
+config.set('colors.webpage.darkmode.enabled', False, 'file://*')
+
 c.auto_save.session = True
 c.tabs.width = '7%'
 c.tabs.indicator.width = 0 #
