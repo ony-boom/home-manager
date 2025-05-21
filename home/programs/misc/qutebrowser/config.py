@@ -1,16 +1,25 @@
 import os
+import importlib.util
+from pathlib import Path
 from urllib.request import urlopen
 
-# load your autoconfig, use this, if the rest of your config is empty!
-config.load_autoconfig()
+home_dir = Path.home()
+theme_dir = home_dir / ".local" / "share" / "qutebrowser"
+theme_dir.mkdir(parents=True, exist_ok=True)
 
-if not os.path.exists(config.configdir / "theme.py"):
-    theme = "https://raw.githubusercontent.com/catppuccin/qutebrowser/main/setup.py"
-    with urlopen(theme) as themehtml:
-        with open(config.configdir / "theme.py", "a") as file:
-            file.writelines(themehtml.read().decode("utf-8"))
+theme_path = theme_dir / "theme.py"
 
-if os.path.exists(config.configdir / "theme.py"):
-    import theme
+if not theme_path.exists():
+    theme_url = "https://raw.githubusercontent.com/catppuccin/qutebrowser/main/setup.py"
+    with urlopen(theme_url) as response:
+        theme_code = response.read().decode("utf-8")
+        with open(theme_path, "w") as file:
+            file.write(theme_code)
+
+if theme_path.exists():
+    spec = importlib.util.spec_from_file_location("theme", theme_path)
+    theme = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(theme)
     theme.setup(c, 'mocha', True)
 
+c.tabs.padding = {'top': 6, 'bottom': 6, 'left': 8, 'right': 8}

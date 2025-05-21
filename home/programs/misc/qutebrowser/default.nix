@@ -6,11 +6,12 @@
       w = "https://en.wikipedia.org/wiki/Special:Search?search={}&amp;go=Go&amp;ns0=1";
       aw = "https://wiki.archlinux.org/?search={}";
       nw = "https://wiki.nixos.org/index.php?search={}";
-      g = "https://www.google.com/search?hl=en&amp;q={}";
+      g = "https://www.google.com/search?q={}";
     };
 
     settings = {
       auto_save.session = true;
+      window.hide_decoration = true;
 
       content = {
         autoplay = false;
@@ -22,15 +23,9 @@
       tabs = {
         width = "8%";
         indicator.width = 0;
-        padding = {
-          top = 6;
-          left = 8;
-          right = 8;
-          bottom = 6;
-        };
       };
 
-      colors.webpage.preferred_color_scheme = "dark";
+      colors.webpage.preferred_color_scheme = "auto";
     };
     extraConfig = builtins.readFile ./config.py;
   };
