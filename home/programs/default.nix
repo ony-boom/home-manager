@@ -5,7 +5,7 @@
     ./editor
     ./media
     ./wm
-    ./others
+    ./misc
     ./nix.nix
   ];
 
