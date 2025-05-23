@@ -7,10 +7,9 @@
     loadAutoconfig = true;
 
     searchEngines = {
-      w = "https://en.wikipedia.org/wiki/Special:Search?search={}&amp;go=Go&amp;ns0=1";
       aw = "https://wiki.archlinux.org/?search={}";
-      np = "https://search.nixos.org/packages?channel=unstable&q={}";
       g = "https://www.google.com/search?q={}";
+      np = "https://search.nixos.org/packages?channel=unstable&from=0&size=50&sort=relevance&type=packages&query={}";
     };
 
     settings = {
