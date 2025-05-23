@@ -1,4 +1,5 @@
 {pkgs, ...}: {
+  home.packages = with pkgs; [vim-full];
   programs.qutebrowser = {
     enable = true;
     package = pkgs.nixGL pkgs.qutebrowser;
@@ -8,7 +9,7 @@
     searchEngines = {
       w = "https://en.wikipedia.org/wiki/Special:Search?search={}&amp;go=Go&amp;ns0=1";
       aw = "https://wiki.archlinux.org/?search={}";
-      nw = "https://wiki.nixos.org/index.php?search={}";
+      np = "https://search.nixos.org/packages?channel=unstable&q={}";
       g = "https://www.google.com/search?q={}";
     };
 
