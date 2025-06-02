@@ -5,6 +5,12 @@
     caskaydia-mono
   ];
 
+  mapleFonts = with pkgs; [
+    maple-mono.truetype
+    maple-mono.NF-unhinted
+    maple-mono.NF-CN-unhinted
+  ];
+
   monospacefontPriorities = {
     "CaskaydiaMono NF" = 0;
     "MesloLGS Nerd Font" = 1;
@@ -24,5 +30,6 @@ in {
     [
       open-sans
     ]
+    ++ mapleFonts
     ++ nerdFonts;
 }
