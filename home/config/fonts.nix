@@ -12,9 +12,10 @@
   ];
 
   monospacefontPriorities = {
-    "CaskaydiaMono NF" = 0;
-    "MesloLGS Nerd Font" = 1;
-    "JetBrainsMono Nerd Font" = 2;
+    "Maple Mono NF" = 0;
+    "CaskaydiaMono NF" = 1;
+    "MesloLGS Nerd Font" = 2;
+    "JetBrainsMono Nerd Font" = 4;
   };
 
   monospaces = builtins.sort (a: b: monospacefontPriorities.${a} < monospacefontPriorities.${b}) (builtins.attrNames monospacefontPriorities);
