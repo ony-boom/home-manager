@@ -22,7 +22,7 @@
     shellAliases = {
       lg = "lazygit";
       open = "xdg-open";
-      nvim-dev = ''NVIM_APPNAME="nvim-dev" nvim'';
+      hm = "home-manager";
     };
 
     dotDir = ".config/zsh";
