@@ -7,6 +7,10 @@
     "toggle_relative_line_numbers": true
   },
 
+  "features": {
+    "edit_prediction_provider": "copilot"
+  },
+
   "buffer_font_size": 19.0,
   "buffer_font_family": "Maple Mono NF",
   "buffer_font_features": {
