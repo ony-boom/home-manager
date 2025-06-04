@@ -4,6 +4,7 @@
 
   imports = [
     ./wofi
+    ./fuzzel
     ./hyprland
   ];
 }
