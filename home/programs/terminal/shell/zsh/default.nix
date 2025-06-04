@@ -23,6 +23,7 @@
       lg = "lazygit";
       open = "xdg-open";
       hm = "home-manager";
+      hms = "home-manager --impure switch -b backup";
     };
 
     dotDir = ".config/zsh";
