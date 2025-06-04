@@ -30,5 +30,6 @@
     font-manager
     emote
     copyq
+    httpie
   ];
 }
