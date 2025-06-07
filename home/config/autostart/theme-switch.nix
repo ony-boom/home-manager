@@ -1,10 +1,11 @@
 {pkgs, ...}: let
   themeSwitcher = pkgs.writeShellScriptBin "theme-switcher" ''
+
     # TODO: Use `config.gtk` for this
-    LIGHT_GTK_THEME="Colloid-Light-Catppuccin"
-    DARK_GTK_THEME="Colloid-Dark-Catppuccin"
-    LIGHT_SHELL_THEME="Colloid-Light-Catppuccin"
-    DARK_SHELL_THEME="Colloid-Dark-Catppuccin"
+    LIGHT_GTK_THEME="Colloid-Light-Gruvbox"
+    DARK_GTK_THEME="Colloid-Dark-Gruvbox"
+    LIGHT_SHELL_THEME="Colloid-Light-Gruvbox"
+    DARK_SHELL_THEME="Colloid-Dark-Gruvbox"
 
     schema_exists() {
         gsettings list-schemas | grep -q "$1"

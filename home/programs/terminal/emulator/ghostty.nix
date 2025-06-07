@@ -9,7 +9,7 @@
 
     settings = {
       command = config.defaultApps.shell;
-      theme = "dark:catppuccin-mocha,light:catppuccin-latte";
+      theme = "dark:GruvboxDarkHard,light:GruvboxLightHard";
 
       window-padding-y = 10;
       window-padding-x = 12;

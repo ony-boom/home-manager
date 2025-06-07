@@ -28,12 +28,12 @@
   },
 
   "theme": {
-    "dark": "Catppuccin Mocha",
-    "light": "Catppuccin Latte"
+    "dark": "Gruvbox Dark Hard",
+    "light": "Gruvbox Light Hard"
   },
 
   "icon_theme": {
-    "dark": "Catppuccin Mocha",
-    "light": "Catppuccin Latte"
+    "dark": "JetBrains New UI Icons (Dark)",
+    "light": "JetBrains New UI Icons (Light)"
   }
 }
