@@ -1,5 +1,5 @@
 {
-  config,
+  utils,
   pkgs,
   ...
 }: {
@@ -9,7 +9,7 @@
   };
 
   xdg.configFile."nvim" = {
-    source = config.lib.file.mkOutOfStoreSymlink /${config.home.homeDirectory}/.config/home-manager/home/programs/editor/neovim/config;
+    source = utils.mkDots "/editor/neovim/config";
     recursive = true;
   };
 

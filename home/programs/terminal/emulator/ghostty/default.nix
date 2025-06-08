@@ -1,10 +1,11 @@
 {
   config,
   pkgs,
+  utils,
   ...
 }: {
   xdg.configFile."ghostty/themes" = {
-    source = config.lib.file.mkOutOfStoreSymlink /${config.home.homeDirectory}/.config/home-manager/home/programs/terminal/emulator/ghostty/themes;
+    source = utils.mkDots "/terminal/emulator/ghostty/themes";
     recursive = true;
   };
 

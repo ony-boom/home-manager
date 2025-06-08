@@ -1,14 +1,12 @@
-{config, ...}: let
-  mkHmPath = path: config.lib.file.mkOutOfStoreSymlink /${config.home.homeDirectory}/.config/home-manager/home/programs${path};
-in {
+{utils, ...}: {
   xdg.configFile = {
     "hypr" = {
-      source = mkHmPath /wm/hyprland/hypr;
+      source = utils.mkDots "/wm/hyprland/hypr";
       recursive = true;
     };
 
     "hyprpanel" = {
-      source = mkHmPath /wm/hyprland/hyprpanel;
+      source = utils.mkDots "/wm/hyprland/hyprpanel";
       recursive = true;
     };
   };

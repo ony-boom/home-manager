@@ -4,7 +4,5 @@
   ...
 }: {
   imports =
-    lib.optional (builtins.pathExists ./${hostname}) ./${hostname}
-    ++ [
-    ];
+    lib.optional (builtins.pathExists ./${hostname}) ./${hostname};
 }

@@ -1,12 +1,23 @@
-{username, ...}: {
+{
+  username,
+  config,
+  ...
+}: let
+  utils = import ./../lib/utils.nix {inherit config;};
+in {
   imports = [
     ./modules
     ./config
     ./programs
   ];
+
   # nixpks config
   nixpkgs.config = {
     allowUnfree = true;
+  };
+
+  _module.args = {
+    inherit utils;
   };
 
   # Home Manager needs a bit of information about you and the paths it should
