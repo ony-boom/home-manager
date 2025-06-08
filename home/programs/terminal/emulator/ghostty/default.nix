@@ -3,6 +3,11 @@
   pkgs,
   ...
 }: {
+  xdg.configFile."ghostty/themes" = {
+    source = config.lib.file.mkOutOfStoreSymlink /${config.home.homeDirectory}/.config/home-manager/home/programs/terminal/emulator/ghostty/themes;
+    recursive = true;
+  };
+
   programs.ghostty = {
     enable = config.defaultApps.terminal == "ghostty";
     package = pkgs.nixGL pkgs.ghostty;
