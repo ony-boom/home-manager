@@ -1,8 +1,9 @@
 {pkgs, ...}: let
   nerdFonts = with pkgs.nerd-fonts; [
-    meslo-lg
     jetbrains-mono
     caskaydia-mono
+    fira-code
+    hasklug
   ];
 
   mapleFonts = with pkgs; [
@@ -11,14 +12,14 @@
     maple-mono.NF-CN-unhinted
   ];
 
-  monospacefontPriorities = {
-    "Maple Mono NF" = 0;
-    "CaskaydiaMono NF" = 1;
-    "MesloLGS Nerd Font" = 2;
-    "JetBrainsMono Nerd Font" = 4;
-  };
+  monospaces = [
+    "Hasklug Nerd Font"
+    "Maple Mono NF"
+    "CaskaydiaMono NF"
+    "MesloLGS Nerd Font"
+    "JetBrainsMono Nerd Font"
+  ];
 
-  monospaces = builtins.sort (a: b: monospacefontPriorities.${a} < monospacefontPriorities.${b}) (builtins.attrNames monospacefontPriorities);
 in {
   fonts.fontconfig = {
     enable = true;
