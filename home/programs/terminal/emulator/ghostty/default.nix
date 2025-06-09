@@ -3,7 +3,12 @@
   pkgs,
   utils,
   ...
-}: {
+}: let
+  theme = {
+    light = "rose-pine-dawn";
+    dark = "rose-pine";
+  };
+in {
   xdg.configFile."ghostty/themes" = {
     source = utils.mkDots "/terminal/emulator/ghostty/themes";
     recursive = true;
@@ -15,7 +20,7 @@
 
     settings = {
       command = config.defaultApps.shell;
-      theme = "light:gruvbox-material-hard-light,dark:gruvbox-material-hard-dark";
+      theme = "light:${theme.light},dark:${theme.dark}";
 
       window-padding-y = 10;
       window-padding-x = 12;

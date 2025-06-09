@@ -1,6 +1,7 @@
 local list = {
   catppuccin = "catppuccin",
   gruvbox = "gruvbox-material",
+  rosepine = "rose-pine",
 }
 
 local get_default_theme = function() return list.gruvbox end
