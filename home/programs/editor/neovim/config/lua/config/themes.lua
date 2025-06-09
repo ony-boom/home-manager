@@ -4,6 +4,6 @@ local list = {
   rosepine = "rose-pine",
 }
 
-local get_default_theme = function() return list.gruvbox end
+local get_default_theme = function() return list.rosepine end
 
 return { list = list, get_default = get_default_theme }
