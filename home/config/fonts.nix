@@ -15,11 +15,10 @@
   monospaces = [
     "Hasklug Nerd Font"
     "Maple Mono NF"
+    "FiraCode Nerd Font"
     "CaskaydiaMono NF"
-    "MesloLGS Nerd Font"
     "JetBrainsMono Nerd Font"
   ];
-
 in {
   fonts.fontconfig = {
     enable = true;

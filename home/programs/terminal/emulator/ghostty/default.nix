@@ -31,7 +31,8 @@ in {
       window-theme = "ghostty";
       adw-toolbar-style = "flat";
 
-      font-size = 14;
+      font-size = 15;
+      font-style = "SemiBold";
       background-opacity = 0.9;
       shell-integration = "zsh";
       shell-integration-features = "sudo";
