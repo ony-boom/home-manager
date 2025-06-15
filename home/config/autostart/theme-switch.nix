@@ -2,7 +2,7 @@
   themeSwitcher = pkgs.writeShellScriptBin "theme-switcher" ''
 
     # TODO: Use `config.gtk` for this
-    LIGHT_GTK_THEME="Colloid-Ligh"
+    LIGHT_GTK_THEME="Colloid-Light"
     DARK_GTK_THEME="Colloid-Dark"
     LIGHT_SHELL_THEME="Colloid-Light"
     DARK_SHELL_THEME="Colloid-Dark"

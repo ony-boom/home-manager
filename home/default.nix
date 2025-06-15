@@ -44,11 +44,9 @@ in {
   # release notes.
   home.sessionVariables = {
     # Disable deno update checker
+    GOPATH = "$HOME/go";
     DENO_NO_UPDATE_CHECK = 1;
     PNPM_HOME = "$HOME/.local/share/pnpm";
-
-    ANDROID_HOME = "$HOME/Android/Sdk";
-    GOPATH = "$HOME/go";
   };
 
   home.sessionPath = [

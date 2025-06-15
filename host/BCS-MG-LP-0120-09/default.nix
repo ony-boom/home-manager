@@ -6,6 +6,7 @@
       };
     };
   };
+
   services = {
     mpd.enable = false;
   };

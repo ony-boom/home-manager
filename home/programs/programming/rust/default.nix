@@ -8,9 +8,7 @@
 in {
   config = lib.mkIf config.programs.rust.enable {
     home.packages = [
-      # pkgs.rustup
       toolchain
-      # We want the unwrapped version, "rust-analyzer" (wrapped) comes with nixpkgs' toolchain
       pkgs.rust-analyzer-unwrapped
     ];
 

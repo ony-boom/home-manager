@@ -2,6 +2,6 @@
   imports = [
     ./fonts.nix
     ./autostart
-    ./defaultApps.nix
+    ./default-apps.nix
   ];
 }
