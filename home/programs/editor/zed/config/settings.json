@@ -35,5 +35,10 @@
   "icon_theme": {
     "dark": "JetBrains New UI Icons (Dark)",
     "light": "JetBrains New UI Icons (Light)"
+  },
+  "terminal": {
+    "shell": {
+      "program": "zsh"
+    }
   }
 }
