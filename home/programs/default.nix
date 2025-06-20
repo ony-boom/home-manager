@@ -5,7 +5,7 @@
     ./text-editor
     ./media
     ./wm
-    ./nix.nix
+    ./tools
   ];
 
   programs = {

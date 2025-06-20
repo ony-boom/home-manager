@@ -9,7 +9,7 @@
   };
 
   xdg.configFile."nvim" = {
-    source = utils.mkDots "/editor/neovim/config";
+    source = utils.mkDots "/text-editor/neovim/config";
     recursive = true;
   };
 

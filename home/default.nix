@@ -14,6 +14,7 @@ in {
   # nixpks config
   nixpkgs.config = {
     allowUnfree = true;
+    allowPredicate = pkg: true;
   };
 
   _module.args = {
