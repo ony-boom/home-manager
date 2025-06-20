@@ -2,7 +2,7 @@
   imports = [
     ./terminal
     ./programming
-    ./editor
+    ./text-editor
     ./media
     ./wm
     ./nix.nix

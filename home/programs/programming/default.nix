@@ -11,7 +11,6 @@
   golang = with pkgs; [
     go
     gopls
-    gotools
     gofumpt
     go-task
   ];
