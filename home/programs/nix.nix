@@ -3,6 +3,7 @@
     package = pkgs.nix;
     settings = {
       substituters = [
+        "https://cache.nixos.org/"
         "https://ony-boom.cachix.org"
       ];
       trusted-public-keys = [
