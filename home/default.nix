@@ -11,11 +11,16 @@ in {
     ./programs
   ];
 
-  # nixpks config
-  nixpkgs.config = {
-    allowUnfree = true;
-    allowPredicate = pkg: true;
-  };
+  xdg.configFile."nixpkgs/config.nix".text =
+    /*
+    nix
+    */
+    ''
+      {
+        allowUnfree = true;
+        allowPredicate = pkg: true;
+      }
+    '';
 
   _module.args = {
     inherit utils;
