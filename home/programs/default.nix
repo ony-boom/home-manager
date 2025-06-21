@@ -6,7 +6,6 @@
     ./media
     ./wm
     ./tools
-    ./nix.nix
   ];
 
   programs = {
