@@ -22,14 +22,6 @@ in {
       }
     '';
 
-  nix.settings = {
-    substituters = [
-      "https://ony-boom.cahix.org"
-    ];
-    trusted-public-keys = [
-      "ony-boom.cachix.org-1:rPOTyyOCiAhLarertCrNnZLxsBFpcirEekoohcCZt10="
-    ];
-  };
 
   _module.args = {
     inherit utils;
