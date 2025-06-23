@@ -17,6 +17,9 @@
 
       hizuru = {
         hostname = "94.250.201.16";
+        setEnv = {
+          TERM = "xterm-256color";
+        };
       };
     };
   };
