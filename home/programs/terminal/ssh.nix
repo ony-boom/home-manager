@@ -14,6 +14,10 @@
         user = "git";
         identityFile = "~/.ssh/bocasay_gh";
       };
+
+      hizuru = {
+        hostname = "94.250.201.16";
+      };
     };
   };
 }
