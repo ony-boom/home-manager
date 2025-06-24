@@ -74,7 +74,6 @@ fi
 echo "=== Installing Nix if not installed ==="
 if ! command -v nix >/dev/null 2>&1; then
   echo "Nix not found, installing..."
-  # Use your install_nix function or embed it here:
   wget -qO- https://raw.githubusercontent.com/ony-boom/dev-setup/main/install.sh | bash
 else
   echo "Nix already installed."
