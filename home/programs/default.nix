@@ -30,5 +30,6 @@
     emote
     copyq
     httpie
+    killport
   ];
 }
