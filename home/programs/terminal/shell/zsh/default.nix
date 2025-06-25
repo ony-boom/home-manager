@@ -21,6 +21,7 @@
 
     shellAliases = {
       lg = "lazygit";
+      kp = "killport";
       open = "xdg-open";
       hm = "home-manager";
       hms = "home-manager --impure switch -b backup";
