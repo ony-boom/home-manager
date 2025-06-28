@@ -7,13 +7,6 @@
     pkgs.lua51Packages.lua
     pkgs.lua51Packages.luarocks
   ];
-
-  golang = with pkgs; [
-    go
-    gopls
-    gofumpt
-    go-task
-  ];
 in {
   imports = [
     ./rust
@@ -25,6 +18,7 @@ in {
     [
       nixd
       typescript
+      go
     ]
-    ++ lua ++ golang;
+    ++ lua;
 }

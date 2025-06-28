@@ -19,6 +19,8 @@
 
     # format
     shfmt
+    gofumpt
+    gotools
     stylua
     prettierd
     alejandra
@@ -26,6 +28,7 @@
     # lsp
     nil
     eslint
+    gopls
     typescript
     lua-language-server
     emmet-language-server
