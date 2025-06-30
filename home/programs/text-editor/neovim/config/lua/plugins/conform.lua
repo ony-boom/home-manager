@@ -21,6 +21,7 @@ return {
         lua = { "stylua" },
         nix = { "alejandra" },
         go = { "gofumpt", "goimports" },
+        python = { "isort", "black" },
         javascript = prettiers,
         typescript = prettiers,
         javascriptreact = prettiers,

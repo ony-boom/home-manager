@@ -24,12 +24,15 @@
     stylua
     prettierd
     alejandra
+    isort
+    black
 
     # lsp
     nil
     eslint
     gopls
     typescript
+    pyright
     lua-language-server
     emmet-language-server
     svelte-language-server

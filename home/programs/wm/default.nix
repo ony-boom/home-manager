@@ -3,7 +3,7 @@
   # through system's package manager
 
   imports = [
-    ./wofi
+    ./rofi
     ./hyprland
   ];
 }
