@@ -1,5 +1,7 @@
-from libqtile import hook
-from libqtile import bar, layout, qtile, widget
+from os.path import expanduser
+from subprocess import Popen
+
+from libqtile import bar, hook, layout, qtile, widget
 from libqtile.config import Click, Drag, Group, Key, Match, Screen
 from libqtile.lazy import lazy
 from libqtile.utils import guess_terminal
@@ -7,6 +9,11 @@ from libqtile.utils import guess_terminal
 mod = "mod4"
 terminal = guess_terminal() or "ghostty"
 menu = "rofi -show drun"
+
+
+@hook.subscribe.startup_once
+def startup():
+    Popen(expanduser("~/.config/qtile/startup.sh"))
 
 keys = [
     # A list of available commands that can be bound to keys can be found
@@ -111,11 +118,11 @@ for i in groups:
     )
 
 layouts = [
-    layout.Columns(border_focus_stack=["#d75f5f", "#8f3d3d"], border_width=4),
-    layout.Max(),
+    layout.Columns(border_focus_stack=["#d75f5f", "#8f3d3d"], border_width=4, margin=4),
+    # layout.Bsp(),
+    layout.Max(margin=4),
     # Try more layouts by unleashing below layouts.
     # layout.Stack(num_stacks=2),
-    # layout.Bsp(),
     # layout.Matrix(),
     # layout.MonadTall(),
     # layout.MonadWide(),
@@ -156,6 +163,8 @@ screens = [
                 widget.QuickExit(),
             ],
             24,
+            margin=[6, 6, 6, 6],  # Top, Right, Bottom, Left margins
+            padding=6,  # Padding inside the bar
             # border_width=[2, 0, 2, 0],  # Draw top and bottom borders
             # border_color=["ff00ff", "000000", "ff00ff", "000000"]  # Borders are magenta
         ),
@@ -163,6 +172,9 @@ screens = [
         # By default we handle these events delayed to already improve performance, however your system might still be struggling
         # This variable is set to None (no cap) by default, but you can set it to 60 to indicate that you limit it to 60 events per second
         # x11_drag_polling_rate = 60,
+        top=bar.Gap(6),
+        left=bar.Gap(6),
+        right=bar.Gap(6),
     ),
 ]
 
@@ -216,8 +228,3 @@ wl_xcursor_size = 24
 # We choose LG3D to maximize irony: it is a 3D non-reparenting WM written in
 # java that happens to be on java's whitelist.
 wmname = "LG3D"
-
-
-@hook.subscribe.startup_once
-def auto_start():
-    lazy.spawn("nitrogen --restore &")
