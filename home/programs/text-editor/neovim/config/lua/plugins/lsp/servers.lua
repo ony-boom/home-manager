@@ -18,6 +18,7 @@ return function()
     html = {
       capabilities = snippets_capabilities,
     },
+    pyright = {},
     cssls = {
       capabilities = snippets_capabilities,
     },
