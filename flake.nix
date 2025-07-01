@@ -2,7 +2,8 @@
   description = "My Home manager config";
 
   inputs = {
-    nixpkgs.url = "github:nixos/nixpkgs/nixos-25.05";
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
+    nixpkgs-stable.url = "github:NixOS/nixpkgs/25.05";
 
     home-manager = {
       url = "github:nix-community/home-manager";
@@ -48,11 +49,13 @@
       ];
     };
 
+    stablePkgs = import inputs.nixpkgs-stable {inherit system;};
+
     mkHomeConfig = hostname:
       home-manager.lib.homeManagerConfiguration {
         inherit pkgs;
         extraSpecialArgs = {
-          inherit hostname self nixgl username system;
+          inherit hostname self nixgl username system stablePkgs;
         };
         modules = [
           ./home
@@ -67,6 +70,11 @@
     };
   in {
     formatter.${system} = pkgs.alejandra;
+
+    apps.${system}.hm = {
+        type = "app";
+        program = "${pkgs.home-manager}/bin/home-manager";
+    };
 
     homeConfigurations =
       nixpkgs.lib.mapAttrs'

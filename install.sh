@@ -74,7 +74,7 @@ fi
 echo "=== Installing Nix if not installed ==="
 if ! command -v nix >/dev/null 2>&1; then
   echo "Nix not found, installing..."
-  wget -qO- https://raw.githubusercontent.com/ony-boom/dev-setup/main/install.sh | bash
+  curl -fsSL https://install.determinate.systems/nix | sh -s -- install --determinate
 else
   echo "Nix already installed."
 fi
@@ -102,6 +102,6 @@ fi
 rm -rf "$TMPDIR"
 
 echo "=== Running home-manager switch ==="
-nix run nixpkgs#home-manager -- switch --impure -b backup
+nix run .#hm -- switch --impure -b backup
 
 echo "Setup complete!"

@@ -1,6 +1,7 @@
 {
   utils,
   pkgs,
+  stablePkgs,
   ...
 }: {
   programs.neovim = {
@@ -37,8 +38,9 @@
     emmet-language-server
     svelte-language-server
     typescript-language-server
-    tailwindcss-language-server
     vscode-langservers-extracted
     nodePackages."@astrojs/language-server"
-  ];
+  ] ++ (with stablePkgs; [
+    tailwindcss-language-server
+  ]);
 }
