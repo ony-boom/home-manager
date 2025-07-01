@@ -1,6 +1,5 @@
-{config, lib, stablePkgs, ...}: {
+{config, lib, ...}: {
   services.mpd = {
-    package = stablePkgs.mpd;
     enable =  lib.mkDefault true;
     musicDirectory = "${config.home.homeDirectory}/Music";
     playlistDirectory = "${config.home.homeDirectory}/.config/mpd/playlists";

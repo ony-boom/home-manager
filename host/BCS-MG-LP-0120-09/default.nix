@@ -1,10 +1,7 @@
 {
-  programs = {
-    ghostty = {
-      settings = {
-        background-opacity = 1;
-      };
-    };
+  nixGL = {
+    defaultWrapper = "mesa";
+    installScripts = ["mesa"];
   };
 
   services = {

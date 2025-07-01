@@ -23,7 +23,6 @@
 
     font-size = 15;
     font-style = "SemiBold";
-    background-opacity = 0.9;
     shell-integration = "zsh";
     shell-integration-features = "sudo";
     font-family = builtins.head config.fonts.fontconfig.defaultFonts.monospace;
