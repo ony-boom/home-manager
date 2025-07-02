@@ -1,10 +1,18 @@
 {
-  # some of the programs are not in the home-manager module but installed
-  # through system's package manager
-
+  pkgs,
+  config,
+  ...
+}: let
+  isXCompositor = config.xsession.windowManager.qtile.enable;
+in {
   imports = [
     ./rofi
     ./qtile
+    ./polybar
     ./hyprland
+  ];
+
+  home.packages = pkgs.lib.optionals isXCompositor [
+    pkgs.nitrogen
   ];
 }
