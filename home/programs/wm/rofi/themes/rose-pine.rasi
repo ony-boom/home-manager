@@ -1,31 +1,34 @@
-/**
- * Catppuccin Mocha theme
- * Color palette copied from https://catppuccin.com/palette
- * https://github.com/hiimsergey/rofi-catppuccin
- */
-
 * {
-    base: #1e1e2e;
-    surface0: #313244;
-    overlay0: #6c7086;
-    text: #cdd6f4;
+    font: "Montserrat 12";
 
-    mauve: #cba6f7;
-    red: #f38ba8;
-    peach: #fab387;
-    green: #a6e3a1;
-    lavender: #b4befe;
+    base: #19172495;
+    surface: #1f1d2e95;
+    overlay: #26233a95;
+    text: #cdd6f495;
+    muted: #6e6a8695;
+
+    mauve: #f6c17795;
+    red: #eb6f9295;
+    peach: #ebbcba95;
+    green: #9ccfd895;
+    lavender: #c4a7e795;
 
     background-color: @base;
 }
 
 window {
-    height: 348;
+    height: 382;
     width: 526;
     location: center;
     border: 1;
     border-radius: 8;
-    border-color: @overlay0;
+    border-color: @overlay;
+}
+
+entry {
+  placeholder: "Search...";
+  placeholder-color: @muted;
+  background-color: transparent;
 }
 
 
@@ -33,20 +36,18 @@ inputbar {
     color: @text;
     padding: 14;
     border: 0px 0px 1px 0px;
-    border-color: @overlay0;
+    border-color: @overlay;
     background-color: @base;
 }
 
 message {
-    padding: 10;
-    background-color: @overlay0;
+    padding: 8;
+    background-color: @overlay;
 }
 
 listview {
     padding: 8;
-    border: 2 2 2 2;
     border-color: @base;
-    background-color: @base;
     dynamic: false;
 }
 
@@ -55,27 +56,23 @@ textbox {
     background-color: inherit;
 }
 
-error-message {
-    border: 20 20 20 20;
-}
-
 entry, prompt, case-indicator {
     text-color: inherit;
 }
 
 prompt {
-    margin: 0 10 0 0;
+    margin: 0 8 0 0;
 }
 
 element {
-    padding: 5;
+    padding: 6;
     vertical-align: 0.5;
-    border-radius: 10;
-    background-color: inherit;
+    border-radius: 8;
+    background-color: transparent;
 }
 
 element.selected.normal {
-    background-color: @surface0;
+    background-color: @surface;
 }
 
 element.normal.active, element.alternate.active {
@@ -95,11 +92,11 @@ element.selected.urgent {
 }
 
 element-text, element-icon {
-    size: 40;
-    margin: 0 10 0 0;
-    vertical-align: 0.5;
-    background-color: inherit;
+    size: 38;
+    margin: 0 8 0 0;
     text-color: @text;
+    vertical-align: 0.5;
+    background-color: transparent;
 }
 
 element-text .active, element-text .urgent {

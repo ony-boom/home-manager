@@ -15,6 +15,7 @@ menu = "rofi -show drun"
 def startup():
     Popen(expanduser("~/.config/qtile/startup.sh"))
 
+
 keys = [
     # A list of available commands that can be bound to keys can be found
     # at https://docs.qtile.org/en/latest/manual/config/lazy.html
@@ -72,7 +73,13 @@ keys = [
         lazy.window.toggle_floating(),
         desc="Toggle floating on the focused window",
     ),
-    Key([mod, "control"], "r", lazy.reload_config(), desc="Reload the config"),
+    Key(
+        [mod, "control"],
+        "r",
+        lazy.reload_config(),
+        lazy.spawn(expanduser("~/.config/polybar/launch.sh")),
+        desc="Reload the config",
+    ),
     Key([mod, "control"], "q", lazy.shutdown(), desc="Shutdown Qtile"),
     Key([mod], "r", lazy.spawn(menu), desc="Spawn a command using a prompt widget"),
 ]
@@ -91,7 +98,7 @@ for vt in range(1, 8):
     )
 
 
-groups = [Group(i) for i in "123456789"]
+groups = [Group(i) for i in "123"]
 
 for i in groups:
     keys.extend(
@@ -118,7 +125,7 @@ for i in groups:
     )
 
 layouts = [
-    layout.Columns(border_width=0, margin=4),
+    layout.Columns(border_width=0, margin=6),
     # layout.Bsp(),
     layout.Max(margin=4),
     # Try more layouts by unleashing below layouts.
@@ -183,7 +190,8 @@ floating_layout = layout.Floating(
         Match(wm_class="ssh-askpass"),  # ssh-askpass
         Match(title="branchdialog"),  # gitk
         Match(title="pinentry"),  # GPG key password entry
-    ]
+    ],
+    border_width=0,
 )
 auto_fullscreen = True
 focus_on_window_activation = "smart"
