@@ -11,7 +11,7 @@ return {
     },
   },
   opts = function()
-    local prettiers = { "biome", "biome-organize-imports", stop_after_first = true }
+    local prettiers = { "biome" }
     local sh_like = { "shfmt" }
 
     return {
