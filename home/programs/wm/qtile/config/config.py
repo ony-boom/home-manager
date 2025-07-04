@@ -1,7 +1,7 @@
 from os.path import expanduser
 from subprocess import Popen
 
-from libqtile import bar, hook, layout, qtile
+from libqtile import bar, hook, layout, qtile, widget
 from libqtile.config import Click, Drag, Group, Key, Match, Screen
 from libqtile.lazy import lazy
 from libqtile.utils import guess_terminal
@@ -148,12 +148,12 @@ extension_defaults = widget_defaults.copy()
 
 screens = [
     Screen(
-        bottom=bar.Gap(6),
         # You can uncomment this variable if you see that on X11 floating resize/moving is laggy
         # By default we handle these events delayed to already improve performance, however your system might still be struggling
         # This variable is set to None (no cap) by default, but you can set it to 60 to indicate that you limit it to 60 events per second
         # x11_drag_polling_rate = 60,
-        top=bar.Gap(6),
+        top=bar.Bar([widget.GroupBox(), widget.WindowName(), widget.Systray()], 32),
+        bottom=bar.Gap(6),
         left=bar.Gap(6),
         right=bar.Gap(6),
     ),
