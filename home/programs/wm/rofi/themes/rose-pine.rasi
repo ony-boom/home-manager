@@ -1,17 +1,17 @@
 * {
     font: "Montserrat 12";
 
-    base: #19172495;
-    surface: #1f1d2e95;
-    overlay: #26233a95;
-    text: #cdd6f495;
-    muted: #6e6a8695;
+    base: #191724;
+    surface: #1f1d2e;
+    overlay: #26233a;
+    text: #cdd6f4;
+    muted: #6e6a86;
 
-    mauve: #f6c17795;
-    red: #eb6f9295;
-    peach: #ebbcba95;
-    green: #9ccfd895;
-    lavender: #c4a7e795;
+    mauve: #f6c177;
+    red: #eb6f92;
+    peach: #ebbcba;
+    green: #9ccfd8;
+    lavender: #c4a7e7;
 
     background-color: @base;
 }
