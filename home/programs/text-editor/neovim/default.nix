@@ -34,6 +34,7 @@
     gopls
     typescript
     pyright
+    biome
     lua-language-server
     emmet-language-server
     svelte-language-server

@@ -19,6 +19,7 @@ return function()
       capabilities = snippets_capabilities,
     },
     pyright = {},
+    biome = {},
     cssls = {
       capabilities = snippets_capabilities,
     },
