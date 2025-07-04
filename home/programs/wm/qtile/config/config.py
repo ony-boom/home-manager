@@ -77,7 +77,6 @@ keys = [
         [mod, "control"],
         "r",
         lazy.reload_config(),
-        lazy.spawn(expanduser("~/.config/polybar/launch.sh")),
         desc="Reload the config",
     ),
     Key([mod, "control"], "q", lazy.shutdown(), desc="Shutdown Qtile"),
