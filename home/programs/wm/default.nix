@@ -1,16 +1,9 @@
-{
-  pkgs,
-  config,
-  ...
-}: let
-  isXCompositor = config.xsession.windowManager.qtile.enable;
-in {
+{pkgs, ...}: {
   imports = [
     ./rofi
-    ./qtile
   ];
 
-  home.packages = pkgs.lib.optionals isXCompositor [
+  home.packages = [
     pkgs.nitrogen
   ];
 }
