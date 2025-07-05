@@ -23,6 +23,7 @@ return function()
     cssls = {
       capabilities = snippets_capabilities,
     },
+    sqls = {},
     astro = {},
     rust_analyzer = {},
     svelte = {},

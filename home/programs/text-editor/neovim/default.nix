@@ -14,34 +14,37 @@
     recursive = true;
   };
 
-  home.packages = with pkgs; [
-    # misc
-    tree-sitter
+  home.packages = with pkgs;
+    [
+      # misc
+      tree-sitter
 
-    # format
-    shfmt
-    gofumpt
-    gotools
-    stylua
-    prettierd
-    alejandra
-    isort
-    black
+      # format
+      shfmt
+      gofumpt
+      gotools
+      stylua
+      prettierd
+      alejandra
+      isort
+      black
 
-    # lsp
-    nil
-    eslint
-    gopls
-    typescript
-    pyright
-    biome
-    lua-language-server
-    emmet-language-server
-    svelte-language-server
-    typescript-language-server
-    vscode-langservers-extracted
-    nodePackages."@astrojs/language-server"
-  ] ++ (with stablePkgs; [
-    tailwindcss-language-server
-  ]);
+      # lsp
+      nil
+      eslint
+      sqls
+      gopls
+      typescript
+      pyright
+      biome
+      lua-language-server
+      emmet-language-server
+      svelte-language-server
+      typescript-language-server
+      vscode-langservers-extracted
+      nodePackages."@astrojs/language-server"
+    ]
+    ++ (with stablePkgs; [
+      tailwindcss-language-server
+    ]);
 }
