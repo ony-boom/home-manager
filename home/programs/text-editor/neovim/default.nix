@@ -28,6 +28,7 @@
       alejandra
       isort
       black
+      sleek
 
       # lsp
       nil
