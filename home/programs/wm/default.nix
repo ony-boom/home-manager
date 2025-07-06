@@ -4,7 +4,8 @@
     ./hyprland
   ];
 
-  home.packages = [
-    pkgs.nitrogen
+  home.packages = with pkgs; [
+    nitrogen
+    swww
   ];
 }
