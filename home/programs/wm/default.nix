@@ -1,6 +1,7 @@
 {pkgs, ...}: {
   imports = [
     ./rofi
+    ./waybar
     ./hyprland
   ];
 
