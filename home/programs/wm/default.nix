@@ -1,6 +1,7 @@
 {pkgs, ...}: {
   imports = [
     ./rofi
+    ./hyprland
   ];
 
   home.packages = [
