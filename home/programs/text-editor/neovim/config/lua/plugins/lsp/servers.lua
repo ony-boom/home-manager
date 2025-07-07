@@ -24,6 +24,7 @@ return function()
       capabilities = snippets_capabilities,
     },
     sqls = {},
+    tinymist = {},
     astro = {},
     rust_analyzer = {},
     svelte = {},

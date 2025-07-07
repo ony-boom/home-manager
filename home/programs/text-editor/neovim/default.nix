@@ -35,6 +35,7 @@
       eslint
       sqls
       gopls
+      tinymist
       typescript
       pyright
       biome
