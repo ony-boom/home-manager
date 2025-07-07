@@ -8,6 +8,12 @@
     recursive = true;
   };
 
+
+  xdg.configFile."rofi/extra" = {
+    source = utils.mkDots "/wm/rofi/extra";
+    recursive = true;
+  };
+
   programs.rofi = {
     enable = true;
     package = pkgs.rofi-wayland;
