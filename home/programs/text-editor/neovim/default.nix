@@ -22,6 +22,7 @@
       # format
       shfmt
       gofumpt
+      typstyle
       gotools
       stylua
       prettierd
