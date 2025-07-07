@@ -1,4 +1,8 @@
-{utils, pkgs, ...}: {
+{
+  utils,
+  pkgs,
+  ...
+}: {
   xdg.configFile."rofi/themes" = {
     source = utils.mkDots "/wm/rofi/themes";
     recursive = true;
@@ -15,4 +19,8 @@
       display-drun = "";
     };
   };
+
+  home.packages = with pkgs; [
+    rofi-power-menu
+  ];
 }
