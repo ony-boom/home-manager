@@ -4,6 +4,8 @@ local map = function(mode, lhs, rhs, opts)
   vim.keymap.set(mode, lhs, rhs, options)
 end
 
+map("n", "<Esc>", ":noh<CR>", { desc = "Clear search highlights" })
+
 map("n", "<leader>q", ":q<CR>", { desc = "Quit" })
 map("n", "<leader>/", ":normal gcc<CR>", { desc = "Quit" })
 map({ "n" }, "<C-s>", ":w<CR>", { desc = "Save File" })
