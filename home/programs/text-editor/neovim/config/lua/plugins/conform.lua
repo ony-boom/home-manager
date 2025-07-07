@@ -11,7 +11,7 @@ return {
     },
   },
   opts = function()
-    local prettiers = { "biome" }
+    local prettiers = { "prettier", "biome", stop_after_first = true }
     local sh_like = { "shfmt" }
 
     return {
