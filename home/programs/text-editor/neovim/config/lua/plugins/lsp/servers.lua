@@ -24,7 +24,11 @@ return function()
       capabilities = snippets_capabilities,
     },
     sqls = {},
-    tinymist = {},
+    tinymist = {
+      settings = {
+        formatterMode = "typstyle",
+      },
+    },
     astro = {},
     rust_analyzer = {},
     svelte = {},

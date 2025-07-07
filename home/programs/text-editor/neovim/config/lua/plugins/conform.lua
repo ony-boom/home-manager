@@ -30,12 +30,10 @@ return {
         css = prettiers,
         sql = { "sleek" },
         rust = { "rustfmt" },
-        typ = { "typstyle" },
       },
       default_format_opts = {
         lsp_format = "fallback",
       },
-      format_on_save = nil,
       formatters = {},
     }
   end,
