@@ -20,7 +20,7 @@
     window-decoration = "none";
     window-theme = "ghostty";
     adw-toolbar-style = "flat";
-    background-opacity = 0.85;
+    background-opacity = 0.90;
 
     font-size = 15;
     font-style = "SemiBold";
