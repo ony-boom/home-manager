@@ -22,6 +22,7 @@
 
     extraConfig = {
       show-icons = true;
+      icon-theme = "Colloid-Dark";
       display-drun = "";
     };
   };
