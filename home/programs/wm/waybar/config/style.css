@@ -11,7 +11,7 @@ window#waybar {
 }
 
 #waybar > box {
-    padding: 8px 22px;
+    padding: 8px 16px;
     padding-bottom: 0;
     padding-bottom: 0;
 }
