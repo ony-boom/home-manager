@@ -1,8 +1,7 @@
 @import "./themes/rose-pine.css";
 
 * {
-    font-weight: 600;
-    font-family: "monospace";
+    font-family: "JetBrainsMono Nerd Font Propo";
 }
 
 window#waybar {
