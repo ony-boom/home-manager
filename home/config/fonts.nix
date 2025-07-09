@@ -13,7 +13,7 @@
   ];
 
   monospaces = [
-    "Hasklug Nerd Font"
+    "Hasklug Nerd Font Mono"
     "Maple Mono NF"
     "FiraCode Nerd Font"
     "CaskaydiaMono NF"
