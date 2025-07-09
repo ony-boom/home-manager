@@ -1,6 +1,6 @@
 {pkgs, lib, ...}: {
   imports = [
-    ./mpd.nix
+    ./mpd
   ];
 
   services.mms = {
