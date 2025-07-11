@@ -5,7 +5,7 @@
   };
 
   programs.zed-editor.enable = false;
-  programs.waybar.settings.main.outputs = ["eDP-1"];
+  programs.waybar.settings.main.output = ["eDP-1"];
 
   services = {
     mpd.enable = false;
