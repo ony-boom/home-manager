@@ -50,6 +50,10 @@ window#waybar {
     color: @text;
 }
 
+#memory {
+  margin-right: 8px;
+}
+
 #bluetooth {
   min-width: 22px;
   padding-left: 10px;
