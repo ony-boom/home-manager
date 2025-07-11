@@ -19,6 +19,7 @@ window#waybar {
 #clock,
 #hardware,
 #network,
+#bluetooth,
 #tray {
     color: @text;
     background: @base;
@@ -28,12 +29,9 @@ window#waybar {
 #clock,
 #hardware,
 #tray,
-#network {
+#network,
+#bluetooth {
     padding: 0 8px;
-}
-
-#hardware {
-    margin-right: 8px;
 }
 
 #workspaces button {
@@ -52,6 +50,14 @@ window#waybar {
     color: @text;
 }
 
-#memory {
-    margin-right: 12px;
+#bluetooth {
+  transition: color 0.2s ease-in-out;
+}
+
+#bluetooth.off {
+  color: @muted;
+}
+
+#bluetooth.connected {
+  color: @pine;
 }
