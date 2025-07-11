@@ -10,18 +10,41 @@
         layer = "top";
         position = "top";
         reload_style_on_change = true;
+
         modules-left = [
           "hyprland/workspaces"
         ];
+
         modules-center = [
           "clock"
         ];
+
+        battery = {
+          interval = 60;
+          states = {
+            warning = 30;
+            critical = 15;
+          };
+          format = "{capacity}% {icon}";
+          format-charging = "{capacity} 󰂄";
+          format-icons = [
+            "󰂎"
+            "󰁺"
+            "󰁼"
+            "󰁿"
+            "󰂂"
+            "󰁹"
+          ];
+          max-length = 25;
+        };
+
         modules-right = [
           "network"
           "bluetooth"
           "group/hardware"
           "tray"
         ];
+
         "hyprland/workspaces" = {
           persistent-workspaces = {
             "*" = [
@@ -31,17 +54,21 @@
             ];
           };
         };
+
         tray = {
           icon-size = 21;
           spacing = 12;
         };
+
         clock = {
           tooltip-format = "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>";
           format-alt = "{:%Y-%m-%d}";
         };
+
         memory = {
           format = "{}% <span> </span>";
         };
+
         pulseaudio = {
           format = "{volume}% <span>{icon}</span>";
           format-muted = "󰝟";
@@ -61,6 +88,7 @@
           modules = [
             "memory"
             "pulseaudio"
+            "battery"
           ];
         };
         network = {

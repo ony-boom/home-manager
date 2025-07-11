@@ -78,10 +78,22 @@ window#waybar {
   transition: color 0.2s ease-in-out;
 }
 
+#memory, #pulseaudio {
+  margin-right: 12px;
+}
+
 #bluetooth.off {
   color: @muted;
 }
 
 #bluetooth.connected {
   color: @pine;
+}
+
+#battery.critical {
+  color: @rose;
+}
+
+#battery.warning {
+  color: @peach;
 }
