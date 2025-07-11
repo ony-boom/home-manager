@@ -33,6 +33,7 @@
     typst
     emote
     copyq
+    cava
     httpie
     killport
   ];

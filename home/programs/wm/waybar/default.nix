@@ -13,30 +13,12 @@
 
         modules-left = [
           "hyprland/workspaces"
+          "mpris"
         ];
 
         modules-center = [
           "clock"
         ];
-
-        battery = {
-          interval = 60;
-          states = {
-            warning = 30;
-            critical = 15;
-          };
-          format = "{capacity}% {icon}";
-          format-charging = "{capacity} 󰂄";
-          format-icons = [
-            "󰂎"
-            "󰁺"
-            "󰁼"
-            "󰁿"
-            "󰂂"
-            "󰁹"
-          ];
-          max-length = 25;
-        };
 
         modules-right = [
           "network"
@@ -83,6 +65,7 @@
           on-click = "pactl set-sink-mute @DEFAULT_SINK@ toggle";
           on-click-right = "pavucontrol";
         };
+
         "group/hardware" = {
           orientation = "horizontal";
           modules = [
@@ -91,10 +74,31 @@
             "battery"
           ];
         };
+
         network = {
           interval = 5;
           format = "{bandwidthUpBits} 󰁝 <span color=\"#6e6a86\">|</span> {bandwidthDownBits} 󰁅";
         };
+
+        battery = {
+          interval = 60;
+          states = {
+            warning = 30;
+            critical = 15;
+          };
+          format = "{capacity}% {icon}";
+          format-charging = "{capacity}% 󰂄";
+          format-icons = [
+            "󰂎"
+            "󰁺"
+            "󰁼"
+            "󰁿"
+            "󰂂"
+            "󰁹"
+          ];
+          max-length = 25;
+        };
+
         bluetooth = {
           format = "";
           format-connected = "󰂱";
@@ -102,6 +106,15 @@
           format-disabled = "󰂲";
           tooltip-format-connected = "{device_enumerate}";
           tooltip-format-enumerate-connected = "{device_alias}";
+        };
+
+        mpris = {
+          format = "<span color=\"#6e6a86\">{player_icon}</span> {title} - {artist}";
+          max-length = 32;
+          player-icons = {
+            spotify = "󰓇";
+            default = "󰎇";
+          };
         };
       };
     };

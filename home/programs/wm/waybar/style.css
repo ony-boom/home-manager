@@ -42,7 +42,8 @@ window#waybar {
 #hardware,
 #network,
 #bluetooth,
-#tray {
+#tray,
+#mpris {
     color: @text;
     background: @base;
     border-radius: 8px;
@@ -52,8 +53,9 @@ window#waybar {
 #hardware,
 #tray,
 #network,
-#bluetooth {
-    padding: 0 8px;
+#bluetooth,
+#mpris {
+    padding: 0 10px;
 }
 
 #workspaces button {
