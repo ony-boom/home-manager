@@ -3,8 +3,8 @@
     enable = lib.mkDefault true;
     style = ./style.css;
 
-    settings = [
-      {
+    settings = {
+      main = {
         height = 30;
         spacing = 12;
         layer = "top";
@@ -75,7 +75,7 @@
           tooltip-format-connected = "{device_enumerate}";
           tooltip-format-enumerate-connected = "{device_alias}";
         };
-      }
-    ];
+      };
+    };
   };
 }
