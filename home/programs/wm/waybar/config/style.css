@@ -51,6 +51,8 @@ window#waybar {
 }
 
 #bluetooth {
+  min-width: 22px;
+  padding-left: 10px;
   transition: color 0.2s ease-in-out;
 }
 
