@@ -40,8 +40,8 @@
 
         modules-right = [
           "network"
-          "bluetooth"
           "group/hardware"
+          "bluetooth"
           "tray"
         ];
 
