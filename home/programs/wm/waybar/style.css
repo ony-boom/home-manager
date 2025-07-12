@@ -80,8 +80,12 @@ window#waybar {
   transition: color 0.2s ease-in-out;
 }
 
-#memory, #pulseaudio {
+#memory {
   margin-right: 12px;
+}
+
+#battery {
+  margin-left: 12px;
 }
 
 #bluetooth.off {
