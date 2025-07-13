@@ -43,7 +43,8 @@ window#waybar {
 #network,
 #bluetooth,
 #tray,
-#mpris {
+#mpris,
+#custom-distro {
     color: @text;
     background: @base;
     border-radius: 8px;
@@ -54,7 +55,8 @@ window#waybar {
 #tray,
 #network,
 #bluetooth,
-#mpris {
+#mpris,
+#custom-distro {
     padding: 0 10px;
 }
 
@@ -74,10 +76,14 @@ window#waybar {
     color: @text;
 }
 
-#bluetooth {
-  min-width: 22px;
+#bluetooth, #custom-distro {
+  min-width: 20px;
   padding-left: 10px;
   transition: color 0.2s ease-in-out;
+}
+
+#custom-distro {
+  color: @rose;
 }
 
 #memory {

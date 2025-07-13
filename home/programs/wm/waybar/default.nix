@@ -12,8 +12,9 @@
         reload_style_on_change = true;
 
         modules-left = [
+          "custom/distro"
           "hyprland/workspaces"
-          "mpris"
+          # "mpris"
         ];
 
         modules-center = [
@@ -78,6 +79,10 @@
         network = {
           interval = 5;
           format = "{bandwidthUpBits} 󰁝 <span color=\"#6e6a86\">|</span> {bandwidthDownBits} 󰁅";
+        };
+
+        "custom/distro" = {
+          format = "󰣇";
         };
 
         battery = {
