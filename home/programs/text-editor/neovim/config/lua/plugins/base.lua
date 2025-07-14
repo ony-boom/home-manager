@@ -56,8 +56,10 @@ return {
   {
     "numToStr/Comment.nvim",
     opts = {},
-    config = function()
-      require("Comment").setup()
-    end,
+    config = function() require("Comment").setup() end,
+  },
+
+  {
+    "elkowar/yuck.vim",
   },
 }
