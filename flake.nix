@@ -20,6 +20,7 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    ags.url = "github:aylur/ags";
     rust-overlay.url = "github:oxalica/rust-overlay";
   };
 
@@ -55,11 +56,12 @@
       home-manager.lib.homeManagerConfiguration {
         inherit pkgs;
         extraSpecialArgs = {
-          inherit hostname self nixgl username system stablePkgs;
+          inherit hostname self nixgl username system stablePkgs inputs;
         };
         modules = [
           ./home
           ./host
+          inputs.ags.homeManagerModules.default
           inputs.mms.homeManagerModules.${system}
         ];
       };
@@ -72,8 +74,8 @@
     formatter.${system} = pkgs.alejandra;
 
     apps.${system}.hm = {
-        type = "app";
-        program = "${pkgs.home-manager}/bin/home-manager";
+      type = "app";
+      program = "${pkgs.home-manager}/bin/home-manager";
     };
 
     homeConfigurations =
