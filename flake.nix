@@ -20,10 +20,7 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    ditto = {
-      url = "github:ony-boom/ditto";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
+    ditto.url = "github:ony-boom/ditto";
 
     rust-overlay.url = "github:oxalica/rust-overlay";
   };
@@ -51,7 +48,7 @@
       overlays = [
         nixgl.overlay
         inputs.rust-overlay.overlays.default
-        inputs.ditto.overlays.default
+        inputs.ditto.overlays.${system}.default
       ];
     };
 

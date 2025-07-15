@@ -1,5 +1,6 @@
 {
   imports = [
+    ./ditto
     ./distrobox.nix
   ];
 }
