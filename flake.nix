@@ -20,7 +20,11 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    ags.url = "github:aylur/ags";
+    ditto = {
+      url = "github:ony-boom/ditto";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
     rust-overlay.url = "github:oxalica/rust-overlay";
   };
 
@@ -47,6 +51,7 @@
       overlays = [
         nixgl.overlay
         inputs.rust-overlay.overlays.default
+        inputs.ditto.overlays.default
       ];
     };
 
@@ -61,7 +66,6 @@
         modules = [
           ./home
           ./host
-          inputs.ags.homeManagerModules.default
           inputs.mms.homeManagerModules.${system}
         ];
       };
