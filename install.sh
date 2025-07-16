@@ -75,6 +75,15 @@ echo "=== Installing Nix if not installed ==="
 if ! command -v nix >/dev/null 2>&1; then
   echo "Nix not found, installing..."
   curl -fsSL https://install.determinate.systems/nix | sh -s -- install --determinate
+
+  # Load the nix environment manually
+  if [ -f "$HOME/.nix-profile/etc/profile.d/nix.sh" ]; then
+    # shellcheck source=/dev/null
+    . "$HOME/.nix-profile/etc/profile.d/nix.sh"
+  elif [ -f "/nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh" ]; then
+    # shellcheck source=/dev/null
+    . "/nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh"
+  fi
 else
   echo "Nix already installed."
 fi
