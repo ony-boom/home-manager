@@ -32,8 +32,8 @@
     font-manager
     typst
     emote
-    copyq
     cava
+    cliphist
     httpie
     killport
   ];
