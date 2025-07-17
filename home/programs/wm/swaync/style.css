@@ -2,7 +2,7 @@
 	all: unset;
 	font-family: Cantarell, JetBrains Mono Nerd Font Propo;
 	transition: 0.3s;
-	font-size: 1.2rem;
+	font-size: 1rem;
 }
 
 .floating-notifications.background .notification-row {
