@@ -1,7 +1,8 @@
 {pkgs, ...}: {
   imports = [
     ./rofi
-    ./mako
+    ./swaync
+    # ./mako
     ./waybar
     ./hyprland
   ];
