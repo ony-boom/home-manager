@@ -95,14 +95,15 @@
         "flake-utils": "flake-utils_2",
         "nixpkgs": [
           "nixpkgs"
-        ]
+        ],
+        "nixpkgs-prisma-6": "nixpkgs-prisma-6"
       },
       "locked": {
-        "lastModified": 1751381919,
-        "narHash": "sha256-xh+DS6u/dvu2Iib0ddaWNrRwWUOrE9X6xPSkQJKWG08=",
+        "lastModified": 1753009505,
+        "narHash": "sha256-RVIlx18amYgviDX9KdR9EQYoCr3ZvBpAnupEDOKQWBg=",
         "owner": "ony-boom",
         "repo": "mms",
-        "rev": "96866ed77d58656acc683fb46d2d800847935692",
+        "rev": "f67c226583853e8a447adaf89a04a015f806c5a2",
         "type": "github"
       },
       "original": {
@@ -145,6 +146,22 @@
         "owner": "nixos",
         "ref": "nixos-unstable",
         "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "nixpkgs-prisma-6": {
+      "locked": {
+        "lastModified": 1745110259,
+        "narHash": "sha256-osRYbqUkNcf0K+7Ss0wB8gqUEEOrxfJOOXJ2jXtd+tA=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "7db9cd9d3f2a6a257d5e52d3173200b1c8650782",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "7db9cd9d3f2a6a257d5e52d3173200b1c8650782",
         "type": "github"
       }
     },
