@@ -22,7 +22,6 @@ in {
       }
     '';
 
-
   _module.args = {
     inherit utils;
   };
@@ -54,6 +53,7 @@ in {
     GOPATH = "$HOME/go";
     DENO_NO_UPDATE_CHECK = 1;
     PNPM_HOME = "$HOME/.local/share/pnpm";
+    BROWSER = "zen-browser";
   };
 
   home.sessionPath = [
