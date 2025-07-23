@@ -36,5 +36,6 @@
     cliphist
     httpie
     killport
+    yazi
   ];
 }
