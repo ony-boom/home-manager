@@ -14,7 +14,6 @@ return function()
     lua_ls = {},
     nil_ls = {},
     gopls = {},
-    nushell = {},
     html = {
       capabilities = snippets_capabilities,
     },
@@ -23,7 +22,6 @@ return function()
     cssls = {
       capabilities = snippets_capabilities,
     },
-    sqls = {},
     tinymist = {
       settings = {
         formatterMode = "typstyle",

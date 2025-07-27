@@ -34,7 +34,6 @@
       # lsp
       nil
       eslint
-      sqls
       gopls
       tinymist
       typescript

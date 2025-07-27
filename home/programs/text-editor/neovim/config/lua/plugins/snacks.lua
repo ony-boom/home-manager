@@ -23,9 +23,7 @@ return {
     explorer = { enabled = true, replace_netrw = true },
   },
 
-  dependencies = {
-    { "echasnovski/mini.icons", version = false },
-  },
+  dependencies = {},
 
   keys = {
     {
@@ -52,11 +50,6 @@ return {
       "<leader>n",
       function() Snacks.picker.notifications() end,
       desc = "Notification History",
-    },
-    {
-      "<leader>e",
-      function() Snacks.explorer() end,
-      desc = "File Explorer",
     },
     {
       "<leader>dl",

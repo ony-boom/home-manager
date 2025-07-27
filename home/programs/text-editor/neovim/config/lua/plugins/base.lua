@@ -58,8 +58,8 @@ return {
     opts = {},
     config = function() require("Comment").setup() end,
   },
-
   {
-    "elkowar/yuck.vim",
+    "echasnovski/mini.icons",
+    config = function() require("mini.icons").setup {} end,
   },
 }
