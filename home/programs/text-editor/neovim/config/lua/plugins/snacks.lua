@@ -52,6 +52,11 @@ return {
       desc = "Notification History",
     },
     {
+      "<leader>e",
+      function() Snacks.explorer() end,
+      desc = "File Explorer",
+    },
+    {
       "<leader>dl",
       function() Snacks.picker.diagnostics() end,
       desc = "Diagnostics list",

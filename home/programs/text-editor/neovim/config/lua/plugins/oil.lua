@@ -12,6 +12,6 @@ return {
       },
     }
 
-    vim.keymap.set("n", "<leader>e", function() vim.cmd((vim.bo.filetype == "oil") and "bd" or "Oil") end)
+    vim.keymap.set("n", "-", function() vim.cmd("Oil") end)
   end,
 }
