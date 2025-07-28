@@ -62,4 +62,5 @@ return {
     "echasnovski/mini.icons",
     config = function() require("mini.icons").setup {} end,
   },
+  { "windwp/nvim-ts-autotag", config = function() require("nvim-ts-autotag").setup {} end },
 }
