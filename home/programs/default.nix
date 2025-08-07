@@ -1,5 +1,7 @@
 {
   pkgs,
+  system,
+  agenix,
   ...
 }: {
   imports = [
@@ -37,5 +39,6 @@
     httpie
     killport
     yazi
+    inputs.agenix.packages.${system}.default
   ];
 }
