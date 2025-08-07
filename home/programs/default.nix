@@ -1,7 +1,7 @@
 {
   pkgs,
   system,
-  agenix,
+  inputs,
   ...
 }: {
   imports = [
