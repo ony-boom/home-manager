@@ -29,7 +29,6 @@ return {
         html = prettiers,
         css = prettiers,
         sql = { "sleek" },
-        rust = { "rustfmt" },
       },
       default_format_opts = {
         lsp_format = "fallback",

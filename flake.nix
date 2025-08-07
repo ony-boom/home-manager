@@ -21,8 +21,7 @@
     };
 
     ditto.url = "github:ony-boom/ditto";
-
-    rust-overlay.url = "github:oxalica/rust-overlay";
+    agenix.url = "github:ryantm/agenix";
   };
 
   nixConfig = {
@@ -47,7 +46,6 @@
       inherit system;
       overlays = [
         nixgl.overlay
-        inputs.rust-overlay.overlays.default
         inputs.ditto.overlays.${system}.default
       ];
     };
@@ -63,6 +61,7 @@
         modules = [
           ./home
           ./host
+          inputs.agenix.homeManagerModules.default
           inputs.mms.homeManagerModules.${system}
         ];
       };
