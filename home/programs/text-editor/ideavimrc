@@ -55,4 +55,4 @@ map [d <Action>(GotoPreviousError)
 map <leader>e :NERDTreeToggle<CR>
 map [b :prev<CR>
 map ]b :next<CR>
-
+map <leader>t <Action>(ActivateTerminalToolWindow)
