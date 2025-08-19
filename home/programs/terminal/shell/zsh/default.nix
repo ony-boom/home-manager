@@ -1,6 +1,7 @@
 {
   lib,
   pkgs,
+  config,
   ...
 }: {
   programs.zsh = {
@@ -27,7 +28,7 @@
       hms = "home-manager --impure switch -b backup";
     };
 
-    dotDir = ".config/zsh";
+    dotDir = "${config.xdg.configHome}/zsh";
 
     initContent = builtins.readFile ./main.zsh;
   };
