@@ -49,11 +49,11 @@
         "nixpkgs": "nixpkgs_2"
       },
       "locked": {
-        "lastModified": 1754209426,
-        "narHash": "sha256-aN14+gVG0gbljP9fUHU7clgfZfVA42Nka7+zbCTAbOA=",
+        "lastModified": 1756046600,
+        "narHash": "sha256-9AftK8h1VSue5Q5OhkIrG5fAk9Z2yp3PQ0p3q6qjRBM=",
         "owner": "ony-boom",
         "repo": "ditto",
-        "rev": "f2c09701bd18a453c02031619c8129d56c90873e",
+        "rev": "35bd2fb4d05da8e6fe0b6217e4b03ba62aa99205",
         "type": "github"
       },
       "original": {
