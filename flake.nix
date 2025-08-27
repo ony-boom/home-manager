@@ -63,6 +63,7 @@
           ./host
           inputs.agenix.homeManagerModules.default
           inputs.mms.homeManagerModules.${system}
+          ./age/age.nix
         ];
       };
 

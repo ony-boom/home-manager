@@ -166,11 +166,11 @@
         "nixpkgs-prisma-6": "nixpkgs-prisma-6"
       },
       "locked": {
-        "lastModified": 1755579810,
-        "narHash": "sha256-yaVMvSNZvm7AHMyiF4PpejzANSbjZ6FTVqNlBljw8BI=",
+        "lastModified": 1756311685,
+        "narHash": "sha256-AFnYAZ6sR2qPzE6uNHqDjynPPWaMGmLzs+8eeSK5+to=",
         "owner": "ony-boom",
         "repo": "mms",
-        "rev": "5f40a1e20176a4484ed240e243ff31b0c094f22c",
+        "rev": "3036f59229260c8b2374edb5d22c4cae97c21b22",
         "type": "github"
       },
       "original": {
