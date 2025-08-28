@@ -37,7 +37,6 @@
       gopls
       tinymist
       typescript
-      nimlangserver
       lua-language-server
       emmet-language-server
       svelte-language-server
