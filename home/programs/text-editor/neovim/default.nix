@@ -33,13 +33,11 @@
 
       # lsp
       nil
-      nimlsp
       eslint
       gopls
       tinymist
       typescript
-      pyright
-      biome
+      nimlangserver
       lua-language-server
       emmet-language-server
       svelte-language-server

@@ -23,7 +23,7 @@ return function()
         formatterMode = "typstyle",
       },
     },
-    nimls = {},
+    nim_langserver = {},
     astro = {},
     svelte = {},
     emmet_language_server = {},
