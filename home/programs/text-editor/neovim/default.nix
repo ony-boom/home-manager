@@ -33,6 +33,7 @@
 
       # lsp
       nil
+      nimlsp
       eslint
       gopls
       tinymist

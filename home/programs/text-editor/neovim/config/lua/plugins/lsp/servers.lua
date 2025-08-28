@@ -14,11 +14,7 @@ return function()
     lua_ls = {},
     nil_ls = {},
     gopls = {},
-    html = {
-      capabilities = snippets_capabilities,
-    },
-    pyright = {},
-    biome = {},
+    html = { capabilities = snippets_capabilities },
     cssls = {
       capabilities = snippets_capabilities,
     },
@@ -27,6 +23,7 @@ return function()
         formatterMode = "typstyle",
       },
     },
+    nimls = {},
     astro = {},
     svelte = {},
     emmet_language_server = {},
