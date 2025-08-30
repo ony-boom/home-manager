@@ -6,6 +6,7 @@
   utils = import ./../lib/utils.nix {inherit config;};
 in {
   imports = [
+    ./age
     ./modules
     ./config
     ./programs
@@ -54,6 +55,7 @@ in {
     DENO_NO_UPDATE_CHECK = 1;
     PNPM_HOME = "$HOME/.local/share/pnpm";
     BROWSER = "zen-browser";
+    CACHIX_AUTH_TOKEN = "$(cat ${config.age.secrets.cachix-secret.path})";
   };
 
   home.sessionPath = [

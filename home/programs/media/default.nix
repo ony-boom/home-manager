@@ -1,17 +1,11 @@
 {
   pkgs,
-  lib,
-  config,
   ...
 }: {
   imports = [
     ./mpd
+    ./mms.nix
   ];
-
-  services.mms = {
-    enable = lib.mkDefault true;
-    sessionSecretFile = config.age.secrets.mms.path;
-  };
 
   home.packages = with pkgs; [
     playerctl
