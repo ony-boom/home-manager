@@ -4,6 +4,9 @@
     lua51Packages.luarocks
   ];
 in {
+  imports = [
+    ./rust
+  ];
   home.packages = with pkgs;
     [
       nixd
