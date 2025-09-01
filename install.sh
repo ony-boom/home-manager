@@ -111,6 +111,7 @@ fi
 rm -rf "$TMPDIR"
 
 echo "=== Running home-manager switch ==="
+cd $HM_DIR
 nix run .#hm -- switch --impure -b backup
 
 echo "Setup complete!"
