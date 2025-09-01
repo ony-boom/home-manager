@@ -13,7 +13,7 @@ _Because there's no place like home_
 Just:
 
 ```sh
-curl -fsSL https://ony.world/devenv-setup | sh
+curl -fsSL https://ony.world/devenv | sh
 ```
 
 > It's the `install.sh` in this repo, you can check it out if you want to know what it does.
