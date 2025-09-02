@@ -15,6 +15,7 @@ return function()
     nil_ls = {},
     gopls = {},
     html = { capabilities = snippets_capabilities },
+    rust_analyzer = {},
     cssls = {
       capabilities = snippets_capabilities,
     },
