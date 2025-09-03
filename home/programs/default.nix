@@ -35,7 +35,6 @@
     typst
     emote
     cava
-    cliphist
     httpie
     killport
     yazi
