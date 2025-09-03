@@ -1,10 +1,9 @@
 {pkgs, ...}: {
   imports = [
-    ./rofi
-    # ./swaync
     ./mako
     ./waybar
     ./hyprland
+    ./walker
   ];
 
   home.packages = with pkgs; [
