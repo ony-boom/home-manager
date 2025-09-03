@@ -31,15 +31,6 @@
     walker.url = "github:abenz1267/walker";
   };
 
-  nixConfig = {
-    extra-substituters = [
-      "https://ony-boom.cachix.org"
-    ];
-    extra-trusted-public-keys = [
-      "ony-boom.cachix.org-1:rPOTyyOCiAhLarertCrNnZLxsBFpcirEekoohcCZt10="
-    ];
-  };
-
   outputs = {
     nixpkgs,
     home-manager,
