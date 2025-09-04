@@ -22,12 +22,6 @@
 
     ditto.url = "github:ony-boom/ditto";
     agenix.url = "github:ryantm/agenix";
-
-    fenix = {
-      url = "github:nix-community/fenix";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-
     walker.url = "github:abenz1267/walker";
   };
 

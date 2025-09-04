@@ -4,12 +4,10 @@
     ./waybar
     ./hyprland
     ./walker
+    ./nwg-bar
   ];
 
   home.packages = with pkgs; [
-    nitrogen
     swww
-    grim
-    slurp
   ];
 }

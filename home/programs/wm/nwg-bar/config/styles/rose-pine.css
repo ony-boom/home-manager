@@ -1,0 +1,12 @@
+@define-color bg #191724;
+@define-color surface #1f1d2e;
+@define-color fg #fff;
+
+#outer-box {
+  background-color: @bg;
+}
+
+button {
+  color: @fg;
+  background-color: @surface;
+}

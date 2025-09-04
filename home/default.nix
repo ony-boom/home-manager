@@ -43,6 +43,7 @@ in {
     package = pkgs.nix;
     settings = {
       substituters = [
+        "http://cache.nixos.org/"
         "https://ony-boom.cachix.org"
       ];
 
@@ -68,7 +69,6 @@ in {
     GOPATH = "$HOME/go";
     DENO_NO_UPDATE_CHECK = 1;
     PNPM_HOME = "$HOME/.local/share/pnpm";
-    BROWSER = "zen-browser";
     CACHIX_AUTH_TOKEN = "$(cat ${config.age.secrets.cachix-secret.path})";
   };
 

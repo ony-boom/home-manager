@@ -31,7 +31,6 @@
   };
 
   home.packages = with pkgs; [
-    font-manager
     typst
     emote
     cava
