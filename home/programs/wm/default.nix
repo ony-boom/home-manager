@@ -3,7 +3,6 @@
     ./mako
     ./waybar
     ./hyprland
-    ./walker
     ./nwg-bar
   ];
 

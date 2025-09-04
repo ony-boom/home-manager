@@ -22,7 +22,6 @@
 
     ditto.url = "github:ony-boom/ditto";
     agenix.url = "github:ryantm/agenix";
-    walker.url = "github:abenz1267/walker";
   };
 
   outputs = {
