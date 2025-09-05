@@ -22,6 +22,11 @@
 
     ditto.url = "github:ony-boom/ditto";
     agenix.url = "github:ryantm/agenix";
+
+    sherlock = {
+      url = "github:Skxxtz/sherlock";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs = {
