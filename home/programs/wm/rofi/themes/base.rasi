@@ -1,0 +1,132 @@
+window {
+  width:  596;
+  height: 456;
+
+	border:           1;
+  padding:          0;
+	border-radius:    12;
+	background-color: @background;
+	border-color:     @bordercolor;
+}
+
+
+#message {
+	border:       1px solid 0px 0px ;
+	border-color: @separatorcolor;
+}
+
+
+#textbox {
+	text-color: @foreground;
+}
+
+
+#listview {
+	spacing:      12px;
+	scrollbar:    false;
+	border-color: @bordercolor;
+	border:       1px solid 0px 0px;
+}
+
+element {
+  spacing:  12px;
+	border:  0;
+	padding: 12px;
+  fixed-height: 0;
+}
+
+element.normal.normal {
+	background-color: @background;
+	text-color:       @foreground;
+}
+
+element.normal.urgent {
+	background-color: @urgent-background;
+	text-color:       @urgent-foreground;
+}
+
+element.normal.active {
+	background-color: @active-background;
+	text-color:       @background;
+}
+
+element.selected.normal {
+	background-color: @selected-background;
+	text-color:       @foreground;
+}
+
+element.selected.urgent {
+	background-color: @selected-urgent-background;
+	text-color:       @foreground;
+}
+
+element.selected.active {
+	background-color: @selected-active-background;
+	text-color:       @background;
+}
+
+element.alternate.normal {
+	background-color: @background;
+	text-color:       @foreground;
+}
+
+element.alternate.urgent {
+	background-color: @urgent-background;
+	text-color:       @foreground;
+}
+
+element.alternate.active {
+	background-color: @active-background;
+	text-color:       @foreground;
+}
+
+element-icon {
+  size: 2.5ch;
+}
+
+#scrollbar {
+	width:        2px;
+	border:       0;
+	handle-width: 8px;
+}
+
+#sidebar {
+	border:       2px dash 0px 0px ;
+	border-color: @separatorcolor;
+}
+
+
+button.selected {
+	text-color:       @foreground;
+	background-color: @selected-background;
+}
+
+inputbar {
+	spacing:    0;
+  padding:    12px;
+	text-color: @foreground;
+}
+
+case-indicator {
+	spacing:    0;
+	text-color: @foreground;
+}
+
+entry {
+	spacing:    0;
+	text-color: @cya;
+}
+
+prompt {
+	spacing:    0;
+	text-color: @grn;
+}
+
+#inputbar {
+	children:   [ prompt,textbox-prompt-colon,entry,case-indicator ];
+}
+
+#textbox-prompt-colon {
+	expand:     false;
+	str:        "";
+}
