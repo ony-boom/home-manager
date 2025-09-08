@@ -3,13 +3,16 @@
     lua51Packages.lua
     lua51Packages.luarocks
   ];
+  phpPackage = with pkgs; [
+    php
+    php84Packages.composer
+  ];
 in {
-  imports = [];
   home.packages = with pkgs;
     [
       nixd
       typescript
       go
     ]
-    ++ lua;
+    ++ lua ++ phpPackage;
 }
