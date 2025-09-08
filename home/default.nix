@@ -50,12 +50,13 @@ in {
   # want to update the value, then make sure to first check the Home Manager
   # release notes.
   home.sessionVariables = {
-    # Disable deno update checker
     GOPATH = "$HOME/go";
+    # Disable deno update checker
     DENO_NO_UPDATE_CHECK = 1;
-    PNPM_HOME = "$HOME/.local/share/pnpm";
-    CACHIX_AUTH_TOKEN = "$(cat ${config.age.secrets.cachix-secret.path})";
     NIXPKGS_ALLOW_INSECURE = 1;
+    PNPM_HOME = "$HOME/.local/share/pnpm";
+    COMPOSER_PATH = "$XDG_CONFIG_HOME/composer";
+    CACHIX_AUTH_TOKEN = "$(cat ${config.age.secrets.cachix-secret.path})";
   };
 
   home.sessionPath = [
@@ -64,6 +65,7 @@ in {
     "$HOME/.deno/bin"
     "$PNPM_HOME"
     "$GOPATH/bin"
+    "$COMPOSER_PATH/vendor/bin"
   ];
 
   home.stateVersion = "24.05"; # Please read the comment before changing.
