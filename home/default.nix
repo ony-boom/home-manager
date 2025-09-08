@@ -55,6 +55,7 @@ in {
     DENO_NO_UPDATE_CHECK = 1;
     PNPM_HOME = "$HOME/.local/share/pnpm";
     CACHIX_AUTH_TOKEN = "$(cat ${config.age.secrets.cachix-secret.path})";
+    NIXPKGS_ALLOW_INSECURE = 1;
   };
 
   home.sessionPath = [
