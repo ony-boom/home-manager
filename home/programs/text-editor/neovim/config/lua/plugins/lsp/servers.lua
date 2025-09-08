@@ -24,6 +24,7 @@ return function()
         formatterMode = "typstyle",
       },
     },
+    phpactor = {},
     astro = {},
     svelte = {},
     emmet_language_server = {},

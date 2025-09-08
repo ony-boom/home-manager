@@ -37,6 +37,7 @@
       gopls
       tinymist
       typescript
+      phpactor
       lua-language-server
       emmet-language-server
       svelte-language-server
