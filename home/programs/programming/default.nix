@@ -10,9 +10,9 @@
 in {
   home.packages = with pkgs;
     [
+      go
       nixd
       typescript
-      go
     ]
     ++ lua ++ phpPackage;
 }

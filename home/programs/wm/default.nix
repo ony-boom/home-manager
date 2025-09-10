@@ -10,5 +10,6 @@
   home.packages = with pkgs; [
     cliphist
     swww
+    (nixGL satty)
   ];
 }
