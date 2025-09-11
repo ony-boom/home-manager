@@ -1,11 +1,9 @@
 {lib, ...}: let
-  config = {
-    settings = import ./config.nix;
-  };
-  style = import ./styles;
+  settings = import ./config.nix;
+  style = import ./styles lib;
 in {
   programs.waybar = {
     enable = lib.mkDefault true;
-    inherit config style;
+    inherit settings style;
   };
 }
