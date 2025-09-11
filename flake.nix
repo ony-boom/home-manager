@@ -22,11 +22,6 @@
 
     ditto.url = "github:ony-boom/ditto";
     agenix.url = "github:ryantm/agenix";
-
-    sherlock = {
-      url = "github:Skxxtz/sherlock";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
   };
 
   outputs = {
@@ -57,8 +52,8 @@
         modules = [
           ./home
           ./host
+          inputs.mms.homeManagerModules.default
           inputs.agenix.homeManagerModules.default
-          inputs.mms.homeManagerModules.${system}
         ];
       };
 
