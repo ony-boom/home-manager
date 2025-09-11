@@ -3,8 +3,8 @@
     ./mako
     ./rofi
     ./waybar
-    ./ironbar
     ./hyprland
+    ./nwg-bar
   ];
 
   home.packages = with pkgs; [
