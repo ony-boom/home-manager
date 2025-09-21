@@ -5,7 +5,6 @@
 }: {
   programs.rofi = {
     enable = true;
-    package = pkgs.rofi-wayland;
     theme = "rose-pine";
 
     font = "monospace 12";

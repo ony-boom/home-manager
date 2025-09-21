@@ -12,8 +12,6 @@
 
     (pkgs.nixGL vlc)
 
-    (pkgs.nixGL stremio)
-
     (pkgs.nixGL spotify)
   ];
 }

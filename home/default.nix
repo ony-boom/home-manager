@@ -63,6 +63,7 @@ in {
     "$HOME/.local/bin"
     "$HOME/.cargo/bin"
     "$HOME/.deno/bin"
+    "$HOME/.cache/.bun/bin"
     "$PNPM_HOME"
     "$GOPATH/bin"
     "$COMPOSER_PATH/vendor/bin"
