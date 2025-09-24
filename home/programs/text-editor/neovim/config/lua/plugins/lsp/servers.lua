@@ -13,6 +13,7 @@ return function()
   return {
     lua_ls = {},
     nil_ls = {},
+    biome = {},
     gopls = {},
     html = { capabilities = snippets_capabilities },
     rust_analyzer = {},

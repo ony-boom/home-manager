@@ -30,6 +30,7 @@
       isort
       black
       sleek
+      biome
 
       # lsp
       nil
