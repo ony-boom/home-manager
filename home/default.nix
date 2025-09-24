@@ -53,7 +53,7 @@ in {
     GOPATH = "$HOME/go";
     # Disable deno update checker
     DENO_NO_UPDATE_CHECK = 1;
-    NIXPKGS_ALLOW_INSECURE = 1;
+    # NIXPKGS_ALLOW_INSECURE = 1;
     PNPM_HOME = "$HOME/.local/share/pnpm";
     COMPOSER_PATH = "$XDG_CONFIG_HOME/composer";
     CACHIX_AUTH_TOKEN = "$(cat ${config.age.secrets.cachix-secret.path})";
